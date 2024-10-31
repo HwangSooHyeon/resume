@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume/l10n/gen_l10n/app_localizations.dart';
-import 'package:resume/page/home_page.dart';
 import 'package:resume/state/app_localizations_state.dart';
 import 'package:resume/state/theme_mode_state.dart';
+import 'package:resume/util/router/custom_router.dart';
 import 'package:resume/util/theme/custom_theme.dart';
 
 void main() {
@@ -23,7 +23,7 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final locale = ref.watch(appLocalizationsStateProvider);
     final themeMode = ref.watch(themeModeStateProvider);
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Resume',
       theme: CustomTheme.themeData(),
       darkTheme: CustomTheme.themeData(isDark: true),
@@ -32,7 +32,7 @@ class MyApp extends ConsumerWidget {
       supportedLocales: AppLocalizations.supportedLocales,
       debugShowCheckedModeBanner: false,
       locale: Locale(locale.localeName),
-      home: const HomePage(),
+      routerConfig: CustomRouter.router,
     );
   }
 }
