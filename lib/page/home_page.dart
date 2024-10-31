@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume/l10n/gen_l10n/app_localizations.dart';
+import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/widget/common/default_layout.dart';
 
 class HomePage extends ConsumerWidget {
@@ -9,9 +10,13 @@ class HomePage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return DefaultLayout(
-      body: Center(
-        child:
-            Text('Current Language: ${AppLocalizations.of(context)?.language}'),
+      body: Column(
+        children: [
+          Text(
+            'Current Language: ${AppLocalizations.of(context)?.language}',
+            style: context.textTheme.headlineLarge,
+          ),
+        ],
       ),
     );
   }
