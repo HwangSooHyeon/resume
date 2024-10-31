@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume/l10n/gen_l10n/app_localizations.dart';
 import 'package:resume/page/home_page.dart';
 import 'package:resume/state/app_localizations_state.dart';
+import 'package:resume/state/theme_mode_state.dart';
 import 'package:resume/util/theme/custom_theme.dart';
 
 void main() {
@@ -21,10 +22,12 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final locale = ref.watch(appLocalizationsStateProvider);
+    final themeMode = ref.watch(themeModeStateProvider);
     return MaterialApp(
       title: 'Resume',
       theme: CustomTheme.themeData(),
       darkTheme: CustomTheme.themeData(isDark: true),
+      themeMode: themeMode,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       debugShowCheckedModeBanner: false,
