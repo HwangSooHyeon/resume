@@ -17,6 +17,7 @@ class CustomRouter {
         builder: (_, __) => const SplashScreen(),
       ),
       ShellRoute(
+        parentNavigatorKey: _rootNavigatorKey,
         navigatorKey: _shellNavigatorKey,
         builder: (_, __, body) => DefaultLayout(body: body),
         routes: [
