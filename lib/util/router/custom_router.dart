@@ -19,7 +19,9 @@ class CustomRouter {
       ShellRoute(
         parentNavigatorKey: _rootNavigatorKey,
         navigatorKey: _shellNavigatorKey,
-        builder: (_, __, body) => DefaultLayout(body: body),
+        builder: (_, __, body) => DefaultLayout(
+          body: body,
+        ),
         routes: [
           GoRoute(
             path: '/home',
