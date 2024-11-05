@@ -119,23 +119,35 @@ abstract class AppLocalizations {
   /// **'황수현'**
   String get myName;
 
-  /// No description provided for @selfIntroduction.
+  /// No description provided for @home.
+  ///
+  /// In ko, this message translates to:
+  /// **'홈'**
+  String get home;
+
+  /// No description provided for @coverLetter.
   ///
   /// In ko, this message translates to:
   /// **'자기소개'**
-  String get selfIntroduction;
+  String get coverLetter;
 
-  /// No description provided for @techStack.
+  /// No description provided for @skills.
   ///
   /// In ko, this message translates to:
-  /// **'기술스택'**
-  String get techStack;
+  /// **'스킬'**
+  String get skills;
 
-  /// No description provided for @portfolio.
+  /// No description provided for @cv.
   ///
   /// In ko, this message translates to:
-  /// **'포트폴리오'**
-  String get portfolio;
+  /// **'이력'**
+  String get cv;
+
+  /// No description provided for @config.
+  ///
+  /// In ko, this message translates to:
+  /// **'설정'**
+  String get config;
 
   /// No description provided for @sendingEmail.
   ///
