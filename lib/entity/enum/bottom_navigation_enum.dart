@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/widget/common/custom_animated_ink_well.dart';
 
@@ -36,6 +37,7 @@ enum BottomNavigationEnum {
           mainAxisSize: MainAxisSize.min,
           children: [
             icon,
+            const Gap(4),
             Text(
               label(context),
               style: context.textTheme.labelSmall,
