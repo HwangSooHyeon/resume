@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:resume/entity/enum/bottom_navigation_enum.dart';
+import 'package:resume/page/config_screen.dart';
+import 'package:resume/page/cover_letter_screen.dart';
+import 'package:resume/page/cv_screen.dart';
 import 'package:resume/page/home_screen.dart';
+import 'package:resume/page/skills_screen.dart';
 import 'package:resume/page/splash_page.dart';
 import 'package:resume/widget/common/default_layout.dart';
 
@@ -11,10 +15,10 @@ class CustomRouter {
 
   static final router = GoRouter(
     navigatorKey: _rootNavigatorKey,
-    initialLocation: '/splash',
+    initialLocation: SplashScreen.path,
     routes: [
       GoRoute(
-        path: '/splash',
+        path: SplashScreen.path,
         builder: (_, __) => const SplashScreen(),
       ),
       ShellRoute(
@@ -27,15 +31,31 @@ class CustomRouter {
             children: BottomNavigationEnum.values
                 .map(
                   (element) => element.bottomNavigationBarItem(
-                context,
-              ),
-            )
+                    context,
+                  ),
+                )
                 .toList(),
           ),
         ),
         routes: [
           GoRoute(
-            path: '/home',
+            path: HomeScreen.path,
+            builder: (_, __) => const HomeScreen(),
+          ),
+          GoRoute(
+            path: CoverLetterScreen.path,
+            builder: (_, __) => const HomeScreen(),
+          ),
+          GoRoute(
+            path: SkillsScreen.path,
+            builder: (_, __) => const HomeScreen(),
+          ),
+          GoRoute(
+            path: CvScreen.path,
+            builder: (_, __) => const HomeScreen(),
+          ),
+          GoRoute(
+            path: ConfigScreen.path,
             builder: (_, __) => const HomeScreen(),
           ),
         ],

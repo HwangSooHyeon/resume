@@ -5,11 +5,13 @@ import 'package:resume/state/theme_mode_state.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 
 class HomeScreen extends ConsumerWidget {
+  static const String path = '/home';
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
           'Current Language: ${AppLocalizations.of(context)?.language}',
