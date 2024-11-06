@@ -6,6 +6,7 @@ class CustomAnimatedInkWell extends StatefulWidget {
     this.padding,
     this.borderRadius,
     this.width,
+    this.height,
     this.onTap,
     required this.child,
   });
@@ -13,6 +14,7 @@ class CustomAnimatedInkWell extends StatefulWidget {
   final EdgeInsetsGeometry? padding;
   final BorderRadius? borderRadius;
   final double? width;
+  final double? height;
   final Function()? onTap;
   final Widget child;
 
@@ -26,11 +28,13 @@ class _CustomAnimatedInkWellState extends State<CustomAnimatedInkWell> {
   @override
   Widget build(BuildContext context) {
     return Ink(
+      width: widget.width,
+      height: widget.height,
       padding: widget.padding == null
           ? null
           : EdgeInsets.symmetric(
-              horizontal: widget.padding!.horizontal * 0.3,
-              vertical: widget.padding!.vertical * 0.3,
+              horizontal: widget.padding!.horizontal * 0.4,
+              vertical: widget.padding!.vertical * 0.4,
             ),
       child: InkWell(
         onTap: widget.onTap,
@@ -41,12 +45,14 @@ class _CustomAnimatedInkWellState extends State<CustomAnimatedInkWell> {
         },
         borderRadius: widget.borderRadius,
         child: Ink(
-          width: widget.width,
+          width: widget.width == null
+              ? null
+              : widget.width! - (widget.padding?.horizontal ?? 0) * 2,
           padding: widget.padding == null
               ? null
               : EdgeInsets.symmetric(
-                  horizontal: widget.padding!.horizontal * 0.7,
-                  vertical: widget.padding!.vertical * 0.7,
+                  horizontal: widget.padding!.horizontal * 0.6,
+                  vertical: widget.padding!.vertical * 0.6,
                 ),
           child: AnimatedScale(
             scale: _scale,

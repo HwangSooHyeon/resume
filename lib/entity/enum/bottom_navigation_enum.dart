@@ -27,12 +27,20 @@ enum BottomNavigationEnum {
         },
       );
 
-  BottomNavigationBarItem bottomNavigationBarItem(BuildContext context) =>
-      BottomNavigationBarItem(
-        label: label(context),
-        icon: CustomAnimatedInkWell(
-          width: context.width / 5,
-          child: icon,
+  Widget bottomNavigationBarItem(BuildContext context) => CustomAnimatedInkWell(
+        width: (context.width) / 5,
+        height: 84,
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
+        borderRadius: BorderRadius.circular(10),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            icon,
+            Text(
+              label(context),
+              style: context.textTheme.labelSmall,
+            ),
+          ],
         ),
       );
 
