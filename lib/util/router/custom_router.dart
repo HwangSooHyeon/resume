@@ -25,8 +25,12 @@ class CustomRouter {
       ShellRoute(
         parentNavigatorKey: _rootNavigatorKey,
         navigatorKey: _shellNavigatorKey,
-        redirect: (_, __) {
+        redirect: (_, state) {
           // start from splash screen if the app restart
+          if (state.uri.toString() == HomeScreen.path) {
+            _needRefresh = false;
+            return HomeScreen.path;
+          }
           if (_needRefresh) {
             _needRefresh = false;
             return SplashScreen.path;
