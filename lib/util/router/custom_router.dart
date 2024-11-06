@@ -12,6 +12,7 @@ import 'package:resume/widget/common/default_layout.dart';
 class CustomRouter {
   static final _rootNavigatorKey = GlobalKey<NavigatorState>();
   static final _shellNavigatorKey = GlobalKey<NavigatorState>();
+  static bool _needRefresh = true;
 
   static final router = GoRouter(
     navigatorKey: _rootNavigatorKey,
@@ -24,6 +25,14 @@ class CustomRouter {
       ShellRoute(
         parentNavigatorKey: _rootNavigatorKey,
         navigatorKey: _shellNavigatorKey,
+        redirect: (_, __) {
+          // start from splash screen if the app restart
+          if (_needRefresh) {
+            _needRefresh = false;
+            return SplashScreen.path;
+          }
+          return null;
+        },
         builder: (context, __, body) => DefaultLayout(
           body: body,
           bottomNavigationBar: Row(
@@ -44,19 +53,19 @@ class CustomRouter {
           ),
           GoRoute(
             path: CoverLetterScreen.path,
-            builder: (_, __) => const HomeScreen(),
+            builder: (_, __) => const CoverLetterScreen(),
           ),
           GoRoute(
             path: SkillsScreen.path,
-            builder: (_, __) => const HomeScreen(),
+            builder: (_, __) => const SkillsScreen(),
           ),
           GoRoute(
             path: CvScreen.path,
-            builder: (_, __) => const HomeScreen(),
+            builder: (_, __) => const CvScreen(),
           ),
           GoRoute(
             path: ConfigScreen.path,
-            builder: (_, __) => const HomeScreen(),
+            builder: (_, __) => const ConfigScreen(),
           ),
         ],
       ),
