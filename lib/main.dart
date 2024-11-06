@@ -23,6 +23,7 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final locale = ref.watch(appLocalizationsStateProvider);
     final themeMode = ref.watch(themeModeStateProvider);
+
     return MaterialApp.router(
       title: 'Resume',
       theme: CustomTheme.themeData(),

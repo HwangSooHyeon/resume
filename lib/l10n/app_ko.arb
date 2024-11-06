@@ -3,8 +3,10 @@
   "title": "크로스플랫폼 앱 개발자",
   "name": "이름",
   "myName": "황수현",
-  "selfIntroduction": "자기소개",
-  "techStack": "기술스택",
-  "portfolio": "포트폴리오",
+  "home": "홈",
+  "coverLetter": "자기소개",
+  "skills": "스킬",
+  "cv": "이력",
+  "config": "설정",
   "sendingEmail": "이메일 보내기"
 }

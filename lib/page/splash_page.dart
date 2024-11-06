@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:resume/widget/common/default_layout.dart';
 
 class SplashScreen extends StatefulWidget {
+  static const String path = '/splash';
   const SplashScreen({super.key});
 
   @override

@@ -12,6 +12,7 @@ class CustomTheme {
             : CustomColorScheme.lightColorScheme,
         fontFamily: 'NanumSquareNeo',
         textTheme: CustomTextTheme.textTheme,
+        hoverColor: Colors.transparent,
         useMaterial3: true,
       );
 }

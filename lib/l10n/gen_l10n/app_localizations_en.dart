@@ -7,26 +7,32 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get language => 'english';
+  String get language => 'English';
 
   @override
-  String get title => 'cross-platform app developer';
+  String get title => 'Cross-platform App Developer';
 
   @override
-  String get name => 'name';
+  String get name => 'Name';
 
   @override
   String get myName => 'Soo-Hyeon Hwang';
 
   @override
-  String get selfIntroduction => 'self-introduction';
+  String get home => 'Home';
 
   @override
-  String get techStack => 'tech-stack';
+  String get coverLetter => 'Cover-letter';
 
   @override
-  String get portfolio => 'portfolio';
+  String get skills => 'Skills';
 
   @override
-  String get sendingEmail => 'sending-email';
+  String get cv => 'CV';
+
+  @override
+  String get config => 'Config';
+
+  @override
+  String get sendingEmail => 'Sending-email';
 }

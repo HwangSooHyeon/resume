@@ -1,10 +1,12 @@
 {
-  "language": "english",
-  "title": "cross-platform app developer",
-  "name": "name",
+  "language": "English",
+  "title": "Cross-platform App Developer",
+  "name": "Name",
   "myName": "Soo-Hyeon Hwang",
-  "selfIntroduction": "self-introduction",
-  "techStack": "tech-stack",
-  "portfolio": "portfolio",
-  "sendingEmail": "sending-email"
+  "home": "Home",
+  "coverLetter": "Cover-letter",
+  "skills": "Skills",
+  "cv": "CV",
+  "config": "Config",
+  "sendingEmail": "Sending-email"
 }

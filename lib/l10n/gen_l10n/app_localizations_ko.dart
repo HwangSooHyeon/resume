@@ -19,13 +19,19 @@ class AppLocalizationsKo extends AppLocalizations {
   String get myName => '황수현';
 
   @override
-  String get selfIntroduction => '자기소개';
+  String get home => '홈';
 
   @override
-  String get techStack => '기술스택';
+  String get coverLetter => '자기소개';
 
   @override
-  String get portfolio => '포트폴리오';
+  String get skills => '스킬';
+
+  @override
+  String get cv => '이력';
+
+  @override
+  String get config => '설정';
 
   @override
   String get sendingEmail => '이메일 보내기';
