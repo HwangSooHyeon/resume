@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:resume/entity/enum/bottom_navigation_enum.dart';
-import 'package:resume/page/config_screen.dart';
-import 'package:resume/page/cover_letter_screen.dart';
-import 'package:resume/page/cv_screen.dart';
+import 'package:resume/model/enum/bottom_navigation_bar_enum.dart';
 import 'package:resume/page/home_screen.dart';
-import 'package:resume/page/skills_screen.dart';
 import 'package:resume/page/splash_page.dart';
+import 'package:resume/widget/common/default_app_bar.dart';
 import 'package:resume/widget/common/default_layout.dart';
 
 class CustomRouter {
@@ -38,10 +35,15 @@ class CustomRouter {
           return null;
         },
         builder: (context, __, body) => DefaultLayout(
-          body: body,
+          body: Column(
+            children: [
+              const DefaultAppBar(),
+              body,
+            ],
+          ),
           bottomNavigationBar: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: BottomNavigationEnum.values
+            children: BottomNavigationBarEnum.values
                 .map(
                   (element) => element.bottomNavigationBarItem(
                     context,
@@ -50,28 +52,14 @@ class CustomRouter {
                 .toList(),
           ),
         ),
-        routes: [
-          GoRoute(
-            path: HomeScreen.path,
-            builder: (_, __) => const HomeScreen(),
-          ),
-          GoRoute(
-            path: CoverLetterScreen.path,
-            builder: (_, __) => const CoverLetterScreen(),
-          ),
-          GoRoute(
-            path: SkillsScreen.path,
-            builder: (_, __) => const SkillsScreen(),
-          ),
-          GoRoute(
-            path: CvScreen.path,
-            builder: (_, __) => const CvScreen(),
-          ),
-          GoRoute(
-            path: ConfigScreen.path,
-            builder: (_, __) => const ConfigScreen(),
-          ),
-        ],
+        routes: BottomNavigationBarEnum.values
+            .map(
+              (element) => GoRoute(
+                path: element.path,
+                builder: (_, __) => element.screen,
+              ),
+            )
+            .toList(),
       ),
     ],
   );

@@ -1,27 +1,27 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'app_localizations_state.dart';
+part of 'app_localizations_view_model.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$appLocalizationsStateHash() =>
-    r'a49198927cc23b267c671c2cf64f26f0bf13f26a';
+String _$appLocalizationsViewModelHash() =>
+    r'703c0eba44f88785ade3e25163cb8c940a505c36';
 
-/// See also [AppLocalizationsState].
-@ProviderFor(AppLocalizationsState)
-final appLocalizationsStateProvider = AutoDisposeNotifierProvider<
-    AppLocalizationsState, AppLocalizations>.internal(
-  AppLocalizationsState.new,
-  name: r'appLocalizationsStateProvider',
+/// See also [AppLocalizationsViewModel].
+@ProviderFor(AppLocalizationsViewModel)
+final appLocalizationsViewModelProvider = AutoDisposeNotifierProvider<
+    AppLocalizationsViewModel, AppLocalizations>.internal(
+  AppLocalizationsViewModel.new,
+  name: r'appLocalizationsViewModelProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$appLocalizationsStateHash,
+      : _$appLocalizationsViewModelHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$AppLocalizationsState = AutoDisposeNotifier<AppLocalizations>;
+typedef _$AppLocalizationsViewModel = AutoDisposeNotifier<AppLocalizations>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

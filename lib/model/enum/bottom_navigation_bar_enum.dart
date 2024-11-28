@@ -7,23 +7,39 @@ import 'package:resume/page/cover_letter_screen.dart';
 import 'package:resume/page/cv_screen.dart';
 import 'package:resume/page/home_screen.dart';
 import 'package:resume/page/skills_screen.dart';
-import 'package:resume/state/bottom_navigation_state.dart';
+import 'package:resume/view_model/bottom_navigation_view_model.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/widget/common/custom_animated_ink_well.dart';
 
-enum BottomNavigationEnum {
+enum BottomNavigationBarEnum {
   home,
   coverLetter,
   skills,
   cv,
   config;
 
+  String get path => switch (this) {
+    BottomNavigationBarEnum.home => HomeScreen.path,
+    BottomNavigationBarEnum.coverLetter => CoverLetterScreen.path,
+    BottomNavigationBarEnum.skills => SkillsScreen.path,
+    BottomNavigationBarEnum.cv => CvScreen.path,
+    BottomNavigationBarEnum.config => ConfigScreen.path,
+  };
+
+  Widget get screen => switch (this) {
+    BottomNavigationBarEnum.home => const HomeScreen(),
+    BottomNavigationBarEnum.coverLetter => const CoverLetterScreen(),
+    BottomNavigationBarEnum.skills => const SkillsScreen(),
+    BottomNavigationBarEnum.cv => const CvScreen(),
+    BottomNavigationBarEnum.config => const ConfigScreen(),
+  };
+
   String label(BuildContext context) => switch (this) {
-        BottomNavigationEnum.home => context.locale!.home,
-        BottomNavigationEnum.coverLetter => context.locale!.coverLetter,
-        BottomNavigationEnum.skills => context.locale!.skills,
-        BottomNavigationEnum.cv => context.locale!.cv,
-        BottomNavigationEnum.config => context.locale!.config,
+        BottomNavigationBarEnum.home => context.locale!.home,
+        BottomNavigationBarEnum.coverLetter => context.locale!.coverLetter,
+        BottomNavigationBarEnum.skills => context.locale!.skills,
+        BottomNavigationBarEnum.cv => context.locale!.cv,
+        BottomNavigationBarEnum.config => context.locale!.config,
       };
 
   Widget icon({
@@ -31,34 +47,26 @@ enum BottomNavigationEnum {
   }) =>
       _renderIconWidget(
         switch (this) {
-          BottomNavigationEnum.home => Icons.home_rounded,
-          BottomNavigationEnum.coverLetter => Icons.library_books_rounded,
-          BottomNavigationEnum.skills => Icons.emoji_objects_rounded,
-          BottomNavigationEnum.cv => Icons.apartment_rounded,
-          BottomNavigationEnum.config => Icons.settings_rounded,
+          BottomNavigationBarEnum.home => Icons.home_rounded,
+          BottomNavigationBarEnum.coverLetter => Icons.library_books_rounded,
+          BottomNavigationBarEnum.skills => Icons.emoji_objects_rounded,
+          BottomNavigationBarEnum.cv => Icons.apartment_rounded,
+          BottomNavigationBarEnum.config => Icons.settings_rounded,
         },
         color: color,
       );
 
-  String get path => switch (this) {
-        BottomNavigationEnum.home => HomeScreen.path,
-        BottomNavigationEnum.coverLetter => CoverLetterScreen.path,
-        BottomNavigationEnum.skills => SkillsScreen.path,
-        BottomNavigationEnum.cv => CvScreen.path,
-        BottomNavigationEnum.config => ConfigScreen.path,
-      };
-
   Widget bottomNavigationBarItem(BuildContext context) => Consumer(
         builder: (context, ref, _) {
           final bottomNavigationState =
-              ref.watch(bottomNavigationStateProvider);
+              ref.watch(bottomNavigationViewModelProvider);
           return CustomAnimatedInkWell(
             width: (context.width) / 5,
             height: 84,
             padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
             borderRadius: BorderRadius.circular(10),
             onTap: () {
-              ref.read(bottomNavigationStateProvider.notifier).update(
+              ref.read(bottomNavigationViewModelProvider.notifier).update(
                     bottomNavigationEnum: this,
                   );
               context.go(path);
