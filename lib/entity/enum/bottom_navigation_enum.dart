@@ -18,6 +18,22 @@ enum BottomNavigationEnum {
   cv,
   config;
 
+  String get path => switch (this) {
+    BottomNavigationEnum.home => HomeScreen.path,
+    BottomNavigationEnum.coverLetter => CoverLetterScreen.path,
+    BottomNavigationEnum.skills => SkillsScreen.path,
+    BottomNavigationEnum.cv => CvScreen.path,
+    BottomNavigationEnum.config => ConfigScreen.path,
+  };
+
+  Widget get screen => switch (this) {
+    BottomNavigationEnum.home => const HomeScreen(),
+    BottomNavigationEnum.coverLetter => const CoverLetterScreen(),
+    BottomNavigationEnum.skills => const SkillsScreen(),
+    BottomNavigationEnum.cv => const CvScreen(),
+    BottomNavigationEnum.config => const ConfigScreen(),
+  };
+
   String label(BuildContext context) => switch (this) {
         BottomNavigationEnum.home => context.locale!.home,
         BottomNavigationEnum.coverLetter => context.locale!.coverLetter,
@@ -39,14 +55,6 @@ enum BottomNavigationEnum {
         },
         color: color,
       );
-
-  String get path => switch (this) {
-        BottomNavigationEnum.home => HomeScreen.path,
-        BottomNavigationEnum.coverLetter => CoverLetterScreen.path,
-        BottomNavigationEnum.skills => SkillsScreen.path,
-        BottomNavigationEnum.cv => CvScreen.path,
-        BottomNavigationEnum.config => ConfigScreen.path,
-      };
 
   Widget bottomNavigationBarItem(BuildContext context) => Consumer(
         builder: (context, ref, _) {
