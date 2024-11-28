@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:resume/entity/enum/bottom_navigation_enum.dart';
+import 'package:resume/model/enum/bottom_navigation_enum.dart';
 import 'package:resume/page/home_screen.dart';
 import 'package:resume/page/splash_page.dart';
 import 'package:resume/widget/common/default_layout.dart';
@@ -34,7 +34,12 @@ class CustomRouter {
           return null;
         },
         builder: (context, __, body) => DefaultLayout(
-          body: body,
+          body: Column(
+            children: [
+
+              body,
+            ],
+          ),
           bottomNavigationBar: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: BottomNavigationEnum.values

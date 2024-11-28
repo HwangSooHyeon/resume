@@ -1,27 +1,27 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'app_localizations_state.dart';
+part of 'bottom_navigation_view_model.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$appLocalizationsStateHash() =>
-    r'a49198927cc23b267c671c2cf64f26f0bf13f26a';
+String _$bottomNavigationViewModelHash() =>
+    r'3534dc59baa7cca71c2f156da51ea3dd3c713194';
 
-/// See also [AppLocalizationsState].
-@ProviderFor(AppLocalizationsState)
-final appLocalizationsStateProvider = AutoDisposeNotifierProvider<
-    AppLocalizationsState, AppLocalizations>.internal(
-  AppLocalizationsState.new,
-  name: r'appLocalizationsStateProvider',
+/// See also [BottomNavigationViewModel].
+@ProviderFor(BottomNavigationViewModel)
+final bottomNavigationViewModelProvider =
+    NotifierProvider<BottomNavigationViewModel, BottomNavigationEnum>.internal(
+  BottomNavigationViewModel.new,
+  name: r'bottomNavigationViewModelProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
       ? null
-      : _$appLocalizationsStateHash,
+      : _$bottomNavigationViewModelHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef _$AppLocalizationsState = AutoDisposeNotifier<AppLocalizations>;
+typedef _$BottomNavigationViewModel = Notifier<BottomNavigationEnum>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

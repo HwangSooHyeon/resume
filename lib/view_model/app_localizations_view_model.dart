@@ -2,10 +2,10 @@ import 'package:resume/l10n/gen_l10n/app_localizations.dart';
 import 'package:resume/l10n/l10n.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
-part 'app_localizations_state.g.dart';
+part 'app_localizations_view_model.g.dart';
 
 @riverpod
-class AppLocalizationsState extends _$AppLocalizationsState {
+class AppLocalizationsViewModel extends _$AppLocalizationsViewModel {
   @override
   AppLocalizations build() {
     final foundLocale = L10n.findLocaleByCountryCode(systemLocale.countryCode ?? 'KR');

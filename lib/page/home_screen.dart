@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume/l10n/gen_l10n/app_localizations.dart';
-import 'package:resume/state/theme_mode_state.dart';
+import 'package:resume/view_model/theme_mode_view_model.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -19,7 +19,7 @@ class HomeScreen extends ConsumerWidget {
         ),
         ElevatedButton(
           onPressed: () {
-            ref.read(themeModeStateProvider.notifier).toggleThemeMode(context);
+            ref.read(themeModeViewModelProvider.notifier).toggleThemeMode(context);
           },
           child: Text('toggle theme mode'),
         ),

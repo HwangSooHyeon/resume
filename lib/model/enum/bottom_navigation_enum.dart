@@ -7,7 +7,7 @@ import 'package:resume/page/cover_letter_screen.dart';
 import 'package:resume/page/cv_screen.dart';
 import 'package:resume/page/home_screen.dart';
 import 'package:resume/page/skills_screen.dart';
-import 'package:resume/state/bottom_navigation_state.dart';
+import 'package:resume/view_model/bottom_navigation_view_model.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/widget/common/custom_animated_ink_well.dart';
 
@@ -59,14 +59,14 @@ enum BottomNavigationEnum {
   Widget bottomNavigationBarItem(BuildContext context) => Consumer(
         builder: (context, ref, _) {
           final bottomNavigationState =
-              ref.watch(bottomNavigationStateProvider);
+              ref.watch(bottomNavigationViewModelProvider);
           return CustomAnimatedInkWell(
             width: (context.width) / 5,
             height: 84,
             padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
             borderRadius: BorderRadius.circular(10),
             onTap: () {
-              ref.read(bottomNavigationStateProvider.notifier).update(
+              ref.read(bottomNavigationViewModelProvider.notifier).update(
                     bottomNavigationEnum: this,
                   );
               context.go(path);
