@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:resume/model/enum/bottom_navigation_bar_enum.dart';
 import 'package:resume/page/home_screen.dart';
 import 'package:resume/page/splash_page.dart';
+import 'package:resume/widget/common/default_app_bar.dart';
 import 'package:resume/widget/common/default_layout.dart';
 
 class CustomRouter {
@@ -36,7 +37,7 @@ class CustomRouter {
         builder: (context, __, body) => DefaultLayout(
           body: Column(
             children: [
-
+              const DefaultAppBar(),
               body,
             ],
           ),
