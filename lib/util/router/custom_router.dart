@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:resume/model/enum/bottom_navigation_enum.dart';
+import 'package:resume/model/enum/bottom_navigation_bar_enum.dart';
 import 'package:resume/page/home_screen.dart';
 import 'package:resume/page/splash_page.dart';
 import 'package:resume/widget/common/default_layout.dart';
@@ -42,7 +42,7 @@ class CustomRouter {
           ),
           bottomNavigationBar: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: BottomNavigationEnum.values
+            children: BottomNavigationBarEnum.values
                 .map(
                   (element) => element.bottomNavigationBarItem(
                     context,
@@ -51,7 +51,7 @@ class CustomRouter {
                 .toList(),
           ),
         ),
-        routes: BottomNavigationEnum.values
+        routes: BottomNavigationBarEnum.values
             .map(
               (element) => GoRoute(
                 path: element.path,

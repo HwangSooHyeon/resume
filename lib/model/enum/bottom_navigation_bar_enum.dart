@@ -11,7 +11,7 @@ import 'package:resume/view_model/bottom_navigation_view_model.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/widget/common/custom_animated_ink_well.dart';
 
-enum BottomNavigationEnum {
+enum BottomNavigationBarEnum {
   home,
   coverLetter,
   skills,
@@ -19,27 +19,27 @@ enum BottomNavigationEnum {
   config;
 
   String get path => switch (this) {
-    BottomNavigationEnum.home => HomeScreen.path,
-    BottomNavigationEnum.coverLetter => CoverLetterScreen.path,
-    BottomNavigationEnum.skills => SkillsScreen.path,
-    BottomNavigationEnum.cv => CvScreen.path,
-    BottomNavigationEnum.config => ConfigScreen.path,
+    BottomNavigationBarEnum.home => HomeScreen.path,
+    BottomNavigationBarEnum.coverLetter => CoverLetterScreen.path,
+    BottomNavigationBarEnum.skills => SkillsScreen.path,
+    BottomNavigationBarEnum.cv => CvScreen.path,
+    BottomNavigationBarEnum.config => ConfigScreen.path,
   };
 
   Widget get screen => switch (this) {
-    BottomNavigationEnum.home => const HomeScreen(),
-    BottomNavigationEnum.coverLetter => const CoverLetterScreen(),
-    BottomNavigationEnum.skills => const SkillsScreen(),
-    BottomNavigationEnum.cv => const CvScreen(),
-    BottomNavigationEnum.config => const ConfigScreen(),
+    BottomNavigationBarEnum.home => const HomeScreen(),
+    BottomNavigationBarEnum.coverLetter => const CoverLetterScreen(),
+    BottomNavigationBarEnum.skills => const SkillsScreen(),
+    BottomNavigationBarEnum.cv => const CvScreen(),
+    BottomNavigationBarEnum.config => const ConfigScreen(),
   };
 
   String label(BuildContext context) => switch (this) {
-        BottomNavigationEnum.home => context.locale!.home,
-        BottomNavigationEnum.coverLetter => context.locale!.coverLetter,
-        BottomNavigationEnum.skills => context.locale!.skills,
-        BottomNavigationEnum.cv => context.locale!.cv,
-        BottomNavigationEnum.config => context.locale!.config,
+        BottomNavigationBarEnum.home => context.locale!.home,
+        BottomNavigationBarEnum.coverLetter => context.locale!.coverLetter,
+        BottomNavigationBarEnum.skills => context.locale!.skills,
+        BottomNavigationBarEnum.cv => context.locale!.cv,
+        BottomNavigationBarEnum.config => context.locale!.config,
       };
 
   Widget icon({
@@ -47,11 +47,11 @@ enum BottomNavigationEnum {
   }) =>
       _renderIconWidget(
         switch (this) {
-          BottomNavigationEnum.home => Icons.home_rounded,
-          BottomNavigationEnum.coverLetter => Icons.library_books_rounded,
-          BottomNavigationEnum.skills => Icons.emoji_objects_rounded,
-          BottomNavigationEnum.cv => Icons.apartment_rounded,
-          BottomNavigationEnum.config => Icons.settings_rounded,
+          BottomNavigationBarEnum.home => Icons.home_rounded,
+          BottomNavigationBarEnum.coverLetter => Icons.library_books_rounded,
+          BottomNavigationBarEnum.skills => Icons.emoji_objects_rounded,
+          BottomNavigationBarEnum.cv => Icons.apartment_rounded,
+          BottomNavigationBarEnum.config => Icons.settings_rounded,
         },
         color: color,
       );
