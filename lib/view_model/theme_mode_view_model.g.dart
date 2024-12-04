@@ -7,7 +7,7 @@ part of 'theme_mode_view_model.dart';
 // **************************************************************************
 
 String _$themeModeViewModelHash() =>
-    r'66ca3f9f2c1ee204e3d28bf3bda13c23992c8e0f';
+    r'b640f7e069716b98b0e5a865b046f75b679183fd';
 
 /// See also [ThemeModeViewModel].
 @ProviderFor(ThemeModeViewModel)

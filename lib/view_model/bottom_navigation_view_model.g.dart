@@ -7,12 +7,12 @@ part of 'bottom_navigation_view_model.dart';
 // **************************************************************************
 
 String _$bottomNavigationViewModelHash() =>
-    r'3534dc59baa7cca71c2f156da51ea3dd3c713194';
+    r'070a9b190a109f549974352dfafd2d5aaa533ad3';
 
 /// See also [BottomNavigationViewModel].
 @ProviderFor(BottomNavigationViewModel)
-final bottomNavigationViewModelProvider =
-    NotifierProvider<BottomNavigationViewModel, BottomNavigationBarEnum>.internal(
+final bottomNavigationViewModelProvider = NotifierProvider<
+    BottomNavigationViewModel, BottomNavigationBarEnum>.internal(
   BottomNavigationViewModel.new,
   name: r'bottomNavigationViewModelProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')

@@ -7,7 +7,7 @@ part of 'app_localizations_view_model.dart';
 // **************************************************************************
 
 String _$appLocalizationsViewModelHash() =>
-    r'703c0eba44f88785ade3e25163cb8c940a505c36';
+    r'e34ae706be546340fb1754950aba274775ea5dd3';
 
 /// See also [AppLocalizationsViewModel].
 @ProviderFor(AppLocalizationsViewModel)
