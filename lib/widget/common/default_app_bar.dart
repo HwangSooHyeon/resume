@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
-import 'package:resume/l10n/gen_l10n/app_localizations.dart';
 import 'package:resume/model/enum/app_bar_enum.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
-import 'package:resume/view_model/app_localizations_view_model.dart';
-import 'package:resume/view_model/theme_mode_view_model.dart';
-import 'package:resume/widget/common/custom_animated_ink_well.dart';
 
 class DefaultAppBar extends StatelessWidget {
   const DefaultAppBar({super.key});
