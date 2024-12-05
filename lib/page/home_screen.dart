@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
-import 'package:resume/l10n/gen_l10n/app_localizations.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/util/theme/custom_text_theme.dart';
 
