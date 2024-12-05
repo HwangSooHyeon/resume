@@ -35,7 +35,7 @@ class CustomRouter {
           return null;
         },
         builder: (context, __, body) => DefaultLayout(
-          body: Column(
+          body: ListView(
             children: [
               const DefaultAppBar(),
               body,
