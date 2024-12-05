@@ -16,7 +16,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get name => 'Name';
 
   @override
-  String get myName => 'Soo-Hyeon Hwang';
+  String get myName => 'Soohyeon Hwang';
 
   @override
   String get home => 'Home';
@@ -35,4 +35,55 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get sendingEmail => 'Sending-email';
+
+  @override
+  String get homeTitle1 => 'Developing Cross-platform app';
+
+  @override
+  String get homeTitle2 => 'with Soohyeon Hwang prepared Flutter developer';
+
+  @override
+  String get homeTitle3 => 'Developing and Releasing AOS and IOS app at once';
+
+  @override
+  String get homeTitle4 => 'If you work with Soohyeon Hwang, you can create apps what you want';
+
+  @override
+  String get homeInvestar1 => 'Investar';
+
+  @override
+  String get homeInvestar2 => 'Crypto Currency Information app';
+
+  @override
+  String get homeInvestar3 => 'Improved UI, UX and Logic';
+
+  @override
+  String get homeInvestar4 => 'Developed new pages and did maintenance';
+
+  @override
+  String get homeInvestarBackoffice1 => 'Investar Back Office';
+
+  @override
+  String get homeInvestarBackoffice2 => 'Developed entire system for administrating community page';
+
+  @override
+  String get homeSbl1 => 'SBL APP';
+
+  @override
+  String get homeSbl2 => 'Stock Lending and Borrowing relay App';
+
+  @override
+  String get homeSbl3 => 'Developed almost entire system including core logic';
+
+  @override
+  String get homeFireAnt1 => 'Fire Ant';
+
+  @override
+  String get homeFireAnt2 => 'Stock Short Selling Information App';
+
+  @override
+  String get homeFireAnt3 => 'Developed entire system';
+
+  @override
+  String get seeMore => 'See more';
 }

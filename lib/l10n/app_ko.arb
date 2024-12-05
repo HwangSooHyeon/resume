@@ -8,5 +8,22 @@
   "skills": "스킬",
   "cv": "이력",
   "config": "설정",
-  "sendingEmail": "이메일 보내기"
+  "sendingEmail": "이메일 보내기",
+  "homeTitle1": "크로스플랫폼 앱 개발",
+  "homeTitle2": "준비된 플러터 개발자 황수현과 함께",
+  "homeTitle3": "AOS, IOS 개발 및 출시를 한 번에 해결하세요",
+  "homeTitle4": "황수현과 함께라면 원하는 앱을 만들 수 있을거에요",
+  "homeInvestar1": "인베스타",
+  "homeInvestar2": "코인 정보 앱",
+  "homeInvestar3": "UI, UX, 로직 개선 작업을 했어요",
+  "homeInvestar4": "유지보수와 신규 페이지 개발을 했어요",
+  "homeInvestarBackoffice1": "인베스타 백오피스",
+  "homeInvestarBackoffice2": "커뮤니티 관리에 집중하여 CRUD 개발을 했어요",
+  "homeSbl1": "SBL APP",
+  "homeSbl2": "주식 대차거래 중계 앱",
+  "homeSbl3": "핵심 로직 포함 대부분의 기능을 담당했어요",
+  "homeFireAnt1": "불개미",
+  "homeFireAnt2": "공매도 정보 앱",
+  "homeFireAnt3": "핵심 로직 포함 전체 기능을 담당했어요",
+  "seeMore": "자세히 알아보기"
 }
