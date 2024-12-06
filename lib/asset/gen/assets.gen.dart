@@ -12,20 +12,144 @@ import 'package:flutter/widgets.dart';
 class $AssetImageGen {
   const $AssetImageGen();
 
-  /// File path: asset/image/image_main1.jpg
-  AssetGenImage get imageMain1 =>
-      const AssetGenImage('asset/image/image_main1.jpg');
+  /// File path: asset/image/image_fire_ant_1.png
+  AssetGenImage get imageFireAnt1 =>
+      const AssetGenImage('asset/image/image_fire_ant_1.png');
 
-  /// File path: asset/image/image_main2.jpg
-  AssetGenImage get imageMain2 =>
-      const AssetGenImage('asset/image/image_main2.jpg');
+  /// File path: asset/image/image_fire_ant_2.png
+  AssetGenImage get imageFireAnt2 =>
+      const AssetGenImage('asset/image/image_fire_ant_2.png');
 
-  /// File path: asset/image/image_main3.jpg
-  AssetGenImage get imageMain3 =>
-      const AssetGenImage('asset/image/image_main3.jpg');
+  /// File path: asset/image/image_fire_ant_3.png
+  AssetGenImage get imageFireAnt3 =>
+      const AssetGenImage('asset/image/image_fire_ant_3.png');
+
+  /// File path: asset/image/image_fire_ant_4.png
+  AssetGenImage get imageFireAnt4 =>
+      const AssetGenImage('asset/image/image_fire_ant_4.png');
+
+  /// File path: asset/image/image_fire_ant_5.png
+  AssetGenImage get imageFireAnt5 =>
+      const AssetGenImage('asset/image/image_fire_ant_5.png');
+
+  /// File path: asset/image/image_fire_ant_6.png
+  AssetGenImage get imageFireAnt6 =>
+      const AssetGenImage('asset/image/image_fire_ant_6.png');
+
+  /// File path: asset/image/image_investar_backoffice.png
+  AssetGenImage get imageInvestarBackoffice =>
+      const AssetGenImage('asset/image/image_investar_backoffice.png');
+
+  /// File path: asset/image/image_investar_eng_1.png
+  AssetGenImage get imageInvestarEng1 =>
+      const AssetGenImage('asset/image/image_investar_eng_1.png');
+
+  /// File path: asset/image/image_investar_eng_2.png
+  AssetGenImage get imageInvestarEng2 =>
+      const AssetGenImage('asset/image/image_investar_eng_2.png');
+
+  /// File path: asset/image/image_investar_eng_3.png
+  AssetGenImage get imageInvestarEng3 =>
+      const AssetGenImage('asset/image/image_investar_eng_3.png');
+
+  /// File path: asset/image/image_investar_eng_4.png
+  AssetGenImage get imageInvestarEng4 =>
+      const AssetGenImage('asset/image/image_investar_eng_4.png');
+
+  /// File path: asset/image/image_investar_eng_5.png
+  AssetGenImage get imageInvestarEng5 =>
+      const AssetGenImage('asset/image/image_investar_eng_5.png');
+
+  /// File path: asset/image/image_investar_eng_6.png
+  AssetGenImage get imageInvestarEng6 =>
+      const AssetGenImage('asset/image/image_investar_eng_6.png');
+
+  /// File path: asset/image/image_investar_eng_7.png
+  AssetGenImage get imageInvestarEng7 =>
+      const AssetGenImage('asset/image/image_investar_eng_7.png');
+
+  /// File path: asset/image/image_investar_kor_1.png
+  AssetGenImage get imageInvestarKor1 =>
+      const AssetGenImage('asset/image/image_investar_kor_1.png');
+
+  /// File path: asset/image/image_investar_kor_2.png
+  AssetGenImage get imageInvestarKor2 =>
+      const AssetGenImage('asset/image/image_investar_kor_2.png');
+
+  /// File path: asset/image/image_investar_kor_3.png
+  AssetGenImage get imageInvestarKor3 =>
+      const AssetGenImage('asset/image/image_investar_kor_3.png');
+
+  /// File path: asset/image/image_investar_kor_4.png
+  AssetGenImage get imageInvestarKor4 =>
+      const AssetGenImage('asset/image/image_investar_kor_4.png');
+
+  /// File path: asset/image/image_investar_kor_5.png
+  AssetGenImage get imageInvestarKor5 =>
+      const AssetGenImage('asset/image/image_investar_kor_5.png');
+
+  /// File path: asset/image/image_investar_kor_6.png
+  AssetGenImage get imageInvestarKor6 =>
+      const AssetGenImage('asset/image/image_investar_kor_6.png');
+
+  /// File path: asset/image/image_investar_kor_7.png
+  AssetGenImage get imageInvestarKor7 =>
+      const AssetGenImage('asset/image/image_investar_kor_7.png');
+
+  /// File path: asset/image/image_investar_kor_8.png
+  AssetGenImage get imageInvestarKor8 =>
+      const AssetGenImage('asset/image/image_investar_kor_8.png');
+
+  /// File path: asset/image/image_main.jpg
+  AssetGenImage get imageMain =>
+      const AssetGenImage('asset/image/image_main.jpg');
+
+  /// File path: asset/image/image_sbl_app_1.png
+  AssetGenImage get imageSblApp1 =>
+      const AssetGenImage('asset/image/image_sbl_app_1.png');
+
+  /// File path: asset/image/image_sbl_app_2.png
+  AssetGenImage get imageSblApp2 =>
+      const AssetGenImage('asset/image/image_sbl_app_2.png');
+
+  /// File path: asset/image/image_sbl_app_3.png
+  AssetGenImage get imageSblApp3 =>
+      const AssetGenImage('asset/image/image_sbl_app_3.png');
+
+  /// File path: asset/image/image_sbl_app_4.png
+  AssetGenImage get imageSblApp4 =>
+      const AssetGenImage('asset/image/image_sbl_app_4.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [imageMain1, imageMain2, imageMain3];
+  List<AssetGenImage> get values => [
+        imageFireAnt1,
+        imageFireAnt2,
+        imageFireAnt3,
+        imageFireAnt4,
+        imageFireAnt5,
+        imageFireAnt6,
+        imageInvestarBackoffice,
+        imageInvestarEng1,
+        imageInvestarEng2,
+        imageInvestarEng3,
+        imageInvestarEng4,
+        imageInvestarEng5,
+        imageInvestarEng6,
+        imageInvestarEng7,
+        imageInvestarKor1,
+        imageInvestarKor2,
+        imageInvestarKor3,
+        imageInvestarKor4,
+        imageInvestarKor5,
+        imageInvestarKor6,
+        imageInvestarKor7,
+        imageInvestarKor8,
+        imageMain,
+        imageSblApp1,
+        imageSblApp2,
+        imageSblApp3,
+        imageSblApp4
+      ];
 }
 
 class Assets {
