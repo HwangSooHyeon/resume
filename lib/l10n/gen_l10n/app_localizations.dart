@@ -176,8 +176,14 @@ abstract class AppLocalizations {
   /// No description provided for @homeTitle4.
   ///
   /// In ko, this message translates to:
-  /// **'황수현과 함께라면 원하는 앱을 만들 수 있을거에요'**
+  /// **'황수현과 함께라면,'**
   String get homeTitle4;
+
+  /// No description provided for @homeTitle5.
+  ///
+  /// In ko, this message translates to:
+  /// **'원하는 앱을 만들 수 있을거에요'**
+  String get homeTitle5;
 
   /// No description provided for @homeInvestar1.
   ///
@@ -185,11 +191,17 @@ abstract class AppLocalizations {
   /// **'인베스타'**
   String get homeInvestar1;
 
-  /// No description provided for @homeInvestar2.
+  /// No description provided for @homeInvestar2_1.
   ///
   /// In ko, this message translates to:
-  /// **'코인 정보 앱'**
-  String get homeInvestar2;
+  /// **'암호화폐'**
+  String get homeInvestar2_1;
+
+  /// No description provided for @homeInvestar2_2.
+  ///
+  /// In ko, this message translates to:
+  /// **'정보 앱'**
+  String get homeInvestar2_2;
 
   /// No description provided for @homeInvestar3.
   ///
@@ -197,11 +209,17 @@ abstract class AppLocalizations {
   /// **'UI, UX, 로직 개선 작업을 했어요'**
   String get homeInvestar3;
 
-  /// No description provided for @homeInvestar4.
+  /// No description provided for @homeInvestar4_1.
   ///
   /// In ko, this message translates to:
-  /// **'유지보수와 신규 페이지 개발을 했어요'**
-  String get homeInvestar4;
+  /// **'신규 페이지 개발과'**
+  String get homeInvestar4_1;
+
+  /// No description provided for @homeInvestar4_2.
+  ///
+  /// In ko, this message translates to:
+  /// **'유지보수를 했어요'**
+  String get homeInvestar4_2;
 
   /// No description provided for @homeInvestarBackoffice1.
   ///
@@ -209,11 +227,17 @@ abstract class AppLocalizations {
   /// **'인베스타 백오피스'**
   String get homeInvestarBackoffice1;
 
-  /// No description provided for @homeInvestarBackoffice2.
+  /// No description provided for @homeInvestarBackoffice2_1.
   ///
   /// In ko, this message translates to:
-  /// **'커뮤니티 관리에 집중하여 CRUD 개발을 했어요'**
-  String get homeInvestarBackoffice2;
+  /// **'커뮤니티 관리를 위해'**
+  String get homeInvestarBackoffice2_1;
+
+  /// No description provided for @homeInvestarBackoffice2_2.
+  ///
+  /// In ko, this message translates to:
+  /// **'전체 시스템 개발을 했어요'**
+  String get homeInvestarBackoffice2_2;
 
   /// No description provided for @homeSbl1.
   ///
@@ -221,17 +245,35 @@ abstract class AppLocalizations {
   /// **'SBL APP'**
   String get homeSbl1;
 
-  /// No description provided for @homeSbl2.
+  /// No description provided for @homeSbl2_1.
   ///
   /// In ko, this message translates to:
-  /// **'주식 대차거래 중계 앱'**
-  String get homeSbl2;
+  /// **'주식'**
+  String get homeSbl2_1;
 
-  /// No description provided for @homeSbl3.
+  /// No description provided for @homeSbl2_2.
   ///
   /// In ko, this message translates to:
-  /// **'핵심 로직 포함 대부분의 기능을 담당했어요'**
-  String get homeSbl3;
+  /// **'대차거래'**
+  String get homeSbl2_2;
+
+  /// No description provided for @homeSbl2_3.
+  ///
+  /// In ko, this message translates to:
+  /// **'중계 앱'**
+  String get homeSbl2_3;
+
+  /// No description provided for @homeSbl3_1.
+  ///
+  /// In ko, this message translates to:
+  /// **'핵심 로직을 포함하여'**
+  String get homeSbl3_1;
+
+  /// No description provided for @homeSbl3_2.
+  ///
+  /// In ko, this message translates to:
+  /// **'대부분의 기능을 개발했어요'**
+  String get homeSbl3_2;
 
   /// No description provided for @homeFireAnt1.
   ///
@@ -239,17 +281,35 @@ abstract class AppLocalizations {
   /// **'불개미'**
   String get homeFireAnt1;
 
-  /// No description provided for @homeFireAnt2.
+  /// No description provided for @homeFireAnt2_1.
   ///
   /// In ko, this message translates to:
-  /// **'공매도 정보 앱'**
-  String get homeFireAnt2;
+  /// **'주식'**
+  String get homeFireAnt2_1;
 
-  /// No description provided for @homeFireAnt3.
+  /// No description provided for @homeFireAnt2_2.
   ///
   /// In ko, this message translates to:
-  /// **'핵심 로직 포함 전체 기능을 담당했어요'**
-  String get homeFireAnt3;
+  /// **'공매도'**
+  String get homeFireAnt2_2;
+
+  /// No description provided for @homeFireAnt2_3.
+  ///
+  /// In ko, this message translates to:
+  /// **'정보 앱'**
+  String get homeFireAnt2_3;
+
+  /// No description provided for @homeFireAnt3_1.
+  ///
+  /// In ko, this message translates to:
+  /// **'핵심 로직을 포함하여'**
+  String get homeFireAnt3_1;
+
+  /// No description provided for @homeFireAnt3_2.
+  ///
+  /// In ko, this message translates to:
+  /// **'전체 기능을 개발했어요'**
+  String get homeFireAnt3_2;
 
   /// No description provided for @seeMore.
   ///

@@ -46,43 +46,73 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeTitle3 => 'Developing and Releasing AOS and IOS app at once';
 
   @override
-  String get homeTitle4 => 'If you work with Soohyeon Hwang, you can create apps what you want';
+  String get homeTitle4 => 'If you work with Soohyeon Hwang,';
+
+  @override
+  String get homeTitle5 => 'you can create apps what you want';
 
   @override
   String get homeInvestar1 => 'Investar';
 
   @override
-  String get homeInvestar2 => 'Crypto Currency Information app';
+  String get homeInvestar2_1 => 'Crypto Currency';
+
+  @override
+  String get homeInvestar2_2 => 'Information App';
 
   @override
   String get homeInvestar3 => 'Improved UI, UX and Logic';
 
   @override
-  String get homeInvestar4 => 'Developed new pages and did maintenance';
+  String get homeInvestar4_1 => 'Developed new pages';
+
+  @override
+  String get homeInvestar4_2 => 'and did maintenance';
 
   @override
   String get homeInvestarBackoffice1 => 'Investar Back Office';
 
   @override
-  String get homeInvestarBackoffice2 => 'Developed entire system for administrating community page';
+  String get homeInvestarBackoffice2_1 => 'Developed entire system';
+
+  @override
+  String get homeInvestarBackoffice2_2 => 'for administrating community page';
 
   @override
   String get homeSbl1 => 'SBL APP';
 
   @override
-  String get homeSbl2 => 'Stock Lending and Borrowing relay App';
+  String get homeSbl2_1 => 'Stock';
 
   @override
-  String get homeSbl3 => 'Developed almost entire system including core logic';
+  String get homeSbl2_2 => 'Lending and Borrowing';
+
+  @override
+  String get homeSbl2_3 => 'Relay App';
+
+  @override
+  String get homeSbl3_1 => 'Developed almost entire system';
+
+  @override
+  String get homeSbl3_2 => 'including core logic';
 
   @override
   String get homeFireAnt1 => 'Fire Ant';
 
   @override
-  String get homeFireAnt2 => 'Stock Short Selling Information App';
+  String get homeFireAnt2_1 => 'Stock';
 
   @override
-  String get homeFireAnt3 => 'Developed entire system';
+  String get homeFireAnt2_2 => 'Short Selling';
+
+  @override
+  String get homeFireAnt2_3 => 'Information App';
+
+  @override
+  String get homeFireAnt3_1 => 'Developed entire system';
+
+  @override
+  String get homeFireAnt3_2 => 'including core logic';
 
   @override
   String get seeMore => 'See more';
