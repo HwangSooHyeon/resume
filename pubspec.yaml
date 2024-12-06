@@ -44,6 +44,8 @@ dependencies:
   go_router: ^14.3.0
   gap: ^3.0.1
 
+  flutter_gen:
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -60,6 +62,19 @@ dev_dependencies:
   riverpod_generator: ^2.6.1
   riverpod_lint: ^2.6.1
 
+  flutter_gen_runner:
+
+flutter_gen:
+  output: lib/asset/gen/ # Optional (default: lib/gen/)
+  line_length: 80 # Optional (default: 80)
+
+  # Optional
+  integrations:
+    flutter_svg: true
+    flare_flutter: true
+    rive: true
+    lottie: true
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -75,6 +90,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - asset/font/
+    - asset/image/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
