@@ -35,10 +35,16 @@ class CustomRouter {
           return null;
         },
         builder: (context, __, body) => DefaultLayout(
-          body: ListView(
-            children: [
-              const DefaultAppBar(),
-              body,
+          body: CustomScrollView(
+            slivers: [
+              const SliverAppBar(
+                floating: true,
+                pinned: true,
+                title: DefaultAppBar(),
+              ),
+              SliverToBoxAdapter(
+                child: body,
+              ),
             ],
           ),
           bottomNavigationBar: Row(
