@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
 import 'package:resume/asset/gen/assets.gen.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
