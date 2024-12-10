@@ -221,6 +221,12 @@ abstract class AppLocalizations {
   /// **'유지보수를 했어요'**
   String get homeInvestar4_2;
 
+  /// No description provided for @homeInvestar5.
+  ///
+  /// In ko, this message translates to:
+  /// **'주요기술: GraphQL, Provider, Firebase'**
+  String get homeInvestar5;
+
   /// No description provided for @homeInvestarBackoffice1.
   ///
   /// In ko, this message translates to:
@@ -238,6 +244,12 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'전체 시스템 개발을 했어요'**
   String get homeInvestarBackoffice2_2;
+
+  /// No description provided for @homeInvestarBackoffice3.
+  ///
+  /// In ko, this message translates to:
+  /// **'주요기술: Retrofit, Riverpod, Dio, Freezed'**
+  String get homeInvestarBackoffice3;
 
   /// No description provided for @homeSbl1.
   ///
@@ -275,6 +287,12 @@ abstract class AppLocalizations {
   /// **'대부분의 기능을 개발했어요'**
   String get homeSbl3_2;
 
+  /// No description provided for @homeSbl4.
+  ///
+  /// In ko, this message translates to:
+  /// **'주요기술: Retrofit, Riverpod, Dio, Freezed'**
+  String get homeSbl4;
+
   /// No description provided for @homeFireAnt1.
   ///
   /// In ko, this message translates to:
@@ -311,11 +329,113 @@ abstract class AppLocalizations {
   /// **'전체 기능을 개발했어요'**
   String get homeFireAnt3_2;
 
+  /// No description provided for @homeFireAnt4.
+  ///
+  /// In ko, this message translates to:
+  /// **'주요기술: Optimistic Response, SQLite, Firebase'**
+  String get homeFireAnt4;
+
   /// No description provided for @seeMore.
   ///
   /// In ko, this message translates to:
   /// **'자세히 알아보기'**
   String get seeMore;
+
+  /// No description provided for @coverLetterTitle1.
+  ///
+  /// In ko, this message translates to:
+  /// **'저는 열정의 힘을 믿습니다'**
+  String get coverLetterTitle1;
+
+  /// No description provided for @coverLetterTitle2.
+  ///
+  /// In ko, this message translates to:
+  /// **'만약 비전공자인 제가 열정이 없었다면, 개발자의 길을 걸을 수 없었을 것입니다.'**
+  String get coverLetterTitle2;
+
+  /// No description provided for @coverLetterTitle3.
+  ///
+  /// In ko, this message translates to:
+  /// **'JAVA 백엔드 개발자로 시작하여 Flutter 개발자가 되기까지'**
+  String get coverLetterTitle3;
+
+  /// No description provided for @coverLetterTitle4.
+  ///
+  /// In ko, this message translates to:
+  /// **'열정은 현재도 저의 원동력입니다.'**
+  String get coverLetterTitle4;
+
+  /// No description provided for @coverLetterCard1_1.
+  ///
+  /// In ko, this message translates to:
+  /// **'포기하지 않습니다.'**
+  String get coverLetterCard1_1;
+
+  /// No description provided for @coverLetterCard1_2.
+  ///
+  /// In ko, this message translates to:
+  /// **'기술적으로 어려운 작업이더라도 좌절하지 않습니다.'**
+  String get coverLetterCard1_2;
+
+  /// No description provided for @coverLetterCard1_3.
+  ///
+  /// In ko, this message translates to:
+  /// **'제 역량이 닿는 한 반드시 완성하겠다는 목표로 작업에 임합니다.'**
+  String get coverLetterCard1_3;
+
+  /// No description provided for @coverLetterCard2_1.
+  ///
+  /// In ko, this message translates to:
+  /// **'책임감을 갖고 일합니다.'**
+  String get coverLetterCard2_1;
+
+  /// No description provided for @coverLetterCard2_2.
+  ///
+  /// In ko, this message translates to:
+  /// **'제게 할당된 일은 회피하지 않습니다.'**
+  String get coverLetterCard2_2;
+
+  /// No description provided for @coverLetterCard2_3.
+  ///
+  /// In ko, this message translates to:
+  /// **'항상 더 나은 방법에 대해 고민하며 주인의식을 갖고 작업에 임합니다.'**
+  String get coverLetterCard2_3;
+
+  /// No description provided for @coverLetterCard3_1.
+  ///
+  /// In ko, this message translates to:
+  /// **'준비되어 있습니다.'**
+  String get coverLetterCard3_1;
+
+  /// No description provided for @coverLetterCard3_2.
+  ///
+  /// In ko, this message translates to:
+  /// **'저는 배움에 두려움이 없습니다.'**
+  String get coverLetterCard3_2;
+
+  /// No description provided for @coverLetterCard3_3.
+  ///
+  /// In ko, this message translates to:
+  /// **'강의, 유튜브, 동료, 친구 등 모든 매체를 통해 능력을 개발하고 프로젝트에 적용하려 노력합니다.'**
+  String get coverLetterCard3_3;
+
+  /// No description provided for @coverLetterCard4_1.
+  ///
+  /// In ko, this message translates to:
+  /// **'고객을 먼저 생각합니다.'**
+  String get coverLetterCard4_1;
+
+  /// No description provided for @coverLetterCard4_2.
+  ///
+  /// In ko, this message translates to:
+  /// **'내가 만든 제품은 결국 고객에게 서비스를 제공하기 위한 것입니다.'**
+  String get coverLetterCard4_2;
+
+  /// No description provided for @coverLetterCard4_3.
+  ///
+  /// In ko, this message translates to:
+  /// **'구상부터 구현까지 모든 프로세스에서 고객의 니즈에 대해 고민하며 작업에 임합니다.'**
+  String get coverLetterCard4_3;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

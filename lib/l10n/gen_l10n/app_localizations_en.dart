@@ -7,7 +7,7 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get language => 'English';
+  String get language => 'If I wasn\'t ';
 
   @override
   String get title => 'Cross-platform App Developer';
@@ -70,6 +70,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeInvestar4_2 => 'and did maintenance';
 
   @override
+  String get homeInvestar5 => 'Main Tech: GraphQL, Provider, Firebase';
+
+  @override
   String get homeInvestarBackoffice1 => 'Investar Back Office';
 
   @override
@@ -77,6 +80,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homeInvestarBackoffice2_2 => 'for administrating community page';
+
+  @override
+  String get homeInvestarBackoffice3 => 'Main Tech: Retrofit, Riverpod, Dio, Freezed';
 
   @override
   String get homeSbl1 => 'SBL APP';
@@ -97,6 +103,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeSbl3_2 => 'including core logic';
 
   @override
+  String get homeSbl4 => 'Main Tech: Retrofit, Riverpod, Dio, Freezed';
+
+  @override
   String get homeFireAnt1 => 'Fire Ant';
 
   @override
@@ -115,5 +124,56 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeFireAnt3_2 => 'including core logic';
 
   @override
+  String get homeFireAnt4 => 'Main Tech: Optimistic Response, SQLite, Firebase';
+
+  @override
   String get seeMore => 'See more';
+
+  @override
+  String get coverLetterTitle1 => 'I believe the power of passion';
+
+  @override
+  String get coverLetterTitle2 => '\bIf there is no passion to me who is non-major in CS, I couldn\'t become a developer';
+
+  @override
+  String get coverLetterTitle3 => 'From JAVA backend developer to Flutter developer,';
+
+  @override
+  String get coverLetterTitle4 => 'Passion is still my motivation';
+
+  @override
+  String get coverLetterCard1_1 => 'Never give up';
+
+  @override
+  String get coverLetterCard1_2 => 'Even if it is hard to create technically, Im not frustrated.';
+
+  @override
+  String get coverLetterCard1_3 => 'I approach my work with the goal of completing it to the best of my abilities.';
+
+  @override
+  String get coverLetterCard2_1 => 'I work with a strong sense of responsibility.';
+
+  @override
+  String get coverLetterCard2_2 => 'I do not avoid the tasks assigned to me.';
+
+  @override
+  String get coverLetterCard2_3 => 'I always strive to find better solutions and approach my work with a sense of ownership.';
+
+  @override
+  String get coverLetterCard3_1 => 'I am prepared.';
+
+  @override
+  String get coverLetterCard3_2 => 'I have no fear of learning.';
+
+  @override
+  String get coverLetterCard3_3 => 'I make an effort to develop my skills and apply them to projects using all available resources, such as lectures, YouTube, colleagues, and friends.';
+
+  @override
+  String get coverLetterCard4_1 => 'I prioritize the customers.';
+
+  @override
+  String get coverLetterCard4_2 => 'The products I create are ultimately designed to provide services to customers.';
+
+  @override
+  String get coverLetterCard4_3 => 'From planning to implementation, I consider the customer\'s needs throughout every stage of the process.';
 }
