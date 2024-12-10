@@ -6,12 +6,17 @@ import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/util/theme/custom_text_theme.dart';
 import 'package:resume/widget/common/custom_carousel.dart';
 
-class HomeScreen extends ConsumerWidget {
+class HomeScreen extends StatefulWidget {
   static const String path = '/home';
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
