@@ -70,6 +70,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeInvestar4_2 => '유지보수를 했어요';
 
   @override
+  String get homeInvestar5 => '주요기술: GraphQL, Provider, Firebase';
+
+  @override
   String get homeInvestarBackoffice1 => '인베스타 백오피스';
 
   @override
@@ -77,6 +80,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get homeInvestarBackoffice2_2 => '전체 시스템 개발을 했어요';
+
+  @override
+  String get homeInvestarBackoffice3 => '주요기술: Retrofit, Riverpod, Dio, Freezed';
 
   @override
   String get homeSbl1 => 'SBL APP';
@@ -97,6 +103,9 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeSbl3_2 => '대부분의 기능을 개발했어요';
 
   @override
+  String get homeSbl4 => '주요기술: Retrofit, Riverpod, Dio, Freezed';
+
+  @override
   String get homeFireAnt1 => '불개미';
 
   @override
@@ -115,5 +124,56 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeFireAnt3_2 => '전체 기능을 개발했어요';
 
   @override
+  String get homeFireAnt4 => '주요기술: Optimistic Response, SQLite, Firebase';
+
+  @override
   String get seeMore => '자세히 알아보기';
+
+  @override
+  String get coverLetterTitle1 => '저는 열정의 힘을 믿습니다';
+
+  @override
+  String get coverLetterTitle2 => '만약 비전공자인 제가 열정이 없었다면, 개발자의 길을 걸을 수 없었을 것입니다.';
+
+  @override
+  String get coverLetterTitle3 => 'JAVA 백엔드 개발자로 시작하여 Flutter 개발자가 되기까지';
+
+  @override
+  String get coverLetterTitle4 => '열정은 현재도 저의 원동력입니다.';
+
+  @override
+  String get coverLetterCard1_1 => '포기하지 않습니다.';
+
+  @override
+  String get coverLetterCard1_2 => '기술적으로 어려운 작업이더라도 좌절하지 않습니다.';
+
+  @override
+  String get coverLetterCard1_3 => '제 역량이 닿는 한 반드시 완성하겠다는 목표로 작업에 임합니다.';
+
+  @override
+  String get coverLetterCard2_1 => '책임감을 갖고 일합니다.';
+
+  @override
+  String get coverLetterCard2_2 => '제게 할당된 일은 회피하지 않습니다.';
+
+  @override
+  String get coverLetterCard2_3 => '항상 더 나은 방법에 대해 고민하며 주인의식을 갖고 작업에 임합니다.';
+
+  @override
+  String get coverLetterCard3_1 => '준비되어 있습니다.';
+
+  @override
+  String get coverLetterCard3_2 => '저는 배움에 두려움이 없습니다.';
+
+  @override
+  String get coverLetterCard3_3 => '강의, 유튜브, 동료, 친구 등 모든 매체를 통해 능력을 개발하고 프로젝트에 적용하려 노력합니다.';
+
+  @override
+  String get coverLetterCard4_1 => '고객을 먼저 생각합니다.';
+
+  @override
+  String get coverLetterCard4_2 => '내가 만든 제품은 결국 고객에게 서비스를 제공하기 위한 것입니다.';
+
+  @override
+  String get coverLetterCard4_3 => '구상부터 구현까지 모든 프로세스에서 고객의 니즈에 대해 고민하며 작업에 임합니다.';
 }
