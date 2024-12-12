@@ -9,7 +9,7 @@ class SkillsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Wrap(
       children: [
         const Gap(200),
         // Language

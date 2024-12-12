@@ -16,8 +16,8 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return Wrap(
+      //mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Container(
           height: context.height - 84,

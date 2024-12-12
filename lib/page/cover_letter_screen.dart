@@ -14,143 +14,140 @@ class CoverLetterScreen extends StatefulWidget {
 class _CoverLetterScreenState extends State<CoverLetterScreen> {
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      //height: 4800 + 296,
-      child: Column(
-        children: [
-          const Gap(200),
-          Text(
-            context.locale!.coverLetterTitle1,
-            style: CustomTextTheme.boldTextStyle(fontSize: 44),
-          ),
-          const Gap(200),
-          Text(
-            context.locale!.coverLetterTitle2,
-            style: CustomTextTheme.boldTextStyle(fontSize: 24),
-          ),
-          const Gap(200),
-          Text(
-            context.locale!.coverLetterTitle3,
-            style: CustomTextTheme.boldTextStyle(fontSize: 24),
-          ),
-          const Gap(200),
-          Text(
-            context.locale!.coverLetterTitle4,
-            style: CustomTextTheme.boldTextStyle(fontSize: 24),
-          ),
-          const Gap(200),
-          Text(
-            context.locale!.coverLetterTitle1,
-            style: CustomTextTheme.boldTextStyle(fontSize: 44),
-          ),
-          const Gap(16),
-          Text(
-            context.locale!.coverLetterTitle2,
-            style: CustomTextTheme.boldTextStyle(fontSize: 24),
-          ),
-          Text(
-            context.locale!.coverLetterTitle3,
-            style: CustomTextTheme.boldTextStyle(fontSize: 24),
-          ),
-          Text(
-            context.locale!.coverLetterTitle4,
-            style: CustomTextTheme.boldTextStyle(fontSize: 24),
-          ),
-          const Gap(32),
-          Row(
-            children: [
-              Container(
-                width: 466,
-                height: 372,
-                padding: const EdgeInsets.all(32),
-                decoration: BoxDecoration(
-                  color: context.colorScheme.onSecondary,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Column(
-                  children: [
-                    Text(
-                      context.locale!.coverLetterCard1_1,
-                      style: CustomTextTheme.boldTextStyle(fontSize: 32),
-                    ),
-                    const Gap(24),
-                    Text(context.locale!.coverLetterCard1_2),
-                    const Gap(24),
-                    Text(context.locale!.coverLetterCard1_3),
-                  ],
-                ),
+    return Wrap(
+      children: [
+        const Gap(200),
+        Text(
+          context.locale!.coverLetterTitle1,
+          style: CustomTextTheme.boldTextStyle(fontSize: 44),
+        ),
+        const Gap(200),
+        Text(
+          context.locale!.coverLetterTitle2,
+          style: CustomTextTheme.boldTextStyle(fontSize: 24),
+        ),
+        const Gap(200),
+        Text(
+          context.locale!.coverLetterTitle3,
+          style: CustomTextTheme.boldTextStyle(fontSize: 24),
+        ),
+        const Gap(200),
+        Text(
+          context.locale!.coverLetterTitle4,
+          style: CustomTextTheme.boldTextStyle(fontSize: 24),
+        ),
+        const Gap(200),
+        Text(
+          context.locale!.coverLetterTitle1,
+          style: CustomTextTheme.boldTextStyle(fontSize: 44),
+        ),
+        const Gap(16),
+        Text(
+          context.locale!.coverLetterTitle2,
+          style: CustomTextTheme.boldTextStyle(fontSize: 24),
+        ),
+        Text(
+          context.locale!.coverLetterTitle3,
+          style: CustomTextTheme.boldTextStyle(fontSize: 24),
+        ),
+        Text(
+          context.locale!.coverLetterTitle4,
+          style: CustomTextTheme.boldTextStyle(fontSize: 24),
+        ),
+        const Gap(32),
+        Row(
+          children: [
+            Container(
+              width: 466,
+              height: 372,
+              padding: const EdgeInsets.all(32),
+              decoration: BoxDecoration(
+                color: context.colorScheme.onSecondary,
+                borderRadius: BorderRadius.circular(12),
               ),
-              Container(
-                width: 466,
-                height: 372,
-                padding: const EdgeInsets.all(32),
-                decoration: BoxDecoration(
-                  color: context.colorScheme.onSecondary,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Column(
-                  children: [
-                    Text(
-                      context.locale!.coverLetterCard2_1,
-                      style: CustomTextTheme.boldTextStyle(fontSize: 32),
-                    ),
-                    const Gap(24),
-                    Text(context.locale!.coverLetterCard2_2),
-                    const Gap(24),
-                    Text(context.locale!.coverLetterCard2_3),
-                  ],
-                ),
+              child: Column(
+                children: [
+                  Text(
+                    context.locale!.coverLetterCard1_1,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  const Gap(24),
+                  Text(context.locale!.coverLetterCard1_2),
+                  const Gap(24),
+                  Text(context.locale!.coverLetterCard1_3),
+                ],
               ),
-            ],
-          ),
-          Row(
-            children: [
-              Container(
-                width: 466,
-                height: 372,
-                padding: const EdgeInsets.all(32),
-                decoration: BoxDecoration(
-                  color: context.colorScheme.onSecondary,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Column(
-                  children: [
-                    Text(
-                      context.locale!.coverLetterCard3_1,
-                      style: CustomTextTheme.boldTextStyle(fontSize: 32),
-                    ),
-                    const Gap(24),
-                    Text(context.locale!.coverLetterCard3_2),
-                    const Gap(24),
-                    Text(context.locale!.coverLetterCard3_3),
-                  ],
-                ),
+            ),
+            Container(
+              width: 466,
+              height: 372,
+              padding: const EdgeInsets.all(32),
+              decoration: BoxDecoration(
+                color: context.colorScheme.onSecondary,
+                borderRadius: BorderRadius.circular(12),
               ),
-              Container(
-                width: 466,
-                height: 372,
-                padding: const EdgeInsets.all(32),
-                decoration: BoxDecoration(
-                  color: context.colorScheme.onSecondary,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                child: Column(
-                  children: [
-                    Text(
-                      context.locale!.coverLetterCard4_1,
-                      style: CustomTextTheme.boldTextStyle(fontSize: 32),
-                    ),
-                    const Gap(24),
-                    Text(context.locale!.coverLetterCard4_2),
-                    const Gap(24),
-                    Text(context.locale!.coverLetterCard4_3),
-                  ],
-                ),
+              child: Column(
+                children: [
+                  Text(
+                    context.locale!.coverLetterCard2_1,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  const Gap(24),
+                  Text(context.locale!.coverLetterCard2_2),
+                  const Gap(24),
+                  Text(context.locale!.coverLetterCard2_3),
+                ],
               ),
-            ],
-          ),
-        ],
-      ),
+            ),
+          ],
+        ),
+        Row(
+          children: [
+            Container(
+              width: 466,
+              height: 372,
+              padding: const EdgeInsets.all(32),
+              decoration: BoxDecoration(
+                color: context.colorScheme.onSecondary,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Column(
+                children: [
+                  Text(
+                    context.locale!.coverLetterCard3_1,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  const Gap(24),
+                  Text(context.locale!.coverLetterCard3_2),
+                  const Gap(24),
+                  Text(context.locale!.coverLetterCard3_3),
+                ],
+              ),
+            ),
+            Container(
+              width: 466,
+              height: 372,
+              padding: const EdgeInsets.all(32),
+              decoration: BoxDecoration(
+                color: context.colorScheme.onSecondary,
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Column(
+                children: [
+                  Text(
+                    context.locale!.coverLetterCard4_1,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  const Gap(24),
+                  Text(context.locale!.coverLetterCard4_2),
+                  const Gap(24),
+                  Text(context.locale!.coverLetterCard4_3),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ],
     );
   }
 }
