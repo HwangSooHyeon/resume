@@ -176,4 +176,322 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get coverLetterCard4_3 => '구상부터 구현까지 모든 프로세스에서 고객의 니즈에 대해 고민하며 작업에 임합니다.';
+
+  @override
+  String get skillsLanguageLevel1 => '문법을 이해하는 수준';
+
+  @override
+  String get skillsLanguageLevel2 => 'CRUD가 가능한 수준';
+
+  @override
+  String get skillsLanguageLevel3 => '토이 프로젝트가 가능한 수준';
+
+  @override
+  String get skillsLanguageLevel4 => '테스트 코드 작성이 가능한 수준';
+
+  @override
+  String get skillsLanguageLevel5 => '프로젝트 개발 및 유지보수가 가능한 수준';
+
+  @override
+  String get skillsLibraryRiverpod1 => '상태 관리를 할 수 있으며, 인스턴스의 처리 타이밍을 고려할 수 있다.';
+
+  @override
+  String get skillsLibraryRiverpod2 => '특정 위젯만 상태 관리를 할 수 있다.';
+
+  @override
+  String get skillsLibraryRetrofit => '주어진 RestAPI를 이용해 레포지토리를 정의할 수 있다.';
+
+  @override
+  String get skillsLibraryDio => '인터셉터를 정의하여 API 요청, 응답, 에러 발생 시 상황을 핸들링할 수 있다.';
+
+  @override
+  String get skillsLibraryFirebase1 => 'Push notification, Local notification을 적용할 수 있다.';
+
+  @override
+  String get skillsLibraryFirebase2 => 'Firebase storage를 사용할 수 있다.';
+
+  @override
+  String get skillsLibraryStorage => '앱에 필요한 데이터를 보안 필요 여부에 따라 구분하여 저장 및 사용할 수 있다.';
+
+  @override
+  String get skillsLibraryGraphQL => '주어진 GraphQL 쿼리를 이용해 데이터를 요청할 수 있다.';
+
+  @override
+  String get skillsLibraryLogger => '디버깅을 위한 로깅 작업을 할 수 있다.';
+
+  @override
+  String get skillsLibraryImagePicker => '장치 내 갤러리의 이미지를 앱으로 가져올 수 있다.';
+
+  @override
+  String get skillsLibrarySyncfusionChart => '원하는 형태의 차트를 구현할 수 있다.';
+
+  @override
+  String get skillsLibraryFreezed => '일반 및 제네릭 모델을 정의할 수 있다.';
+
+  @override
+  String get skillsLibraryWidgetbook => '배포 전 구현한 UI를 웹으로 확인할 수 있다.';
+
+  @override
+  String get skillsLibraryGoRouter1 => '페이지 간 라우팅을 적용할 수 있다.';
+
+  @override
+  String get skillsLibraryGoRouter2 => '데이터 상태에 따라 특정 페이지로 리다이렉팅 하도록 구현할 수 있다.';
+
+  @override
+  String get skillsLibrarySkeletonizer => '로딩 UI를 구현할 수 있다.';
+
+  @override
+  String get skillsLibraryLocalization1 => '언어 변경 기능을 구현할 수 있다.';
+
+  @override
+  String get skillsLibraryLocalization2 => '언어 변경 시 상태 관리를 이용해 앱 재시작 없이 즉시 변경할 수 있다.';
+
+  @override
+  String get skillsLibraryLocalization3 => '구글 스프레드 시트를 이용하여 국가 별 언어를 관리할 수 있다.';
+
+  @override
+  String get skillsLibrarySQFLite => '로컬 데이터베이스 생성 및 조작을 할 수 있다.';
+
+  @override
+  String get skillsLibraryFlutterGen => '앱에 필요한 애셋들을 자동 생성할 수 있다.';
+
+  @override
+  String get skillsTechniquePagination1 => '무한 스크롤 페이지네이션을 구현할 수 있다.';
+
+  @override
+  String get skillsTechniquePagination2 => 'Throttle 기법을 적용하여 중복 요청을 방지할 수 있다.';
+
+  @override
+  String get skillsTechniqueOptimisticResponse => '통신에 문제가 없다는 가정하에 예상 응답 먼저 표시하여 UX를 향상 시킬 수 있다.';
+
+  @override
+  String get skillsTechniqueSorting => '서버 부하를 줄이기 위해 앱 내에 정렬 로직을 적용할 수 있다.';
+
+  @override
+  String get skillsTechniqueAnimation => '원하는 애니메이션을 위젯에 적용할 수 있다.';
+
+  @override
+  String get skillsTechniqueSliver => 'Sliver Widget과 Box Widget을 결합한 NestedScrollView를 활용할 수 있다.';
+
+  @override
+  String get skillsTechniqueReorder => 'ReorderableListView와 Dismissible 위젯들을 결합하여 구현할 수 있다.';
+
+  @override
+  String get skillsTechniqueCodeGeneration => '코드 자동 생성을 지원하는 라이브러리의 경우 해당 기능을 사용할 수 있다.';
+
+  @override
+  String get skillsCoWork => '경험해 본 협업 툴';
+
+  @override
+  String get skillsIde => '주로 사용하는 IDE';
+
+  @override
+  String get skillsLanguage => '사용 가능한 언어';
+
+  @override
+  String get cvDirectional => '디렉셔널';
+
+  @override
+  String get cvInvestar => '입사 당시 라이브 서비스 중이었습니다. 새로운 페이지 개발 및 유지보수를 진행했으며 전체 개발 비중의 약 60% 기여했습니다.';
+
+  @override
+  String get cvInvestarDailyCoin1 => '일일코인분석 페이지 개발';
+
+  @override
+  String get cvInvestarDailyCoin2 => '1일 1회 조회 가능하며 홈 화면에서 조회 가능한지 체크 후 가능할 때 일일코인분석 바텀시트가 나타납니다.';
+
+  @override
+  String get cvInvestarDailyCoin3 => '지금 코인 보기를 터치하면 조회 페이지로 이동하며 페이지 내에서 애니메이션이 진행되는 동안 프로바이더를 통해 일일코인을 캐시에 저장합니다.';
+
+  @override
+  String get cvInvestarDailyCoin4 => '네트워크 오류 등으로 인해 데이터 조회가 불가능할 경우 재시도할 수 있습니다.';
+
+  @override
+  String get cvInvestarDailyCoin5 => '프로바이더 캐시에 일일코인이 저장되면 조회 성공으로 판단하여 분석페이지로 이동합니다.';
+
+  @override
+  String get cvInvestarRisingScore1 => '놓치면 후회할 30분 페이지 개발';
+
+  @override
+  String get cvInvestarRisingScore2 => '30분마다 데이터를 갱신하는 페이지로 서버에서 현재 데이터가 유효한 시간을 받아와 타이머로 1초 씩 시간을 줄입니다.';
+
+  @override
+  String get cvInvestarRisingScore3 => '앱을 재시작하는 경우를 제외하고 다시 유효시간을 받아오지 않습니다.';
+
+  @override
+  String get cvInvestarRisingScore4 => '남은 시간이 0초에 도달했을 때 현재 데이터는 만료되었다는 화면을 표시합니다. 이때부터 데이터 유효 시간을 매초 요청합니다.';
+
+  @override
+  String get cvInvestarRisingScore5 => '요청한 유효 시간이 갱신되면 새로운 데이터를 받아와 프로바이더 캐시에 저장합니다.';
+
+  @override
+  String get cvInvestarCarousel1 => '홈 화면 캐로우셀 배너 개발';
+
+  @override
+  String get cvInvestarCarousel2 => '홈 화면 빌드 시점에 캐로우셀에 관련된 페이지들의 프로바이더 생성 및 데이터를 캐시에 저장합니다.';
+
+  @override
+  String get cvInvestarCarousel3 => '특정 페이지에 해당하는 캐시의 데이터가 없을 경우 해당 배너를 렌더링하지 않습니다.';
+
+  @override
+  String get cvInvestarWhale1 => '정보 탭 - 고래 페이지 개발';
+
+  @override
+  String get cvInvestarWhale2 => '주요 암호 화폐 온체인 데이터를 보여주는 화면입니다. 각 주요 암호 화폐 카드를 터치할 경우 차트를 포함한 상세화면으로 이동합니다.';
+
+  @override
+  String get cvInvestarWhale3 => 'BTC, ETH, USDT, USDC 주요 4종 암호 화폐의 온체인 데이터로 최초 생성 시 데이터를 캐시에 저장하여 사용합니다.';
+
+  @override
+  String get cvInvestarWhale4 => '페이지 내 배너를 통해 이동할 수 있는 고래가 많이 산 코인 페이지의 코인 검색 기능도 개발하였습니다.';
+
+  @override
+  String get cvInvestarFavorite1 => '관심 탭 - 관심코인 페이지 개선 및 개발';
+
+  @override
+  String get cvInvestarFavorite2 => '관심 코인의 갯수는 한정적이므로 한 번에 모든 데이터를 받아와 프론트 내 로직으로 정렬하도록 개발했습니다.';
+
+  @override
+  String get cvInvestarCommunity1 => '커뮤니티 탭 - 톡톡 페이지 개선 및 개발';
+
+  @override
+  String get cvInvestarCommunity2 => '글자만 작성할 수 있었던 기존 기능에 이미지 작성도 가능하도록 개선했습니다.';
+
+  @override
+  String get cvInvestarCommunity3 => '추가적으로 IOS 심사 통과 및 커뮤니티 관리를 위해 백오피스도 함께 개발했습니다.';
+
+  @override
+  String get cvInvestarMy1 => '마이 탭 - 전체 개선 및 개발';
+
+  @override
+  String get cvInvestarMy2 => '기존에 파편화 되어 있던 마이 페이지 관련 GraphQL 쿼리를 하나로 통합하여 일관성 있게 데이터를 관리할 수 있도록 개선했습니다.';
+
+  @override
+  String get cvInvestarMy3 => '기존에 존재하지 않았던 나의 정보를 시각적으로 확인할 수 있는 신규 적응형 UI를 개발했습니다.';
+
+  @override
+  String get cvInvestarSearch1 => '코인 검색 페이지 개선 및 개발';
+
+  @override
+  String get cvInvestarSearch2 => '디버그 모드에서 발생했던 고질적인 RenderFlex Overflow를 수정했습니다.';
+
+  @override
+  String get cvInvestarSearch3 => '신규 적응형 UI를 적용했습니다.';
+
+  @override
+  String get cvInvestarGlobal1 => '글로벌 출시를 위해 한/영 로컬라이제이션을 적용했습니다.';
+
+  @override
+  String get cvInvestarGlobal2 => '글로벌 출시를 위해 전체 UI 수정을 진행했습니다.';
+
+  @override
+  String get cvInvestarAll => 'Json 직렬화, 공통 위젯 등 손으로 직접 작성하던 것들을 자동화 및 일반화 하였습니다.';
+
+  @override
+  String get cvSbl => '이전 앱에서는 사용해보지 못한 라이브러리와 기술들을 적용하려고 노력했습니다. 전체 개발 비중의 약 90% 기여했습니다.';
+
+  @override
+  String get cvSbl1 => 'Riverpod, Retrofit, Go Router 등 최신 Flutter 라이브러리 사용했습니다.';
+
+  @override
+  String get cvSbl2 => '코드 제너레이션을 지원하는 라이브러리의 경우 적극 활용했습니다.';
+
+  @override
+  String get cvSbl3 => 'MVVM 아키텍쳐 패턴을 적용했습니다.';
+
+  @override
+  String get cvSbl4 => '로그인 상태에 따른 리다이렉션 기능을 개발했습니다.';
+
+  @override
+  String get cvSbl5 => 'Dio 라이브러리의 Custom Interceptor 기능을 활용하여 통신 시 요청, 응답, 에러가 발생할 경우 먼저 캐치하여 핸들링할 수 있는 기능을 개발했습니다.';
+
+  @override
+  String get cvSbl6 => 'Riverpod을 이용해 상태관리를 하여 상황에 맞게 인스턴스를 유지 혹은 처리하도록 개발했습니다.';
+
+  @override
+  String get cvSbl7 => 'Freezed를 통해 generic model을 정의하고 이를 이용해 무한 스크롤 페이지네이션이 필요한 화면들을 일반화 했습니다.';
+
+  @override
+  String get cvSbl8 => 'Throttle, Debouncer 기법들을 적용하여 불필요한 중복요청을 방지하도록 구현했습니다.';
+
+  @override
+  String get cvInvestarBackOffice1 => 'SBL APP의 기술들을 베이스로 하여 Flutter web으로 동작하는 백오피스를 개발했습니다. 100% 기여했습니다.';
+
+  @override
+  String get cvInvestarBackOffice2 => 'IOS 심사 통과를 위해 커뮤니티 게시글을 관리하는 기능에 집중하여 개발했습니다.';
+
+  @override
+  String get cvFireAnt1 => 'SBL APP 플랫폼을 베이스로하여 개발했습니다. 기존 구현 페이지들은 공매도 탭으로 이동시키고 새로운 기능의 앱으로 전환했습니다. 100% 기여했습니다.';
+
+  @override
+  String get cvFireAnt2 => 'Figma에 정의된 사양에 맞게 일반화한 공통 위젯을 개발했습니다. 특히 List 컴포넌트들을 leading, content, trailing 형태로 세분화하여 일반화 했습니다.';
+
+  @override
+  String get cvFireAnt3 => '아이콘, 리스트 타일 등 터치 가능한 영역 터치 시 애니메이션 효과를 주기 위해 래핑 위젯 CustomAnimatedInkWell을 개발했습니다.';
+
+  @override
+  String get cvFireAnt4 => 'NestedScrollView를 이용해 스크롤 시 바텀내비게이션바와 앱바가 숨겨지는 기능을 개발했습니다.';
+
+  @override
+  String get cvFireAnt5 => 'ReorderableListView와 Dismissible을 결합해 밀었을 때 리스트 삭제와 길게 눌렀을 때 리스트 순서 변경이 한 화면에서 동시에 가능하도록 개발했습니다.';
+
+  @override
+  String get cvFireAnt6 => 'Local Database 라이브러리를 적용하여 앱 구동시 공매도 가능한 전체 종목을 앱에 저장하여 사용할 수 있도록 개발했습니다.';
+
+  @override
+  String get cvFireAnt7 => '테마 모드에 Riverpod을 적용하여 앱 재실행 없이 라이트모드, 다크모드 전환이 가능하도록 개발했습니다.';
+
+  @override
+  String get cvFireAnt8 => '구글 스프레드 시트와 Flutter localization 라이브러리를 활용하여 앱 내 언어를 일괄 관리 및 언어 변경 시 앱 종료 없이 전환 가능하도록 개발했습니다.';
+
+  @override
+  String get cvFireAnt9 => 'AOS 뒤로가기 버튼과 같이 모든 페이지에 필요한 기능을 일괄적으로 구현할 수 있도록 DefaultLayout 위젯을 개발했습니다.';
+
+  @override
+  String get cvFireAnt10 => '종목 검색 화면에서 종목을 검색할 때 매치되는 텍스트에 맞게 하이라이트가 나타나는 기능을 개발했습니다.';
+
+  @override
+  String get cvFireAnt11 => '앱 내에서 사용하는 라인차트를 표현하기 위해 차트 위젯 일반화 했습니다.';
+
+  @override
+  String get cvFireAnt12 => 'API 요청, 응답, 에러 발생 시 쉽게 확인할 수 있도록 로깅작업을 했습니다.';
+
+  @override
+  String get cvFireAnt13 => '앱 내 사용 이미지 애셋의 코드를 자동 생성할 수 있도록 개발했습니다.';
+
+  @override
+  String get cvFireAnt14 => '데이터 요청과 관련된 위젯의 경우 로딩, 에러, 빈케이스, 정상케이스를 명시적으로 정의하도록 개발했습니다.';
+
+  @override
+  String get cvFireAnt15 => 'Firebase Push notification과 Local notification을 적용했습니다.';
+
+  @override
+  String get cvFireAnt16 => 'Widgetbook을 적용하여 앱 테스트 배포 전 웹에서 먼저 확인할 수 있도록 개발했습니다.';
+
+  @override
+  String get cvFireAnt17 => '말풍선 UI를 표현하기 위해 Flutter 내 CustomClipper 기능을 이용해 직접 좌표를 계산하여 개발했습니다.';
+
+  @override
+  String get cvHectoFinancial1 => '헥토 파이낸셜';
+
+  @override
+  String get cvHectoFinancial2 => '지자체 세금 가상계좌 납부 서비스 개발 및 유지보수를 했습니다.';
+
+  @override
+  String get cvHectoFinancial3 => '지자체에 납품한 가상계좌 서버의 보안 점검 및 노후 서버 교체작업을 했습니다.';
+
+  @override
+  String get cvHectoFinancial4 => '지자체에 납품한 가상계좌 서버에 신규 서비스 설치 및 공무원 교육을 진행했습니다.';
+
+  @override
+  String get cvHectoFinancial5 => '가상계좌 납부 서비스 관련 전화 CS를 응대했습니다.';
+
+  @override
+  String get cvUniversity1 => '고려대학교';
+
+  @override
+  String get cvUniversity2 => '일반대학원 메카트로닉스 전공 (석사 중퇴)';
+
+  @override
+  String get cvUniversity3 => '과학기술대학 제어계측공학 전공 (학사 졸업)';
 }
