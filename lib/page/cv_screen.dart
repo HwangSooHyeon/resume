@@ -1,123 +1,199 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
+import 'package:resume/model/enum/cv_enum.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
+import 'package:resume/page/cv/widget/timeline.dart';
+import 'package:resume/util/theme/custom_text_theme.dart';
 
-class CvScreen extends StatelessWidget {
+class CvScreen extends StatefulWidget {
   static const String path = '/cv';
   const CvScreen({super.key});
 
   @override
+  State<CvScreen> createState() => _CvScreenState();
+}
+
+class _CvScreenState extends State<CvScreen> with TickerProviderStateMixin {
+  final _pageController = PageController();
+  late final _animationController = AnimationController(
+    duration: const Duration(milliseconds: 500),
+    vsync: this,
+  );
+  late final _offsetAnimation = Tween(
+    begin: Offset(1, 0),
+    end: Offset(0, 0.0),
+  ).animate(
+    CurvedAnimation(
+      parent: _animationController,
+      curve: Curves.decelerate,
+    ),
+  );
+
+  Widget? _currentScreen = CvEnum.fireAnt.widget;
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    _animationController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Wrap(
-      children: [
-        const Gap(200),
-        Text(
-          context.locale!.cvDirectional,
-        ),
-        Text(
-          '2023-April ~ Now',
-        ),
-        Text(
-          context.locale!.homeFireAnt1,
-        ),
-        Text(
-          '2024-June ~ 2024-November',
-        ),
-        Text(context.locale!.cvFireAnt1,),
-        Text(context.locale!.cvFireAnt2,),
-        Text(context.locale!.cvFireAnt3,),
-        Text(context.locale!.cvFireAnt4,),
-        Text(context.locale!.cvFireAnt5,),
-        Text(context.locale!.cvFireAnt6,),
-        Text(context.locale!.cvFireAnt7,),
-        Text(context.locale!.cvFireAnt8,),
-        Text(context.locale!.cvFireAnt9,),
-        Text(context.locale!.cvFireAnt10,),
-        Text(context.locale!.cvFireAnt11,),
-        Text(context.locale!.cvFireAnt12,),
-        Text(context.locale!.cvFireAnt13,),
-        Text(context.locale!.cvFireAnt14,),
-        Text(context.locale!.cvFireAnt15,),
-        Text(context.locale!.cvFireAnt16,),
-        Text(context.locale!.cvFireAnt17,),
-        Text(
-          context.locale!.homeInvestarBackoffice1,
-        ),
-        Text(
-          '2024-May ~ 2024-July',
-        ),
-        Text(
-          context.locale!.cvInvestarBackOffice1,
-        ),Text(
-          context.locale!.cvInvestarBackOffice2,
-        ),
-        Text(context.locale!.homeSbl1,),
-        Text(
-          '2023-August ~ 2024-December',
-        ),
-        Text(context.locale!.cvSbl,),
-        Text(context.locale!.cvSbl1,),
-        Text(context.locale!.cvSbl2,),
-        Text(context.locale!.cvSbl3,),
-        Text(context.locale!.cvSbl4,),
-        Text(context.locale!.cvSbl5,),
-        Text(context.locale!.cvSbl6,),
-        Text(context.locale!.cvSbl7,),
-        Text(context.locale!.cvSbl8,),
-        Text(context.locale!.homeInvestar1,),
-        Text(
-          '2023-April ~ 2024-November',
-        ),
-        Text(context.locale!.cvInvestar),
-        Text(context.locale!.cvInvestarDailyCoin1,),
-        Text(context.locale!.cvInvestarDailyCoin2,),
-        Text(context.locale!.cvInvestarDailyCoin3,),
-        Text(context.locale!.cvInvestarDailyCoin4,),
-        Text(context.locale!.cvInvestarDailyCoin5,),
-        Text(context.locale!.cvInvestarRisingScore1,),
-        Text(context.locale!.cvInvestarRisingScore2,),
-        Text(context.locale!.cvInvestarRisingScore3,),
-        Text(context.locale!.cvInvestarRisingScore4,),
-        Text(context.locale!.cvInvestarRisingScore5,),
-        Text(context.locale!.cvInvestarCarousel1,),
-        Text(context.locale!.cvInvestarCarousel2,),
-        Text(context.locale!.cvInvestarCarousel3,),
-        Text(context.locale!.cvInvestarWhale1,),
-        Text(context.locale!.cvInvestarWhale2,),
-        Text(context.locale!.cvInvestarWhale3,),
-        Text(context.locale!.cvInvestarWhale4,),
-        Text(context.locale!.cvInvestarFavorite1,),
-        Text(context.locale!.cvInvestarFavorite2,),
-        Text(context.locale!.cvInvestarCommunity1,),
-        Text(context.locale!.cvInvestarCommunity2,),
-        Text(context.locale!.cvInvestarCommunity3,),
-        Text(context.locale!.cvInvestarMy1,),
-        Text(context.locale!.cvInvestarMy2,),
-        Text(context.locale!.cvInvestarMy3,),
-        Text(context.locale!.cvInvestarSearch1,),
-        Text(context.locale!.cvInvestarSearch2,),
-        Text(context.locale!.cvInvestarSearch3,),
-        Text(context.locale!.cvInvestarGlobal1,),
-        Text(context.locale!.cvInvestarGlobal2,),
-        Text(context.locale!.cvInvestarAll,),
-        Text(context.locale!.cvHectoFinancial1,),
-        Text(
-          '2021-November ~ 2022-August',
-        ),
-        Text(context.locale!.cvHectoFinancial2,),
-        Text(context.locale!.cvHectoFinancial3,),
-        Text(context.locale!.cvHectoFinancial4,),
-        Text(context.locale!.cvHectoFinancial5,),
-        Text(context.locale!.cvUniversity1,),
-        Text(context.locale!.cvUniversity2,),
-        Text(
-          '2020-March ~ 2020-August',
-        ),
-        Text(context.locale!.cvUniversity3,),
-        Text(
-          '2013-March ~ 2020-Fabruary',
-        ),
-      ],
+    _animationController.reset();
+    _animationController.forward();
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 100),
+      child: Wrap(
+        runSpacing: 30,
+        children: [
+          Container(
+            width: context.width - 200,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Time Line',
+                  style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                ),
+                const Gap(20),
+                Timeline(
+                  timelines: [
+                    TimelineModel(
+                      startDate: DateTime(2020),
+                      endDate: DateTime(2021),
+                      label: '2020',
+                    ),
+                    TimelineModel(
+                      startDate: DateTime(2021),
+                      endDate: DateTime(2022),
+                      label: '2021',
+                    ),
+                    TimelineModel(
+                      startDate: DateTime(2022),
+                      endDate: DateTime(2023),
+                      label: '2022',
+                    ),
+                    TimelineModel(
+                      startDate: DateTime(2023),
+                      endDate: DateTime(2024),
+                      label: '2023',
+                    ),
+                    TimelineModel(
+                      startDate: DateTime(2024),
+                      endDate: DateTime(2025),
+                      label: '2024',
+                    ),
+                  ],
+                ),
+                const Gap(10),
+                Timeline(
+                  timelines: [
+                    TimelineModel(
+                      startDate: DateTime(2023, 4),
+                      endDate: DateTime(2024, 12),
+                      color: Colors.blueAccent,
+                      label: '디렉셔널',
+                      toolTip: 'directional',
+                    ),
+                    TimelineModel(
+                      startDate: DateTime(2022, 10),
+                      endDate: DateTime(2022, 12),
+                      color: Colors.lightBlue,
+                      label: '우아한테크코스',
+                      toolTip: 'woowa',
+                    ),
+                    TimelineModel(
+                      startDate: DateTime(2021, 11),
+                      endDate: DateTime(2022, 9),
+                      color: Colors.yellow[900]!,
+                      label: '헥토 파이낸셜',
+                      toolTip: 'hecto',
+                    ),
+                    TimelineModel(
+                      startDate: DateTime(2020, 12),
+                      endDate: DateTime(2021, 6),
+                      color: Colors.green,
+                      label: 'IT 교육',
+                      toolTip: 'IT Academy',
+                    ),
+                    TimelineModel(
+                      startDate: DateTime(2020, 1),
+                      endDate: DateTime(2020, 9),
+                      color: Color(0xffDC143C),
+                      label: '대학원',
+                      toolTip: 'graduate school',
+                    ),
+                  ],
+                ),
+                Timeline(
+                  timelines: [
+                    TimelineModel(
+                      startDate: DateTime(2023, 8),
+                      endDate: DateTime(2023, 12),
+                      color: Color(0xffDC143C),
+                      label: context.locale!.cvSbl,
+                      onTap: () {
+                        setState(() {
+                          _currentScreen = CvEnum.sbl.widget;
+                        });
+                      },
+                    ),
+                    TimelineModel(
+                      startDate: DateTime(2024, 6),
+                      endDate: DateTime(2024, 11),
+                      color: Color(0xffDC143C),
+                      label: context.locale!.cvFireAnt,
+                      onTap: () {
+                        setState(() {
+                          _currentScreen = CvEnum.fireAnt.widget;
+                        });
+                      },
+                    ),
+                  ],
+                ),
+                Timeline(
+                  timelines: [
+                    TimelineModel(
+                      startDate: DateTime(2024, 5),
+                      endDate: DateTime(2024, 7),
+                      color: Color(0xffDC143C),
+                      label: context.locale!.cvInvestarBackOffice,
+                    ),
+                  ],
+                ),
+                Timeline(
+                  timelines: [
+                    TimelineModel(
+                      startDate: DateTime(2023, 4),
+                      endDate: DateTime(2024, 11),
+                      color: Color(0xffDC143C),
+                      label: context.locale!.cvInvestar,
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          Wrap(
+            children: [
+              SizedBox(
+                width: context.width - 200,
+                height: context.height - 184 - 18 - 250 - 30,
+                child: SlideTransition(
+                  position: _offsetAnimation,
+                  child: _currentScreen,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 }
