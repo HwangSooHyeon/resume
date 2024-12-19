@@ -292,7 +292,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get cvDirectional => 'Directional';
 
   @override
-  String get cvInvestar => 'At the time of joining, the app was live. I contributed to new page development and maintenance, accounting for approximately 60% of the overall development.';
+  String get cvInvestar => 'Investar';
+
+  @override
+  String get cvInvestar1 => 'At the time of joining, the app was live. I contributed to new page development and maintenance, accounting for approximately 60% of the overall development.';
 
   @override
   String get cvInvestarDailyCoin1 => 'Daily Coin Analysis Page Development';
@@ -388,37 +391,46 @@ class AppLocalizationsEn extends AppLocalizations {
   String get cvInvestarAll => 'Developed generalized widgets and applied automation functions (e.g. Json Serialization,  common components. etc.)';
 
   @override
-  String get cvSbl => 'Applied libraries and technologies not used in the previous app, contributing approximately 90% to the overall development.';
+  String get cvSbl => 'SBL APP';
 
   @override
-  String get cvSbl1 => 'Utilized the latest Flutter libraries like Riverpod, Retrofit, and Go Router.';
+  String get cvSbl1 => 'Applied libraries and technologies not used in the previous app, contributing approximately 90% to the overall development.';
 
   @override
-  String get cvSbl2 => 'Actively used code-generation libraries.';
+  String get cvSbl2 => 'Utilized the latest Flutter libraries like Riverpod, Retrofit, and Go Router.';
 
   @override
-  String get cvSbl3 => 'Applied the MVVM architectural pattern.';
+  String get cvSbl3 => 'Actively used code-generation libraries.';
 
   @override
-  String get cvSbl4 => 'Developed a redirection feature based on login state.';
+  String get cvSbl4 => 'Applied the MVVM architectural pattern.';
 
   @override
-  String get cvSbl5 => 'Implemented Custom Interceptor using the Dio library to handle requests, responses, and errors effectively.';
+  String get cvSbl5 => 'Developed a redirection feature based on login state.';
 
   @override
-  String get cvSbl6 => 'Managed state using Riverpod, ensuring proper instance maintenance or disposal based on context.';
+  String get cvSbl6 => 'Implemented Custom Interceptor using the Dio library to handle requests, responses, and errors effectively.';
 
   @override
-  String get cvSbl7 => 'Defined generic models using Freezed and generalized infinite scroll pagination screens.';
+  String get cvSbl7 => 'Managed state using Riverpod, ensuring proper instance maintenance or disposal based on context.';
 
   @override
-  String get cvSbl8 => 'Prevented redundant requests by applying Throttle and Debouncer techniques.';
+  String get cvSbl8 => 'Defined generic models using Freezed and generalized infinite scroll pagination screens.';
+
+  @override
+  String get cvSbl9 => 'Prevented redundant requests by applying Throttle and Debouncer techniques.';
+
+  @override
+  String get cvInvestarBackOffice => 'Investar Back Office';
 
   @override
   String get cvInvestarBackOffice1 => 'Developed a Flutter web-based back office using SBL app technology (100% contribution).';
 
   @override
   String get cvInvestarBackOffice2 => 'Focused on community post management for iOS review approval.';
+
+  @override
+  String get cvFireAnt => 'Fire Ant';
 
   @override
   String get cvFireAnt1 => 'Developed using the SBL APP platform as a base. Moved the existing implementation pages to the Short Sale tab and converted them into a new functional app. (100% contribution).';
@@ -472,26 +484,44 @@ class AppLocalizationsEn extends AppLocalizations {
   String get cvFireAnt17 => 'Developed a balloon-style UI using CustomClipper with calculated coordinates.';
 
   @override
-  String get cvHectoFinancial1 => 'Hecto Financial';
+  String get cvHectoFinancial => 'Hecto Financial';
 
   @override
-  String get cvHectoFinancial2 => 'Developed and maintained a municipal tax virtual account payment service.';
+  String get cvHectoFinancial1 => 'Developed and maintained a municipal tax virtual account payment service.';
 
   @override
-  String get cvHectoFinancial3 => 'Security checks on virtual account servers and replacement of aging servers.';
+  String get cvHectoFinancial2 => 'Security checks on virtual account servers and replacement of aging servers.';
 
   @override
-  String get cvHectoFinancial4 => 'Installed new services on virtual account servers and trained government officials.';
+  String get cvHectoFinancial3 => 'Installed new services on virtual account servers and trained government officials.';
 
   @override
-  String get cvHectoFinancial5 => 'Answered phone CS for virtual account payment service.';
+  String get cvHectoFinancial4 => 'Answered phone CS for virtual account payment service.';
 
   @override
-  String get cvUniversity1 => 'Korea University';
+  String get cvHectoFinancial5 => 'Organized about 10 years of history into an integrated operations guide document';
 
   @override
-  String get cvUniversity2 => 'Mechatronics Major (Master\'s Dropout), General Graduate School';
+  String get cvEducation => 'Education';
 
   @override
-  String get cvUniversity3 => 'Control and Instrumentation Engineering major (B.S.), College of Science and Technology';
+  String get cvEducationBootCamp => 'Woowacourse pre-course(Kotlin)';
+
+  @override
+  String get cvEducationBootCamp1 => 'To be familiar with Kotlin, participants implement four toy projects with specific requirements (number of method lines, number of method parameters, etc.). Additionally, participants write test code for the implemented methods to verify that they produce the desired results. Since the course is not intended to be a direct training, it only provides guidelines and there are no restrictions on how participants implement it as long as the final test code for each toy project passes, so I focused on practicing TDD using those guidelines as a reference.';
+
+  @override
+  String get cvEducationUniversity => 'Korea University';
+
+  @override
+  String get cvEducationUniversity1 => 'Mechatronics Major (Master\'s Dropout), General Graduate School';
+
+  @override
+  String get cvEducationUniversity2 => 'GPA: 3.83/4.5';
+
+  @override
+  String get cvEducationUniversity3 => 'Control and Instrumentation Engineering major (B.S.), College of Science and Technology';
+
+  @override
+  String get cvEducationUniversity4 => 'GPA: 3.5/4.5 (Major GPA: 3.81/4.5)';
 }

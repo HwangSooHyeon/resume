@@ -668,8 +668,14 @@ abstract class AppLocalizations {
   /// No description provided for @cvInvestar.
   ///
   /// In ko, this message translates to:
-  /// **'입사 당시 라이브 서비스 중이었습니다. 새로운 페이지 개발 및 유지보수를 진행했으며 전체 개발 비중의 약 60% 기여했습니다.'**
+  /// **'인베스타'**
   String get cvInvestar;
+
+  /// No description provided for @cvInvestar1.
+  ///
+  /// In ko, this message translates to:
+  /// **'입사 당시 라이브 서비스 중이었습니다. 새로운 페이지 개발 및 유지보수를 진행했으며 전체 개발 비중의 약 60% 기여했습니다.'**
+  String get cvInvestar1;
 
   /// No description provided for @cvInvestarDailyCoin1.
   ///
@@ -860,56 +866,68 @@ abstract class AppLocalizations {
   /// No description provided for @cvSbl.
   ///
   /// In ko, this message translates to:
-  /// **'이전 앱에서는 사용해보지 못한 라이브러리와 기술들을 적용하려고 노력했습니다. 전체 개발 비중의 약 90% 기여했습니다.'**
+  /// **'SBL APP'**
   String get cvSbl;
 
   /// No description provided for @cvSbl1.
   ///
   /// In ko, this message translates to:
-  /// **'Riverpod, Retrofit, Go Router 등 최신 Flutter 라이브러리 사용했습니다.'**
+  /// **'이전 앱에서는 사용해보지 못한 라이브러리와 기술들을 적용하려고 노력했습니다. 전체 개발 비중의 약 90% 기여했습니다.'**
   String get cvSbl1;
 
   /// No description provided for @cvSbl2.
   ///
   /// In ko, this message translates to:
-  /// **'코드 제너레이션을 지원하는 라이브러리의 경우 적극 활용했습니다.'**
+  /// **'Riverpod, Retrofit, Go Router 등 최신 Flutter 라이브러리 사용했습니다.'**
   String get cvSbl2;
 
   /// No description provided for @cvSbl3.
   ///
   /// In ko, this message translates to:
-  /// **'MVVM 아키텍쳐 패턴을 적용했습니다.'**
+  /// **'코드 제너레이션을 지원하는 라이브러리의 경우 적극 활용했습니다.'**
   String get cvSbl3;
 
   /// No description provided for @cvSbl4.
   ///
   /// In ko, this message translates to:
-  /// **'로그인 상태에 따른 리다이렉션 기능을 개발했습니다.'**
+  /// **'MVVM 아키텍쳐 패턴을 적용했습니다.'**
   String get cvSbl4;
 
   /// No description provided for @cvSbl5.
   ///
   /// In ko, this message translates to:
-  /// **'Dio 라이브러리의 Custom Interceptor 기능을 활용하여 통신 시 요청, 응답, 에러가 발생할 경우 먼저 캐치하여 핸들링할 수 있는 기능을 개발했습니다.'**
+  /// **'로그인 상태에 따른 리다이렉션 기능을 개발했습니다.'**
   String get cvSbl5;
 
   /// No description provided for @cvSbl6.
   ///
   /// In ko, this message translates to:
-  /// **'Riverpod을 이용해 상태관리를 하여 상황에 맞게 인스턴스를 유지 혹은 처리하도록 개발했습니다.'**
+  /// **'Dio 라이브러리의 Custom Interceptor 기능을 활용하여 통신 시 요청, 응답, 에러가 발생할 경우 먼저 캐치하여 핸들링할 수 있는 기능을 개발했습니다.'**
   String get cvSbl6;
 
   /// No description provided for @cvSbl7.
   ///
   /// In ko, this message translates to:
-  /// **'Freezed를 통해 generic model을 정의하고 이를 이용해 무한 스크롤 페이지네이션이 필요한 화면들을 일반화 했습니다.'**
+  /// **'Riverpod을 이용해 상태관리를 하여 상황에 맞게 인스턴스를 유지 혹은 처리하도록 개발했습니다.'**
   String get cvSbl7;
 
   /// No description provided for @cvSbl8.
   ///
   /// In ko, this message translates to:
-  /// **'Throttle, Debouncer 기법들을 적용하여 불필요한 중복요청을 방지하도록 구현했습니다.'**
+  /// **'Freezed를 통해 generic model을 정의하고 이를 이용해 무한 스크롤 페이지네이션이 필요한 화면들을 일반화 했습니다.'**
   String get cvSbl8;
+
+  /// No description provided for @cvSbl9.
+  ///
+  /// In ko, this message translates to:
+  /// **'Throttle, Debouncer 기법들을 적용하여 불필요한 중복요청을 방지하도록 구현했습니다.'**
+  String get cvSbl9;
+
+  /// No description provided for @cvInvestarBackOffice.
+  ///
+  /// In ko, this message translates to:
+  /// **'인베스타 백오피스'**
+  String get cvInvestarBackOffice;
 
   /// No description provided for @cvInvestarBackOffice1.
   ///
@@ -922,6 +940,12 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'IOS 심사 통과를 위해 커뮤니티 게시글을 관리하는 기능에 집중하여 개발했습니다.'**
   String get cvInvestarBackOffice2;
+
+  /// No description provided for @cvFireAnt.
+  ///
+  /// In ko, this message translates to:
+  /// **'불개미'**
+  String get cvFireAnt;
 
   /// No description provided for @cvFireAnt1.
   ///
@@ -1025,53 +1049,89 @@ abstract class AppLocalizations {
   /// **'말풍선 UI를 표현하기 위해 Flutter 내 CustomClipper 기능을 이용해 직접 좌표를 계산하여 개발했습니다.'**
   String get cvFireAnt17;
 
-  /// No description provided for @cvHectoFinancial1.
+  /// No description provided for @cvHectoFinancial.
   ///
   /// In ko, this message translates to:
   /// **'헥토 파이낸셜'**
+  String get cvHectoFinancial;
+
+  /// No description provided for @cvHectoFinancial1.
+  ///
+  /// In ko, this message translates to:
+  /// **'지자체 세금 가상계좌 납부 서비스 개발 및 유지보수를 했습니다.'**
   String get cvHectoFinancial1;
 
   /// No description provided for @cvHectoFinancial2.
   ///
   /// In ko, this message translates to:
-  /// **'지자체 세금 가상계좌 납부 서비스 개발 및 유지보수를 했습니다.'**
+  /// **'지자체에 납품한 가상계좌 서버의 보안 점검 및 노후 서버 교체작업을 했습니다.'**
   String get cvHectoFinancial2;
 
   /// No description provided for @cvHectoFinancial3.
   ///
   /// In ko, this message translates to:
-  /// **'지자체에 납품한 가상계좌 서버의 보안 점검 및 노후 서버 교체작업을 했습니다.'**
+  /// **'지자체에 납품한 가상계좌 서버에 신규 서비스 설치 및 공무원 교육을 진행했습니다.'**
   String get cvHectoFinancial3;
 
   /// No description provided for @cvHectoFinancial4.
   ///
   /// In ko, this message translates to:
-  /// **'지자체에 납품한 가상계좌 서버에 신규 서비스 설치 및 공무원 교육을 진행했습니다.'**
+  /// **'가상계좌 납부 서비스 관련 전화 CS를 응대했습니다.'**
   String get cvHectoFinancial4;
 
   /// No description provided for @cvHectoFinancial5.
   ///
   /// In ko, this message translates to:
-  /// **'가상계좌 납부 서비스 관련 전화 CS를 응대했습니다.'**
+  /// **'약 10년 동안의 히스토리를 정리하여 통합 업무 가이드 문서를 컨플루언스로 작성했습니다.'**
   String get cvHectoFinancial5;
 
-  /// No description provided for @cvUniversity1.
+  /// No description provided for @cvEducation.
+  ///
+  /// In ko, this message translates to:
+  /// **'교육'**
+  String get cvEducation;
+
+  /// No description provided for @cvEducationBootCamp.
+  ///
+  /// In ko, this message translates to:
+  /// **'우아한 테크코스 프리코스(코틀린)'**
+  String get cvEducationBootCamp;
+
+  /// No description provided for @cvEducationBootCamp1.
+  ///
+  /// In ko, this message translates to:
+  /// **'코틀린에 익숙해지기 위한 과정으로 4개의 토이 프로젝트를 특정 조건(메서드 줄 수, 메서드 파라미터 수 등)에 맞춰 구현합니다. 추가적으로 구현한 메서드에 대한 테스트 코드를 작성하여 해당 메서드가 원하는 결과값을 도출하는지 확인합니다. 해당 과정은 직접적인 교육이 목적이 아니기 때문에 가이드라인만 제시하고 각 토이 프로젝트의 최종 테스트 코드만 통과하면 구현 방식에는 제한이 없습니다. 따라서 저는 해당 가이드라인을 참고하여 TDD를 연습하는 것에 집중했습니다.'**
+  String get cvEducationBootCamp1;
+
+  /// No description provided for @cvEducationUniversity.
   ///
   /// In ko, this message translates to:
   /// **'고려대학교'**
-  String get cvUniversity1;
+  String get cvEducationUniversity;
 
-  /// No description provided for @cvUniversity2.
+  /// No description provided for @cvEducationUniversity1.
   ///
   /// In ko, this message translates to:
   /// **'일반대학원 메카트로닉스 전공 (석사 중퇴)'**
-  String get cvUniversity2;
+  String get cvEducationUniversity1;
 
-  /// No description provided for @cvUniversity3.
+  /// No description provided for @cvEducationUniversity2.
+  ///
+  /// In ko, this message translates to:
+  /// **'학점: 3.83/4.5'**
+  String get cvEducationUniversity2;
+
+  /// No description provided for @cvEducationUniversity3.
   ///
   /// In ko, this message translates to:
   /// **'과학기술대학 제어계측공학 전공 (학사 졸업)'**
-  String get cvUniversity3;
+  String get cvEducationUniversity3;
+
+  /// No description provided for @cvEducationUniversity4.
+  ///
+  /// In ko, this message translates to:
+  /// **'학점: 3.5/4.5 (전공: 3.81/4.5)'**
+  String get cvEducationUniversity4;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
