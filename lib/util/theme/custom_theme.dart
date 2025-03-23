@@ -3,6 +3,11 @@ import 'package:resume/util/theme/custom_color_scheme.dart';
 import 'package:resume/util/theme/custom_text_theme.dart';
 
 class CustomTheme {
+  static const Color investarColor = Colors.yellow;
+  static const Color koreaUnivColor = Color(0xffDC143C);
+  static const Color woowaColor = Colors.lightBlue;
+  static const Color directionalColor = Colors.blueAccent;
+
   static ThemeData themeData({
     bool isDark = false,
   }) =>
