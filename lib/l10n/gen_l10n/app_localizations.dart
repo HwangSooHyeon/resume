@@ -686,26 +686,8 @@ abstract class AppLocalizations {
   /// No description provided for @cvInvestarDailyCoin2.
   ///
   /// In ko, this message translates to:
-  /// **'1일 1회 조회 가능하며 홈 화면에서 조회 가능한지 체크 후 가능할 때 일일코인분석 바텀시트가 나타납니다.'**
+  /// **'1일 1회 조회 가능한 화면으로 접근 시 로딩 화면과 함께 프로바이더에 데이터를 캐싱하여 데이터의 상태에 따라 재요청 혹은 조회 결과 화면으로 이동할 수 있습니다.'**
   String get cvInvestarDailyCoin2;
-
-  /// No description provided for @cvInvestarDailyCoin3.
-  ///
-  /// In ko, this message translates to:
-  /// **'지금 코인 보기를 터치하면 조회 페이지로 이동하며 페이지 내에서 애니메이션이 진행되는 동안 프로바이더를 통해 일일코인을 캐시에 저장합니다.'**
-  String get cvInvestarDailyCoin3;
-
-  /// No description provided for @cvInvestarDailyCoin4.
-  ///
-  /// In ko, this message translates to:
-  /// **'네트워크 오류 등으로 인해 데이터 조회가 불가능할 경우 재시도할 수 있습니다.'**
-  String get cvInvestarDailyCoin4;
-
-  /// No description provided for @cvInvestarDailyCoin5.
-  ///
-  /// In ko, this message translates to:
-  /// **'프로바이더 캐시에 일일코인이 저장되면 조회 성공으로 판단하여 분석페이지로 이동합니다.'**
-  String get cvInvestarDailyCoin5;
 
   /// No description provided for @cvInvestarRisingScore1.
   ///
@@ -716,26 +698,8 @@ abstract class AppLocalizations {
   /// No description provided for @cvInvestarRisingScore2.
   ///
   /// In ko, this message translates to:
-  /// **'30분마다 데이터를 갱신하는 페이지로 서버에서 현재 데이터가 유효한 시간을 받아와 타이머로 1초 씩 시간을 줄입니다.'**
+  /// **'30분마다 상승 가능성이 높은 화폐들의 목록을 갱신하는 페이지로 서버에서 현재 데이터가 유효한 시간을 받아와 타이머로 1초 씩 시간을 줄입니다. 남은 시간이 0초에 도달했을 때 현재 데이터는 만료되었다는 화면을 표시하고 데이터 유효 시간을 매초 요청합니다. 요청한 유효 시간이 갱신되면 새로운 데이터를 받아와 프로바이더 캐시에 저장합니다.'**
   String get cvInvestarRisingScore2;
-
-  /// No description provided for @cvInvestarRisingScore3.
-  ///
-  /// In ko, this message translates to:
-  /// **'앱을 재시작하는 경우를 제외하고 다시 유효시간을 받아오지 않습니다.'**
-  String get cvInvestarRisingScore3;
-
-  /// No description provided for @cvInvestarRisingScore4.
-  ///
-  /// In ko, this message translates to:
-  /// **'남은 시간이 0초에 도달했을 때 현재 데이터는 만료되었다는 화면을 표시합니다. 이때부터 데이터 유효 시간을 매초 요청합니다.'**
-  String get cvInvestarRisingScore4;
-
-  /// No description provided for @cvInvestarRisingScore5.
-  ///
-  /// In ko, this message translates to:
-  /// **'요청한 유효 시간이 갱신되면 새로운 데이터를 받아와 프로바이더 캐시에 저장합니다.'**
-  String get cvInvestarRisingScore5;
 
   /// No description provided for @cvInvestarCarousel1.
   ///
@@ -746,14 +710,8 @@ abstract class AppLocalizations {
   /// No description provided for @cvInvestarCarousel2.
   ///
   /// In ko, this message translates to:
-  /// **'홈 화면 빌드 시점에 캐로우셀에 관련된 페이지들의 프로바이더 생성 및 데이터를 캐시에 저장합니다.'**
+  /// **'홈 화면 빌드 시점에 캐로우셀에 관련된 페이지들의 프로바이더 생성 및 데이터를 캐시에 저장합니다. 특정 페이지에 해당하는 캐시의 데이터가 없을 경우 해당 배너를 렌더링하지 않습니다.'**
   String get cvInvestarCarousel2;
-
-  /// No description provided for @cvInvestarCarousel3.
-  ///
-  /// In ko, this message translates to:
-  /// **'특정 페이지에 해당하는 캐시의 데이터가 없을 경우 해당 배너를 렌더링하지 않습니다.'**
-  String get cvInvestarCarousel3;
 
   /// No description provided for @cvInvestarWhale1.
   ///
@@ -764,20 +722,8 @@ abstract class AppLocalizations {
   /// No description provided for @cvInvestarWhale2.
   ///
   /// In ko, this message translates to:
-  /// **'주요 암호 화폐 온체인 데이터를 보여주는 화면입니다. 각 주요 암호 화폐 카드를 터치할 경우 차트를 포함한 상세화면으로 이동합니다.'**
+  /// **'주요 암호 화폐 온체인 데이터를 보여주는 화면입니다. 각 주요 암호 화폐 카드를 터치할 경우 차트를 포함한 상세화면으로 이동합니다.  페이지 내 배너를 통해 이동할 수 있는 고래가 많이 산 코인 페이지의 코인 검색 기능도 개발하였습니다.'**
   String get cvInvestarWhale2;
-
-  /// No description provided for @cvInvestarWhale3.
-  ///
-  /// In ko, this message translates to:
-  /// **'BTC, ETH, USDT, USDC 주요 4종 암호 화폐의 온체인 데이터로 최초 생성 시 데이터를 캐시에 저장하여 사용합니다.'**
-  String get cvInvestarWhale3;
-
-  /// No description provided for @cvInvestarWhale4.
-  ///
-  /// In ko, this message translates to:
-  /// **'페이지 내 배너를 통해 이동할 수 있는 고래가 많이 산 코인 페이지의 코인 검색 기능도 개발하였습니다.'**
-  String get cvInvestarWhale4;
 
   /// No description provided for @cvInvestarFavorite1.
   ///
@@ -788,7 +734,7 @@ abstract class AppLocalizations {
   /// No description provided for @cvInvestarFavorite2.
   ///
   /// In ko, this message translates to:
-  /// **'관심 코인의 갯수는 한정적이므로 한 번에 모든 데이터를 받아와 프론트 내 로직으로 정렬하도록 개발했습니다.'**
+  /// **'기존에는 관심 표시한 순서대로 코인만 보여주는 화면이었으나 추후 개선을 통해 정렬 로직을 추가하였습니다. 관심 코인의 갯수는 일반적으로 많지 않으므로 UX를 위해 한 번에 모든 데이터를 프로바이더에 캐싱하여 프론트 내 로직으로 정렬하도록 개발했습니다.'**
   String get cvInvestarFavorite2;
 
   /// No description provided for @cvInvestarCommunity1.
@@ -800,14 +746,8 @@ abstract class AppLocalizations {
   /// No description provided for @cvInvestarCommunity2.
   ///
   /// In ko, this message translates to:
-  /// **'글자만 작성할 수 있었던 기존 기능에 이미지 작성도 가능하도록 개선했습니다.'**
+  /// **'글자만 작성할 수 있었던 기존 기능에 이미지 작성도 가능하도록 개선했습니다. 추가적으로 IOS 심사 통과 및 커뮤니티 관리를 위해 백오피스도 함께 개발했습니다.'**
   String get cvInvestarCommunity2;
-
-  /// No description provided for @cvInvestarCommunity3.
-  ///
-  /// In ko, this message translates to:
-  /// **'추가적으로 IOS 심사 통과 및 커뮤니티 관리를 위해 백오피스도 함께 개발했습니다.'**
-  String get cvInvestarCommunity3;
 
   /// No description provided for @cvInvestarMy1.
   ///
@@ -818,14 +758,8 @@ abstract class AppLocalizations {
   /// No description provided for @cvInvestarMy2.
   ///
   /// In ko, this message translates to:
-  /// **'기존에 파편화 되어 있던 마이 페이지 관련 GraphQL 쿼리를 하나로 통합하여 일관성 있게 데이터를 관리할 수 있도록 개선했습니다.'**
+  /// **'파편화 되어 있던 마이 페이지 관련 GraphQL 쿼리를 하나로 통합하여 일관성 있게 데이터를 관리할 수 있도록 개선했습니다. 기존에 존재하지 않았던 나의 정보를 시각적으로 확인할 수 있는 신규 적응형 UI를 개발했습니다.'**
   String get cvInvestarMy2;
-
-  /// No description provided for @cvInvestarMy3.
-  ///
-  /// In ko, this message translates to:
-  /// **'기존에 존재하지 않았던 나의 정보를 시각적으로 확인할 수 있는 신규 적응형 UI를 개발했습니다.'**
-  String get cvInvestarMy3;
 
   /// No description provided for @cvInvestarSearch1.
   ///
@@ -836,32 +770,38 @@ abstract class AppLocalizations {
   /// No description provided for @cvInvestarSearch2.
   ///
   /// In ko, this message translates to:
-  /// **'디버그 모드에서 발생했던 고질적인 RenderFlex Overflow를 수정했습니다.'**
+  /// **'기존에는 검색 기능만 존재했으나 추후 개선을 통해 UI 수정 및 정렬 기능을 추가했습니다.'**
   String get cvInvestarSearch2;
 
-  /// No description provided for @cvInvestarSearch3.
+  /// No description provided for @cvInvestarAll1.
+  ///
+  /// In ko, this message translates to:
+  /// **'공통'**
+  String get cvInvestarAll1;
+
+  /// No description provided for @cvInvestarAll2.
   ///
   /// In ko, this message translates to:
   /// **'신규 적응형 UI를 적용했습니다.'**
-  String get cvInvestarSearch3;
+  String get cvInvestarAll2;
 
-  /// No description provided for @cvInvestarGlobal1.
+  /// No description provided for @cvInvestarAll3.
   ///
   /// In ko, this message translates to:
   /// **'글로벌 출시를 위해 한/영 로컬라이제이션을 적용했습니다.'**
-  String get cvInvestarGlobal1;
+  String get cvInvestarAll3;
 
-  /// No description provided for @cvInvestarGlobal2.
+  /// No description provided for @cvInvestarAll4.
   ///
   /// In ko, this message translates to:
   /// **'글로벌 출시를 위해 전체 UI 수정을 진행했습니다.'**
-  String get cvInvestarGlobal2;
+  String get cvInvestarAll4;
 
-  /// No description provided for @cvInvestarAll.
+  /// No description provided for @cvInvestarAll5.
   ///
   /// In ko, this message translates to:
   /// **'Json 직렬화, 공통 위젯 등 손으로 직접 작성하던 것들을 자동화 및 일반화 하였습니다.'**
-  String get cvInvestarAll;
+  String get cvInvestarAll5;
 
   /// No description provided for @cvSbl.
   ///

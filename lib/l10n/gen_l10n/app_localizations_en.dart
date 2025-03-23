@@ -1,3 +1,5 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -295,100 +297,70 @@ class AppLocalizationsEn extends AppLocalizations {
   String get cvInvestar => 'Investar';
 
   @override
-  String get cvInvestar1 => 'At the time of joining, the app was live. I contributed to new page development and maintenance, accounting for approximately 60% of the overall development.';
+  String get cvInvestar1 => 'When I joined the company, the service was already in live operation. I contributed approximately 60% of the overall development tasks, including developing new features and providing ongoing maintenance.';
 
   @override
-  String get cvInvestarDailyCoin1 => 'Daily Coin Analysis Page Development';
+  String get cvInvestarDailyCoin1 => 'Daily Coin Analysis Page';
 
   @override
-  String get cvInvestarDailyCoin2 => 'Allows accessing once per day, with a bottom sheet appearing on the home screen if it is available.';
+  String get cvInvestarDailyCoin2 => 'Developed a page allowing users to check coin analysis data once per day. Upon accessing, a loading screen appears, and data is cached via providers. Depending on the data state, the page either requests new data or displays cached results.';
 
   @override
-  String get cvInvestarDailyCoin3 => 'Tapping \"View Now\" navigates to the query page, where the daily coin is cached via a provider during the animation.';
+  String get cvInvestarRisingScore1 => '30-Minute Opportunities Page';
 
   @override
-  String get cvInvestarDailyCoin4 => 'If data retrieval fails due to network issues, retry functionality is available.';
+  String get cvInvestarRisingScore2 => 'Built a page that updates a list of coins with high growth potential every 30 minutes. The server provides a validity period for current data, displayed as a countdown timer decreasing each second. When the timer reaches zero, the page indicates that data has expired and continuously requests updated validity periods from the server. Once new validity is received, fresh data is fetched and cached via providers.';
 
   @override
-  String get cvInvestarDailyCoin5 => 'Once the daily coin is successfully cached, it proceeds to the analysis page.';
+  String get cvInvestarCarousel1 => 'Home Screen Carousel Banner';
 
   @override
-  String get cvInvestarRisingScore1 => 'Don’t Miss the 30 Minutes Page Development';
+  String get cvInvestarCarousel2 => 'Developed a feature that initializes carousel-related page providers and caches their data during the home screen build phase. Banners are rendered conditionally, based on whether relevant cached data is available.';
 
   @override
-  String get cvInvestarRisingScore2 => 'This page updates data every 30 minutes. The server provides valid time data, and a timer reduces time every second.';
+  String get cvInvestarWhale1 => 'Information Tab - Whale Page';
 
   @override
-  String get cvInvestarRisingScore3 => 'Except in cases where the app is restarted, the valid time is not re-fetched.';
+  String get cvInvestarWhale2 => 'Developed a page displaying key on-chain data of major cryptocurrencies. Users can tap on cryptocurrency cards to navigate to detailed screens containing charts. Additionally implemented a search feature for “Coins Frequently Bought by Whales” accessible via an in-page banner.';
 
   @override
-  String get cvInvestarRisingScore4 => 'When the remaining time reaches zero, an expiration screen is displayed, and the app starts requesting new valid times every second.';
+  String get cvInvestarFavorite1 => 'Favorites Tab - Favorite Coins Page Improvement';
 
   @override
-  String get cvInvestarRisingScore5 => 'Upon receiving updated valid time data, the provider caches the new data.';
+  String get cvInvestarFavorite2 => 'Initially, the page only displayed coins in the order users added them to their favorites. Enhanced UX by implementing sorting logic. Considering users typically have limited favorite coins, I optimized performance by caching all data upfront in a provider and handling sorting logic within the frontend.';
 
   @override
-  String get cvInvestarCarousel1 => 'Home Screen Carousel Banner Development';
+  String get cvInvestarCommunity1 => 'Community Tab - TokTok Page Improvement';
 
   @override
-  String get cvInvestarCarousel2 => 'At the time of building the home screen, providers for carousel-related pages are generated, and data is cached.';
+  String get cvInvestarCommunity2 => 'Enhanced an existing text-only feature by enabling image uploads. Additionally, developed a backend admin (back-office) interface to support iOS app approval and community management.';
 
   @override
-  String get cvInvestarCarousel3 => 'If cache data for a specific page is missing, the banner related that page is not rendered.';
+  String get cvInvestarMy1 => 'My Tab - Comprehensive Improvement';
 
   @override
-  String get cvInvestarWhale1 => 'Info Tab – Whale Page Development';
+  String get cvInvestarMy2 => 'Consolidated previously fragmented GraphQL queries for the My Page into a unified query, ensuring consistent data management. Developed a new adaptive UI enabling users to visually check their information, a feature that previously did not exist.';
 
   @override
-  String get cvInvestarWhale2 => 'Displays on-chain data for major cryptocurrencies. Tapping a card navigates to a detail screen with charts.';
+  String get cvInvestarSearch1 => 'Coin Search Page Improvement';
 
   @override
-  String get cvInvestarWhale3 => 'The page initially caches data for BTC, ETH, USDT, and USDC.';
+  String get cvInvestarSearch2 => 'Improved the existing search functionality by enhancing the UI and integrating sorting options.';
 
   @override
-  String get cvInvestarWhale4 => 'Developed a coin search function for the \"Most Purchased Coins\" page accessible via a banner.';
+  String get cvInvestarAll1 => 'Common Tasks';
 
   @override
-  String get cvInvestarFavorite1 => 'Favorites Tab – Favorites Coin Page Improvement and Development';
+  String get cvInvestarAll2 => 'Applied a new adaptive UI across the application.';
 
   @override
-  String get cvInvestarFavorite2 => 'Since the number of favorite coins is limited, all data is fetched at once and sorted using frontend logic.';
+  String get cvInvestarAll3 => 'Implemented Korean and English localization to support global launch.';
 
   @override
-  String get cvInvestarCommunity1 => 'Community Tab – TokTok Page Improvement and Development';
+  String get cvInvestarAll4 => 'Conducted comprehensive UI redesign in preparation for global release.';
 
   @override
-  String get cvInvestarCommunity2 => 'Improved the existing feature, which previously allowed only text input, to support image uploads.';
-
-  @override
-  String get cvInvestarCommunity3 => 'Additionally, developed a back-office system for community management and iOS review approval.';
-
-  @override
-  String get cvInvestarMy1 => 'My Tab – Comprehensive Improvement and Development';
-
-  @override
-  String get cvInvestarMy2 => 'Unified fragmented GraphQL queries related to My Page to ensure consistent data management.';
-
-  @override
-  String get cvInvestarMy3 => 'Developed a new adaptive UI to visually display user information.';
-
-  @override
-  String get cvInvestarSearch1 => 'Coin Search Page Improvement and Development';
-
-  @override
-  String get cvInvestarSearch2 => 'Fixed persistent RenderFlex Overflow issues in debug mode.';
-
-  @override
-  String get cvInvestarSearch3 => 'Applied a new adaptive UI.';
-
-  @override
-  String get cvInvestarGlobal1 => 'Implemented Korean/English localization for global release.';
-
-  @override
-  String get cvInvestarGlobal2 => 'Adjusted the overall UI for global deployment';
-
-  @override
-  String get cvInvestarAll => 'Developed generalized widgets and applied automation functions (e.g. Json Serialization,  common components. etc.)';
+  String get cvInvestarAll5 => 'Automated and generalized previously manual tasks such as JSON serialization and creation of common widgets.';
 
   @override
   String get cvSbl => 'SBL APP';
@@ -508,7 +480,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get cvEducationBootCamp => 'Woowacourse pre-course(Kotlin)';
 
   @override
-  String get cvEducationBootCamp1 => 'To be familiar with Kotlin, participants implement four toy projects with specific requirements (number of method lines, number of method parameters, etc.). Additionally, participants write test code for the implemented methods to verify that they produce the desired results. Since the course is not intended to be a direct training, it only provides guidelines and there are no restrictions on how participants implement it as long as the final test code for each toy project passes, so I focused on practicing TDD using those guidelines as a reference.';
+  String get cvEducationBootCamp1 => 'To familiariz with Kotlin, participants implement four toy projects with specific requirements (number of method lines, number of method parameters, etc.). Additionally, participants write test code for the implemented methods to verify that they produce the desired results. Since the course is not intended to be a direct training, it only provides guidelines and there are no restrictions on how paticipants implement it as long as the final test code for each toy project passes, so I focused on practicing TDD using those guidelines as a reference.';
 
   @override
   String get cvEducationUniversity => 'Korea University';
