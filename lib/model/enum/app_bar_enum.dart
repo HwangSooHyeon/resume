@@ -38,7 +38,7 @@ enum AppBarEnum {
                 }}',
                 style: context.textTheme.titleSmall,
               ),
-            AppBarEnum.mailing => Icon(Icons.mail),
+            AppBarEnum.mailing => const Icon(Icons.mail),
           },
         );
       });
