@@ -17,7 +17,7 @@ class CustomTextTheme {
   }) =>
       TextStyle(
         fontSize: fontSize,
-        height: getFontHeight(fontSize: fontSize),
+        height: height ?? getFontHeight(fontSize: fontSize),
         fontWeight: fontWeight,
       );
 
@@ -77,12 +77,12 @@ class CustomTextTheme {
   ).apply();
 
   TextStyle get paragraphMedium => regularTextStyle(
-    fontSize: 14,
-    height: 26,
-  );
+        fontSize: 14,
+        height: 26,
+      );
 
   TextStyle get paragraphLarge => regularTextStyle(
-    fontSize: 16,
-    height: 28,
-  );
+        fontSize: 16,
+        height: 28,
+      );
 }

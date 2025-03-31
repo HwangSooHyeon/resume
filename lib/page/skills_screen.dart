@@ -1,259 +1,380 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
+import 'package:resume/model/enum/skills_enum.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/util/theme/custom_text_theme.dart';
 
-class SkillsScreen extends StatelessWidget {
+class SkillsScreen extends StatefulWidget {
   static const String path = '/skills';
   const SkillsScreen({super.key});
 
   @override
+  State<SkillsScreen> createState() => _SkillsScreenState();
+}
+
+class _SkillsScreenState extends State<SkillsScreen> {
+  final _scrollController = ScrollController();
+  final _sectionKeys =
+      List.generate(SkillsEnum.values.length, (_) => GlobalKey());
+
+  _scrollToSection(GlobalKey key) {
+    if (key.currentContext == null) return;
+    Scrollable.ensureVisible(
+      key.currentContext!,
+      duration: const Duration(milliseconds: 500),
+      curve: Curves.decelerate,
+    );
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Wrap(
-      children: [
-        const Gap(200),
-        // Language
-        Text(
-          context.locale!.skillsLanguageLevel5,
-          style: CustomTextTheme.boldTextStyle(fontSize: 32),
-        ),
-        Text(
-          'Dart',
-          style: CustomTextTheme.boldTextStyle(fontSize: 32),
-        ),
-        Text(
-          context.locale!.skillsLanguageLevel4,
-          style: CustomTextTheme.boldTextStyle(fontSize: 32),
-        ),
-        Text(
-          'Kotlin, Java',
-          style: CustomTextTheme.boldTextStyle(fontSize: 32),
-        ),
-        Text(
-          context.locale!.skillsLanguageLevel3,
-          style: CustomTextTheme.boldTextStyle(fontSize: 32),
-        ),
-        Text(
-          'TypeScript, C',
-          style: CustomTextTheme.boldTextStyle(fontSize: 32),
-        ),
-        Text(
-          context.locale!.skillsLanguageLevel2,
-          style: CustomTextTheme.boldTextStyle(fontSize: 32),
-        ),
-        Text(
-          'SQL, C++',
-          style: CustomTextTheme.boldTextStyle(fontSize: 32),
-        ),
-        Text(
-          context.locale!.skillsLanguageLevel1,
-          style: CustomTextTheme.boldTextStyle(fontSize: 32),
-        ),
-        Text(
-          'Python',
-          style: CustomTextTheme.boldTextStyle(fontSize: 32),
-        ),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 100).copyWith(top: 100),
+      child: Wrap(
+        children: [
+          SizedBox(
+            width: (context.width - 200) * 0.3,
+            height: context.height - 100 - 184,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: SkillsEnum.values
+                  .map(
+                    (element) => GestureDetector(
+                      onTap: () {
+                        _scrollToSection(_sectionKeys[element.index]);
+                      },
+                      child: element.widget,
+                    ),
+                  )
+                  .toList(),
+            ),
+          ),
+          SizedBox(
+            width: (context.width - 200) * 0.7,
+            height: context.height - 100 - 184,
+            child: SingleChildScrollView(
+              controller: _scrollController,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // Language
+                  Text(
+                    key: _sectionKeys[SkillsEnum.programmingLanguage.index],
+                    context.locale!.skillsLanguageLevel5,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Dart',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLanguageLevel4,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Kotlin, Java',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLanguageLevel3,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'TypeScript, C',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLanguageLevel2,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'SQL, C++',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLanguageLevel1,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Python',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
 
-        // Library
-        Text(
-          'Riverpod',
-        ),
-        Text(
-          context.locale!.skillsLibraryRiverpod1,
-        ),
-        Text(
-          context.locale!.skillsLibraryRiverpod2,
-        ),
-        Text(
-          'Retrofit',
-        ),
-        Text(
-          context.locale!.skillsLibraryRetrofit,
-        ),
-        Text(
-          'Dio',
-        ),
-        Text(
-          context.locale!.skillsLibraryDio,
-        ),
-        Text(
-          'Firebase',
-        ),
-        Text(
-          context.locale!.skillsLibraryFirebase1,
-        ),
-        Text(
-          context.locale!.skillsLibraryFirebase2,
-        ),
-        Text(
-          'Shared Preference & Secure Storage',
-        ),
-        Text(
-          context.locale!.skillsLibraryStorage,
-        ),
-        Text(
-          'GraphQL',
-        ),
-        Text(
-          context.locale!.skillsLibraryGraphQL,
-        ),
-        Text(
-          'Logger',
-        ),
-        Text(
-          context.locale!.skillsLibraryLogger,
-        ),
-        Text(
-          'Image Picker',
-        ),
-        Text(
-          context.locale!.skillsLibraryImagePicker,
-        ),
-        Text(
-          'Syncfusion Chart',
-        ),
-        Text(
-          context.locale!.skillsLibrarySyncfusionChart,
-        ),
-        Text(
-          'Freezed',
-        ),
-        Text(
-          context.locale!.skillsLibraryFreezed,
-        ),
-        Text(
-          'Widgetbook',
-        ),
-        Text(
-          context.locale!.skillsLibraryWidgetbook,
-        ),
-        Text(
-          'Go Router',
-        ),
-        Text(
-          context.locale!.skillsLibraryGoRouter1,
-        ),
-        Text(
-          context.locale!.skillsLibraryGoRouter2,
-        ),
-        Text(
-          'Skeletonizer',
-        ),
-        Text(
-          context.locale!.skillsLibrarySkeletonizer,
-        ),
-        Text(
-          'Localization',
-        ),
-        Text(
-          context.locale!.skillsLibraryLocalization1,
-        ),
-        Text(
-          context.locale!.skillsLibraryLocalization2,
-        ),
-        Text(
-          context.locale!.skillsLibraryLocalization3,
-        ),
-        Text(
-          'SQFLite',
-        ),
-        Text(
-          context.locale!.skillsLibrarySQFLite,
-        ),
-        Text(
-          'Flutter Gen',
-        ),
-        Text(
-          context.locale!.skillsLibraryFlutterGen,
-        ),
+                  // Library
+                  Text(
+                    key: _sectionKeys[SkillsEnum.library.index],
+                    'Riverpod',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryRiverpod1,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryRiverpod2,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Retrofit',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryRetrofit,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Dio',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryDio,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Firebase',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryFirebase1,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryFirebase2,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Shared Preference & Secure Storage',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryStorage,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'GraphQL',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryGraphQL,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Logger',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryLogger,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Image Picker',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryImagePicker,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Syncfusion Chart',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibrarySyncfusionChart,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Freezed',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryFreezed,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Widgetbook',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryWidgetbook,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Go Router',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryGoRouter1,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryGoRouter2,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Skeletonizer',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibrarySkeletonizer,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Localization',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryLocalization1,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryLocalization2,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryLocalization3,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'SQFLite',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsLibrarySQFLite,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  const Text(
+                    'Flutter Gen',
+                  ),
+                  Text(
+                    context.locale!.skillsLibraryFlutterGen,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
 
-        // Technique
-        Text('Pagination'),
-        Text(
-          context.locale!.skillsTechniquePagination1,
-        ),
-        Text(
-          context.locale!.skillsTechniquePagination2,
-        ),
-        Text(
-          'Optimistic Response',
-        ),
-        Text(
-          context.locale!.skillsTechniqueOptimisticResponse,
-        ),
-        Text(
-          'Sorting',
-        ),
-        Text(
-          context.locale!.skillsTechniqueSorting,
-        ),
-        Text(
-          'Animation',
-        ),
-        Text(
-          context.locale!.skillsTechniqueAnimation,
-        ),
-        Text(
-          'Code Generation',
-        ),
-        Text(
-          context.locale!.skillsTechniqueCodeGeneration,
-        ),
-        Text(
-          'Sliver Widgets & NestedScrollView',
-        ),
-        Text(
-          context.locale!.skillsTechniqueSliver,
-        ),
-        Text(
-          'ReorderableListView & Dissmisible',
-        ),
-        Text(
-          context.locale!.skillsTechniqueReorder,
-        ),
+                  // Technique
+                  Text(
+                    key: _sectionKeys[SkillsEnum.technique.index],
+                    'Pagination',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsTechniquePagination1,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsTechniquePagination2,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Optimistic Response',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsTechniqueOptimisticResponse,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Sorting',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsTechniqueSorting,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Animation',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsTechniqueAnimation,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Code Generation',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsTechniqueCodeGeneration,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Sliver Widgets & NestedScrollView',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsTechniqueSliver,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'ReorderableListView & Dissmisible',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    context.locale!.skillsTechniqueReorder,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  // co-work tool
+                  Text(
+                    key: _sectionKeys[SkillsEnum.coWork.index],
+                    context.locale!.skillsCoWork,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Slack',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Figma',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Notion',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Jira',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Confluence',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Google Sheet',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  // IDE
+                  Text(
+                    key: _sectionKeys[SkillsEnum.ide.index],
+                    context.locale!.skillsIde,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'IntelliJ IDEA',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'WebStorm',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Android Studio',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
 
-        // co-work tool
-        Text(
-          context.locale!.skillsCoWork,
-        ),
-        Text(
-          'Slack',
-        ),
-        Text(
-          'Figma',
-        ),
-        Text(
-          'Notion',
-        ),
-        Text(
-          'Jira',
-        ),
-        Text(
-          'Confluence',
-        ),
-        Text(
-          'Google Sheet',
-        ),
-
-        // IDE
-        Text(
-          context.locale!.skillsIde,
-        ),
-        Text(
-          'IntelliJ IDEA',
-        ),
-        Text(
-          'WebStorm',
-        ),
-        Text(
-          'Android Studio',
-        ),
-
-        // Language
-        Text(
-          context.locale!.skillsLanguage,
-        ),
-      ],
+                  // Language
+                  Text(
+                    context.locale!.skillsLanguage,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                  Text(
+                    'Korea(Native), English(Between proficient and fluent)',
+                    style: CustomTextTheme.boldTextStyle(fontSize: 32),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
