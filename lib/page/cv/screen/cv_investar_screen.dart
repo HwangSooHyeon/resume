@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:resume/page/cv/widget/description-body/description_body.dart';
+import 'package:resume/page/cv/widget/description-body/description_subtitle.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 
 class CvInvestarScreen extends StatelessWidget {
@@ -6,107 +8,46 @@ class CvInvestarScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          context.locale!.cvInvestar,
+    return DescriptionBody.withSubtitle(
+      title: context.locale!.cvInvestarTitle,
+      subtitles: [
+        DescriptionSubtitle(
+          subtitle: context.locale!.cvInvestarSubtitle,
+          startDate: DateTime(2023, 4),
+          endDate: DateTime(2024, 11),
+          contents: const [],
         ),
-        Text(
-          '2023-April ~ 2024-November',
+        DescriptionSubtitle(
+          subtitle: context.locale!.cvInvestarDailyCoinSubtitle,
+          contents: [context.locale!.cvInvestarDailyCoinContent],
         ),
-        Text(context.locale!.cvInvestar1),
-        Text(
-          context.locale!.cvInvestarDailyCoin1,
+        DescriptionSubtitle(
+          subtitle: context.locale!.cvInvestarRisingScoreSubtitle,
+          contents: [context.locale!.cvInvestarRisingScoreContent],
         ),
-        Text(
-          context.locale!.cvInvestarDailyCoin2,
+        DescriptionSubtitle(
+          subtitle: context.locale!.cvInvestarCarouselSubtitle,
+          contents: [context.locale!.cvInvestarCarouselContent],
         ),
-        Text(
-          context.locale!.cvInvestarDailyCoin3,
+        DescriptionSubtitle(
+          subtitle: context.locale!.cvInvestarWhaleSubtitle,
+          contents: [context.locale!.cvInvestarWhaleContent],
         ),
-        Text(
-          context.locale!.cvInvestarDailyCoin4,
+        DescriptionSubtitle(
+          subtitle: context.locale!.cvInvestarFavoriteSubtitle,
+          contents: [context.locale!.cvInvestarFavoriteContent],
         ),
-        Text(
-          context.locale!.cvInvestarDailyCoin5,
+        DescriptionSubtitle(
+          subtitle: context.locale!.cvInvestarCommunitySubtitle,
+          contents: [context.locale!.cvInvestarCommunityContent],
         ),
-        Text(
-          context.locale!.cvInvestarRisingScore1,
+        DescriptionSubtitle(
+          subtitle: context.locale!.cvInvestarMySubtitle,
+          contents: [context.locale!.cvInvestarMyContent],
         ),
-        Text(
-          context.locale!.cvInvestarRisingScore2,
-        ),
-        Text(
-          context.locale!.cvInvestarRisingScore3,
-        ),
-        Text(
-          context.locale!.cvInvestarRisingScore4,
-        ),
-        Text(
-          context.locale!.cvInvestarRisingScore5,
-        ),
-        Text(
-          context.locale!.cvInvestarCarousel1,
-        ),
-        Text(
-          context.locale!.cvInvestarCarousel2,
-        ),
-        Text(
-          context.locale!.cvInvestarCarousel3,
-        ),
-        Text(
-          context.locale!.cvInvestarWhale1,
-        ),
-        Text(
-          context.locale!.cvInvestarWhale2,
-        ),
-        Text(
-          context.locale!.cvInvestarWhale3,
-        ),
-        Text(
-          context.locale!.cvInvestarWhale4,
-        ),
-        Text(
-          context.locale!.cvInvestarFavorite1,
-        ),
-        Text(
-          context.locale!.cvInvestarFavorite2,
-        ),
-        Text(
-          context.locale!.cvInvestarCommunity1,
-        ),
-        Text(
-          context.locale!.cvInvestarCommunity2,
-        ),
-        Text(
-          context.locale!.cvInvestarCommunity3,
-        ),
-        Text(
-          context.locale!.cvInvestarMy1,
-        ),
-        Text(
-          context.locale!.cvInvestarMy2,
-        ),
-        Text(
-          context.locale!.cvInvestarMy3,
-        ),
-        Text(
-          context.locale!.cvInvestarSearch1,
-        ),
-        Text(
-          context.locale!.cvInvestarSearch2,
-        ),
-        Text(
-          context.locale!.cvInvestarSearch3,
-        ),
-        Text(
-          context.locale!.cvInvestarGlobal1,
-        ),
-        Text(
-          context.locale!.cvInvestarGlobal2,
-        ),
-        Text(
-          context.locale!.cvInvestarAll,
+        DescriptionSubtitle(
+          subtitle: context.locale!.cvInvestarSearchSubtitle,
+          contents: [context.locale!.cvInvestarSearchContent],
         ),
       ],
     );

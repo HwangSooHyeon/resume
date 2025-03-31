@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:resume/page/cv/widget/description-body/description_body.dart';
+import 'package:resume/page/cv/widget/description-body/description_subtitle.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 
 class CvFireAntScreen extends StatelessWidget {
@@ -6,64 +8,31 @@ class CvFireAntScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          context.locale!.cvFireAnt,
-        ),
-        Text(
-          '2024-June ~ 2024-November',
-        ),
-        Text(
-          context.locale!.cvFireAnt1,
-        ),
-        Text(
-          context.locale!.cvFireAnt2,
-        ),
-        Text(
-          context.locale!.cvFireAnt3,
-        ),
-        Text(
-          context.locale!.cvFireAnt4,
-        ),
-        Text(
-          context.locale!.cvFireAnt5,
-        ),
-        Text(
-          context.locale!.cvFireAnt6,
-        ),
-        Text(
-          context.locale!.cvFireAnt7,
-        ),
-        Text(
-          context.locale!.cvFireAnt8,
-        ),
-        Text(
-          context.locale!.cvFireAnt9,
-        ),
-        Text(
-          context.locale!.cvFireAnt10,
-        ),
-        Text(
-          context.locale!.cvFireAnt11,
-        ),
-        Text(
-          context.locale!.cvFireAnt12,
-        ),
-        Text(
-          context.locale!.cvFireAnt13,
-        ),
-        Text(
-          context.locale!.cvFireAnt14,
-        ),
-        Text(
-          context.locale!.cvFireAnt15,
-        ),
-        Text(
-          context.locale!.cvFireAnt16,
-        ),
-        Text(
-          context.locale!.cvFireAnt17,
+    return DescriptionBody.withSubtitle(
+      title: context.locale!.cvFireAntTitle,
+      subtitles: [
+        DescriptionSubtitle(
+          subtitle: context.locale!.cvFireAntSubtitle,
+          startDate: DateTime(2024, 6),
+          endDate: DateTime(2024, 11),
+          contents: [
+            context.locale!.cvFireAntContent1,
+            context.locale!.cvFireAntContent2,
+            context.locale!.cvFireAntContent3,
+            context.locale!.cvFireAntContent4,
+            context.locale!.cvFireAntContent5,
+            context.locale!.cvFireAntContent6,
+            context.locale!.cvFireAntContent7,
+            context.locale!.cvFireAntContent8,
+            context.locale!.cvFireAntContent9,
+            context.locale!.cvFireAntContent10,
+            context.locale!.cvFireAntContent11,
+            context.locale!.cvFireAntContent12,
+            context.locale!.cvFireAntContent13,
+            context.locale!.cvFireAntContent14,
+            context.locale!.cvFireAntContent15,
+            context.locale!.cvFireAntContent16,
+          ],
         ),
       ],
     );

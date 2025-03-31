@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:resume/page/cv/widget/description-body/description_body.dart';
+import 'package:resume/page/cv/widget/description-body/description_subtitle.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 
 class CvSblScreen extends StatelessWidget {
@@ -6,40 +8,23 @@ class CvSblScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(
-          context.locale!.cvSbl,
-        ),
-        Text(
-          '2023-August ~ 2024-December',
-        ),
-        Text(
-          context.locale!.cvSbl1,
-        ),
-        Text(
-          context.locale!.cvSbl2,
-        ),
-        Text(
-          context.locale!.cvSbl3,
-        ),
-        Text(
-          context.locale!.cvSbl4,
-        ),
-        Text(
-          context.locale!.cvSbl5,
-        ),
-        Text(
-          context.locale!.cvSbl6,
-        ),
-        Text(
-          context.locale!.cvSbl7,
-        ),
-        Text(
-          context.locale!.cvSbl8,
-        ),
-        Text(
-          context.locale!.cvSbl9,
+    return DescriptionBody.withSubtitle(
+      title: context.locale!.cvSblTitle,
+      subtitles: [
+        DescriptionSubtitle(
+          subtitle: context.locale!.cvSblSubtitle,
+          startDate: DateTime(2023, 8),
+          endDate: DateTime(2024, 12),
+          contents: [
+            context.locale!.cvSblContent1,
+            context.locale!.cvSblContent2,
+            context.locale!.cvSblContent3,
+            context.locale!.cvSblContent4,
+            context.locale!.cvSblContent5,
+            context.locale!.cvSblContent6,
+            context.locale!.cvSblContent7,
+            context.locale!.cvSblContent8,
+          ],
         ),
       ],
     );
