@@ -13,11 +13,13 @@ class DescriptionContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       spacing: 12,
       children: [
         Container(
           width: 8,
           height: 8,
+          margin: EdgeInsets.only(top: 16),
           decoration: BoxDecoration(
             color: context.colorScheme.primary,
             borderRadius: BorderRadius.circular(8),
@@ -26,7 +28,7 @@ class DescriptionContent extends StatelessWidget {
         Flexible(
           child: Text(
             content,
-            style: CustomTextTheme.regularTextStyle(fontSize: 20),
+            style: CustomTextTheme.regularTextStyle(fontSize: 20, height: 2),
           ),
         ),
       ],

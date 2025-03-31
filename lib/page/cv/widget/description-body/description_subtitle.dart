@@ -20,6 +20,8 @@ class DescriptionSubtitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      spacing: 24,
       children: [
         if (startDate != null && endDate != null)
           DescriptionDate(
@@ -30,21 +32,23 @@ class DescriptionSubtitle extends StatelessWidget {
           padding: const EdgeInsets.only(left: 10),
           child: Text(
             subtitle,
-            style: CustomTextTheme.regularTextStyle(fontSize: 24),
+            style: CustomTextTheme.regularTextStyle(fontSize: 24, height: 2),
           ),
         ),
-        Padding(
-          padding: EdgeInsets.only(left: 20),
-          child: Column(
-            children: [
-              ...contents.map(
-                (content) => DescriptionContent(
-                  content: content,
+        if (contents.isNotEmpty)
+          Padding(
+            padding: EdgeInsets.only(left: 20),
+            child: Column(
+              spacing: 24,
+              children: [
+                ...contents.map(
+                  (content) => DescriptionContent(
+                    content: content,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
-        ),
       ],
     );
   }
