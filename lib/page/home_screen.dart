@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Wrap(
       //mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
+        SizedBox(
           height: context.height - 84,
           width: double.infinity,
           child: Stack(
@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ],
                 ),
               ),
-              Positioned(
+              const Positioned(
                 bottom: 80,
                 child: Icon(
                   Icons.expand_more_rounded,

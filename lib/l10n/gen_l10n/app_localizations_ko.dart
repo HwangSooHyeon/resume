@@ -1,3 +1,5 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
 import 'app_localizations.dart';
 
 // ignore_for_file: type=lint
@@ -35,6 +37,9 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get sendingEmail => '이메일 보내기';
+
+  @override
+  String get readMore => '더보기';
 
   @override
   String get homeTitle1 => '크로스플랫폼 앱 개발';
@@ -289,209 +294,266 @@ class AppLocalizationsKo extends AppLocalizations {
   String get skillsLanguage => '사용 가능한 언어';
 
   @override
-  String get cvDirectional => '디렉셔널';
+  String get cvDirectionalTitle => '디렉셔널';
 
   @override
-  String get cvInvestar => '입사 당시 라이브 서비스 중이었습니다. 새로운 페이지 개발 및 유지보수를 진행했으며 전체 개발 비중의 약 60% 기여했습니다.';
+  String get cvDirectionalSubtitle => 'Flutter 개발자로 입사해 약 2년간 4개의 Flutter 프로젝트를 진행했습니다. 단순히 개발하는 것부터 내부테스트, IOS, AOS 심사 결과에 대응해 신규 기능 업데이트 및 반영하는 것까지 많은 경험을 할 수 있었습니다. 현재는 Flutter 프로젝트들이 종료되어 계열사 퀀팃의 정식 출시를 앞두고 있는 프로젝트인 머니터링의 웹 프론트엔드 개발을 지원하기 위해 파견 중에 있습니다. 해당 직무를 위해 TypeScript와 Next.js, 그리고 Recoil, Relay 등을 공부하여 여러 기능 개발에 참여하고 있습니다. 참여한 프로젝트는 아래와 같고 상세 내용은 타임라인의 프로젝트 명을 클릭하여 확인하실 수 있습니다.';
 
   @override
-  String get cvInvestarDailyCoin1 => '일일코인분석 페이지 개발';
+  String get cvDirectionalContent1 => '인베스타 - 암호화폐 정보 앱';
 
   @override
-  String get cvInvestarDailyCoin2 => '1일 1회 조회 가능하며 홈 화면에서 조회 가능한지 체크 후 가능할 때 일일코인분석 바텀시트가 나타납니다.';
+  String get cvDirectionalContent2 => 'SBL APP - 주식 대차거래 중계 앱';
 
   @override
-  String get cvInvestarDailyCoin3 => '지금 코인 보기를 터치하면 조회 페이지로 이동하며 페이지 내에서 애니메이션이 진행되는 동안 프로바이더를 통해 일일코인을 캐시에 저장합니다.';
+  String get cvDirectionalContent3 => '인베스타 백오피스 - 커뮤니티 관리 툴';
 
   @override
-  String get cvInvestarDailyCoin4 => '네트워크 오류 등으로 인해 데이터 조회가 불가능할 경우 재시도할 수 있습니다.';
+  String get cvDirectionalContent4 => '불개미 - 주식 공매도 정보 앱';
 
   @override
-  String get cvInvestarDailyCoin5 => '프로바이더 캐시에 일일코인이 저장되면 조회 성공으로 판단하여 분석페이지로 이동합니다.';
+  String get cvDirectionalContent5 => '머니터링 - 투자 정보 커뮤니티';
 
   @override
-  String get cvInvestarRisingScore1 => '놓치면 후회할 30분 페이지 개발';
+  String get cvInvestarTitle => '인베스타';
 
   @override
-  String get cvInvestarRisingScore2 => '30분마다 데이터를 갱신하는 페이지로 서버에서 현재 데이터가 유효한 시간을 받아와 타이머로 1초 씩 시간을 줄입니다.';
+  String get cvInvestarSubtitle => '입사 당시 라이브 서비스 중이었습니다. 새로운 페이지 개발 및 유지보수를 진행했으며 전체 개발 비중의 약 60% 기여했습니다.';
 
   @override
-  String get cvInvestarRisingScore3 => '앱을 재시작하는 경우를 제외하고 다시 유효시간을 받아오지 않습니다.';
+  String get cvInvestarDailyCoinSubtitle => '일일코인분석 페이지 개발';
 
   @override
-  String get cvInvestarRisingScore4 => '남은 시간이 0초에 도달했을 때 현재 데이터는 만료되었다는 화면을 표시합니다. 이때부터 데이터 유효 시간을 매초 요청합니다.';
+  String get cvInvestarDailyCoinContent => '1일 1회 조회 가능한 화면으로 접근 시 로딩 화면과 함께 프로바이더에 데이터를 캐싱하여 데이터의 상태에 따라 재요청 혹은 조회 결과 화면으로 이동할 수 있습니다.';
 
   @override
-  String get cvInvestarRisingScore5 => '요청한 유효 시간이 갱신되면 새로운 데이터를 받아와 프로바이더 캐시에 저장합니다.';
+  String get cvInvestarRisingScoreSubtitle => '놓치면 후회할 30분 페이지 개발';
 
   @override
-  String get cvInvestarCarousel1 => '홈 화면 캐로우셀 배너 개발';
+  String get cvInvestarRisingScoreContent => '30분마다 상승 가능성이 높은 화폐들의 목록을 갱신하는 페이지로 서버에서 현재 데이터가 유효한 시간을 받아와 타이머로 1초 씩 시간을 줄입니다. 남은 시간이 0초에 도달했을 때 현재 데이터는 만료되었다는 화면을 표시하고 데이터 유효 시간을 매초 요청합니다. 요청한 유효 시간이 갱신되면 새로운 데이터를 받아와 프로바이더 캐시에 저장합니다.';
 
   @override
-  String get cvInvestarCarousel2 => '홈 화면 빌드 시점에 캐로우셀에 관련된 페이지들의 프로바이더 생성 및 데이터를 캐시에 저장합니다.';
+  String get cvInvestarCarouselSubtitle => '홈 화면 캐로우셀 배너 개발';
 
   @override
-  String get cvInvestarCarousel3 => '특정 페이지에 해당하는 캐시의 데이터가 없을 경우 해당 배너를 렌더링하지 않습니다.';
+  String get cvInvestarCarouselContent => '홈 화면 빌드 시점에 캐로우셀에 관련된 페이지들의 프로바이더 생성 및 데이터를 캐시에 저장합니다. 특정 페이지에 해당하는 캐시의 데이터가 없을 경우 해당 배너를 렌더링하지 않습니다.';
 
   @override
-  String get cvInvestarWhale1 => '정보 탭 - 고래 페이지 개발';
+  String get cvInvestarWhaleSubtitle => '정보 탭 - 고래 페이지 개발';
 
   @override
-  String get cvInvestarWhale2 => '주요 암호 화폐 온체인 데이터를 보여주는 화면입니다. 각 주요 암호 화폐 카드를 터치할 경우 차트를 포함한 상세화면으로 이동합니다.';
+  String get cvInvestarWhaleContent => '주요 암호 화폐 온체인 데이터를 보여주는 화면입니다. 각 주요 암호 화폐 카드를 터치할 경우 차트를 포함한 상세화면으로 이동합니다.  페이지 내 배너를 통해 이동할 수 있는 고래가 많이 산 코인 페이지의 코인 검색 기능도 개발하였습니다.';
 
   @override
-  String get cvInvestarWhale3 => 'BTC, ETH, USDT, USDC 주요 4종 암호 화폐의 온체인 데이터로 최초 생성 시 데이터를 캐시에 저장하여 사용합니다.';
+  String get cvInvestarFavoriteSubtitle => '관심 탭 - 관심코인 페이지 개선 및 개발';
 
   @override
-  String get cvInvestarWhale4 => '페이지 내 배너를 통해 이동할 수 있는 고래가 많이 산 코인 페이지의 코인 검색 기능도 개발하였습니다.';
+  String get cvInvestarFavoriteContent => '기존에는 관심 표시한 순서대로 코인만 보여주는 화면이었으나 추후 개선을 통해 정렬 로직을 추가하였습니다. 관심 코인의 갯수는 일반적으로 많지 않으므로 UX를 위해 한 번에 모든 데이터를 프로바이더에 캐싱하여 프론트 내 로직으로 정렬하도록 개발했습니다.';
 
   @override
-  String get cvInvestarFavorite1 => '관심 탭 - 관심코인 페이지 개선 및 개발';
+  String get cvInvestarCommunitySubtitle => '커뮤니티 탭 - 톡톡 페이지 개선 및 개발';
 
   @override
-  String get cvInvestarFavorite2 => '관심 코인의 갯수는 한정적이므로 한 번에 모든 데이터를 받아와 프론트 내 로직으로 정렬하도록 개발했습니다.';
+  String get cvInvestarCommunityContent => '글자만 작성할 수 있었던 기존 기능에 이미지 작성도 가능하도록 개선했습니다. 추가적으로 IOS 심사 통과 및 커뮤니티 관리를 위해 백오피스도 함께 개발했습니다.';
 
   @override
-  String get cvInvestarCommunity1 => '커뮤니티 탭 - 톡톡 페이지 개선 및 개발';
+  String get cvInvestarMySubtitle => '마이 탭 - 전체 개선 및 개발';
 
   @override
-  String get cvInvestarCommunity2 => '글자만 작성할 수 있었던 기존 기능에 이미지 작성도 가능하도록 개선했습니다.';
+  String get cvInvestarMyContent => '파편화 되어 있던 마이 페이지 관련 GraphQL 쿼리를 하나로 통합하여 일관성 있게 데이터를 관리할 수 있도록 개선했습니다. 기존에 존재하지 않았던 나의 정보를 시각적으로 확인할 수 있는 신규 적응형 UI를 개발했습니다.';
 
   @override
-  String get cvInvestarCommunity3 => '추가적으로 IOS 심사 통과 및 커뮤니티 관리를 위해 백오피스도 함께 개발했습니다.';
+  String get cvInvestarSearchSubtitle => '코인 검색 페이지 개선 및 개발';
 
   @override
-  String get cvInvestarMy1 => '마이 탭 - 전체 개선 및 개발';
+  String get cvInvestarSearchContent => '기존에는 검색 기능만 존재했으나 추후 개선을 통해 UI 수정 및 정렬 기능을 추가했습니다.';
 
   @override
-  String get cvInvestarMy2 => '기존에 파편화 되어 있던 마이 페이지 관련 GraphQL 쿼리를 하나로 통합하여 일관성 있게 데이터를 관리할 수 있도록 개선했습니다.';
+  String get cvInvestarCommonSubtitle => '공통';
 
   @override
-  String get cvInvestarMy3 => '기존에 존재하지 않았던 나의 정보를 시각적으로 확인할 수 있는 신규 적응형 UI를 개발했습니다.';
+  String get cvInvestarCommonContent1 => '신규 적응형 UI를 적용했습니다.';
 
   @override
-  String get cvInvestarSearch1 => '코인 검색 페이지 개선 및 개발';
+  String get cvInvestarCommonContent2 => '글로벌 출시를 위해 한/영 로컬라이제이션을 적용했습니다.';
 
   @override
-  String get cvInvestarSearch2 => '디버그 모드에서 발생했던 고질적인 RenderFlex Overflow를 수정했습니다.';
+  String get cvInvestarCommonContent3 => '글로벌 출시를 위해 전체 UI 수정을 진행했습니다.';
 
   @override
-  String get cvInvestarSearch3 => '신규 적응형 UI를 적용했습니다.';
+  String get cvInvestarCommonContent4 => 'Json 직렬화, 공통 위젯 등 손으로 직접 작성하던 것들을 자동화 및 일반화 하였습니다.';
 
   @override
-  String get cvInvestarGlobal1 => '글로벌 출시를 위해 한/영 로컬라이제이션을 적용했습니다.';
+  String get cvSblTitle => 'SBL APP';
 
   @override
-  String get cvInvestarGlobal2 => '글로벌 출시를 위해 전체 UI 수정을 진행했습니다.';
+  String get cvSblSubtitle => '이전 앱에서는 사용해보지 못한 라이브러리와 기술들을 적용하려고 노력했습니다. 전체 개발 비중의 약 90% 기여했습니다.';
 
   @override
-  String get cvInvestarAll => 'Json 직렬화, 공통 위젯 등 손으로 직접 작성하던 것들을 자동화 및 일반화 하였습니다.';
+  String get cvSblContent1 => 'Riverpod, Retrofit, Go Router 등 최신 Flutter 라이브러리 사용했습니다.';
 
   @override
-  String get cvSbl => '이전 앱에서는 사용해보지 못한 라이브러리와 기술들을 적용하려고 노력했습니다. 전체 개발 비중의 약 90% 기여했습니다.';
+  String get cvSblContent2 => '코드 제너레이션을 지원하는 라이브러리의 경우 적극 활용했습니다.';
 
   @override
-  String get cvSbl1 => 'Riverpod, Retrofit, Go Router 등 최신 Flutter 라이브러리 사용했습니다.';
+  String get cvSblContent3 => 'MVVM 아키텍쳐 패턴을 적용했습니다.';
 
   @override
-  String get cvSbl2 => '코드 제너레이션을 지원하는 라이브러리의 경우 적극 활용했습니다.';
+  String get cvSblContent4 => '로그인 상태에 따른 리다이렉션 기능을 개발했습니다.';
 
   @override
-  String get cvSbl3 => 'MVVM 아키텍쳐 패턴을 적용했습니다.';
+  String get cvSblContent5 => 'Dio 라이브러리의 Custom Interceptor 기능을 활용하여 통신 시 요청, 응답, 에러가 발생할 경우 먼저 캐치하여 핸들링할 수 있는 기능을 개발했습니다.';
 
   @override
-  String get cvSbl4 => '로그인 상태에 따른 리다이렉션 기능을 개발했습니다.';
+  String get cvSblContent6 => 'Riverpod을 이용해 상태관리를 하여 상황에 맞게 인스턴스를 유지 혹은 처리하도록 개발했습니다.';
 
   @override
-  String get cvSbl5 => 'Dio 라이브러리의 Custom Interceptor 기능을 활용하여 통신 시 요청, 응답, 에러가 발생할 경우 먼저 캐치하여 핸들링할 수 있는 기능을 개발했습니다.';
+  String get cvSblContent7 => 'Freezed를 통해 generic model을 정의하고 이를 이용해 무한 스크롤 페이지네이션이 필요한 화면들을 일반화 했습니다.';
 
   @override
-  String get cvSbl6 => 'Riverpod을 이용해 상태관리를 하여 상황에 맞게 인스턴스를 유지 혹은 처리하도록 개발했습니다.';
+  String get cvSblContent8 => 'Throttle, Debouncer 기법들을 적용하여 불필요한 중복요청을 방지하도록 구현했습니다.';
 
   @override
-  String get cvSbl7 => 'Freezed를 통해 generic model을 정의하고 이를 이용해 무한 스크롤 페이지네이션이 필요한 화면들을 일반화 했습니다.';
+  String get cvInvestarBackOfficeTitle => '인베스타 백오피스';
 
   @override
-  String get cvSbl8 => 'Throttle, Debouncer 기법들을 적용하여 불필요한 중복요청을 방지하도록 구현했습니다.';
+  String get cvInvestarBackOfficeSubtitle => 'SBL APP의 기술들을 베이스로 하여 Flutter web으로 동작하는 백오피스를 개발했습니다. 100% 기여했습니다.';
 
   @override
-  String get cvInvestarBackOffice1 => 'SBL APP의 기술들을 베이스로 하여 Flutter web으로 동작하는 백오피스를 개발했습니다. 100% 기여했습니다.';
+  String get cvInvestarBackOfficeContent => 'IOS 심사 통과를 위해 커뮤니티 게시글을 관리하는 기능에 집중하여 개발했습니다.';
 
   @override
-  String get cvInvestarBackOffice2 => 'IOS 심사 통과를 위해 커뮤니티 게시글을 관리하는 기능에 집중하여 개발했습니다.';
+  String get cvFireAntTitle => '불개미';
 
   @override
-  String get cvFireAnt1 => 'SBL APP 플랫폼을 베이스로하여 개발했습니다. 기존 구현 페이지들은 공매도 탭으로 이동시키고 새로운 기능의 앱으로 전환했습니다. 100% 기여했습니다.';
+  String get cvFireAntSubtitle => 'SBL APP 플랫폼을 베이스로하여 개발했습니다. 기존 구현 페이지들은 공매도 탭으로 이동시키고 새로운 기능의 앱으로 전환했습니다. 100% 기여했습니다.';
 
   @override
-  String get cvFireAnt2 => 'Figma에 정의된 사양에 맞게 일반화한 공통 위젯을 개발했습니다. 특히 List 컴포넌트들을 leading, content, trailing 형태로 세분화하여 일반화 했습니다.';
+  String get cvFireAntContent1 => 'Figma에 정의된 사양에 맞게 일반화한 공통 위젯을 개발했습니다. 특히 List 컴포넌트들을 leading, content, trailing 형태로 세분화하여 일반화 했습니다.';
 
   @override
-  String get cvFireAnt3 => '아이콘, 리스트 타일 등 터치 가능한 영역 터치 시 애니메이션 효과를 주기 위해 래핑 위젯 CustomAnimatedInkWell을 개발했습니다.';
+  String get cvFireAntContent2 => '아이콘, 리스트 타일 등 터치 가능한 영역 터치 시 애니메이션 효과를 주기 위해 래핑 위젯 CustomAnimatedInkWell을 개발했습니다.';
 
   @override
-  String get cvFireAnt4 => 'NestedScrollView를 이용해 스크롤 시 바텀내비게이션바와 앱바가 숨겨지는 기능을 개발했습니다.';
+  String get cvFireAntContent3 => 'NestedScrollView를 이용해 스크롤 시 바텀내비게이션바와 앱바가 숨겨지는 기능을 개발했습니다.';
 
   @override
-  String get cvFireAnt5 => 'ReorderableListView와 Dismissible을 결합해 밀었을 때 리스트 삭제와 길게 눌렀을 때 리스트 순서 변경이 한 화면에서 동시에 가능하도록 개발했습니다.';
+  String get cvFireAntContent4 => 'ReorderableListView와 Dismissible을 결합해 밀었을 때 리스트 삭제와 길게 눌렀을 때 리스트 순서 변경이 한 화면에서 동시에 가능하도록 개발했습니다.';
 
   @override
-  String get cvFireAnt6 => 'Local Database 라이브러리를 적용하여 앱 구동시 공매도 가능한 전체 종목을 앱에 저장하여 사용할 수 있도록 개발했습니다.';
+  String get cvFireAntContent5 => 'Local Database 라이브러리를 적용하여 앱 구동시 공매도 가능한 전체 종목을 앱에 저장하여 사용할 수 있도록 개발했습니다.';
 
   @override
-  String get cvFireAnt7 => '테마 모드에 Riverpod을 적용하여 앱 재실행 없이 라이트모드, 다크모드 전환이 가능하도록 개발했습니다.';
+  String get cvFireAntContent6 => '테마 모드에 Riverpod을 적용하여 앱 재실행 없이 라이트모드, 다크모드 전환이 가능하도록 개발했습니다.';
 
   @override
-  String get cvFireAnt8 => '구글 스프레드 시트와 Flutter localization 라이브러리를 활용하여 앱 내 언어를 일괄 관리 및 언어 변경 시 앱 종료 없이 전환 가능하도록 개발했습니다.';
+  String get cvFireAntContent7 => '구글 스프레드 시트와 Flutter localization 라이브러리를 활용하여 앱 내 언어를 일괄 관리 및 언어 변경 시 앱 종료 없이 전환 가능하도록 개발했습니다.';
 
   @override
-  String get cvFireAnt9 => 'AOS 뒤로가기 버튼과 같이 모든 페이지에 필요한 기능을 일괄적으로 구현할 수 있도록 DefaultLayout 위젯을 개발했습니다.';
+  String get cvFireAntContent8 => 'AOS 뒤로가기 버튼과 같이 모든 페이지에 필요한 기능을 일괄적으로 구현할 수 있도록 DefaultLayout 위젯을 개발했습니다.';
 
   @override
-  String get cvFireAnt10 => '종목 검색 화면에서 종목을 검색할 때 매치되는 텍스트에 맞게 하이라이트가 나타나는 기능을 개발했습니다.';
+  String get cvFireAntContent9 => '종목 검색 화면에서 종목을 검색할 때 매치되는 텍스트에 맞게 하이라이트가 나타나는 기능을 개발했습니다.';
 
   @override
-  String get cvFireAnt11 => '앱 내에서 사용하는 라인차트를 표현하기 위해 차트 위젯 일반화 했습니다.';
+  String get cvFireAntContent10 => '앱 내에서 사용하는 라인차트를 표현하기 위해 차트 위젯 일반화 했습니다.';
 
   @override
-  String get cvFireAnt12 => 'API 요청, 응답, 에러 발생 시 쉽게 확인할 수 있도록 로깅작업을 했습니다.';
+  String get cvFireAntContent11 => 'API 요청, 응답, 에러 발생 시 쉽게 확인할 수 있도록 로깅작업을 했습니다.';
 
   @override
-  String get cvFireAnt13 => '앱 내 사용 이미지 애셋의 코드를 자동 생성할 수 있도록 개발했습니다.';
+  String get cvFireAntContent12 => '앱 내 사용 이미지 애셋의 코드를 자동 생성할 수 있도록 개발했습니다.';
 
   @override
-  String get cvFireAnt14 => '데이터 요청과 관련된 위젯의 경우 로딩, 에러, 빈케이스, 정상케이스를 명시적으로 정의하도록 개발했습니다.';
+  String get cvFireAntContent13 => '데이터 요청과 관련된 위젯의 경우 로딩, 에러, 빈케이스, 정상케이스를 명시적으로 정의하도록 개발했습니다.';
 
   @override
-  String get cvFireAnt15 => 'Firebase Push notification과 Local notification을 적용했습니다.';
+  String get cvFireAntContent14 => 'Firebase Push notification과 Local notification을 적용했습니다.';
 
   @override
-  String get cvFireAnt16 => 'Widgetbook을 적용하여 앱 테스트 배포 전 웹에서 먼저 확인할 수 있도록 개발했습니다.';
+  String get cvFireAntContent15 => 'Widgetbook을 적용하여 앱 테스트 배포 전 웹에서 먼저 확인할 수 있도록 개발했습니다.';
 
   @override
-  String get cvFireAnt17 => '말풍선 UI를 표현하기 위해 Flutter 내 CustomClipper 기능을 이용해 직접 좌표를 계산하여 개발했습니다.';
+  String get cvFireAntContent16 => '말풍선 UI를 표현하기 위해 Flutter 내 CustomClipper 기능을 이용해 직접 좌표를 계산하여 개발했습니다.';
 
   @override
-  String get cvHectoFinancial1 => '헥토 파이낸셜';
+  String get cvHectoFinancialTitle => '헥토 파이낸셜';
 
   @override
-  String get cvHectoFinancial2 => '지자체 세금 가상계좌 납부 서비스 개발 및 유지보수를 했습니다.';
+  String get cvHectoFinancialSubtitle => '백엔드 개발자로 입사해 약 9개월간 지자체 세금 가상계좌 납부 서비스 유지보수 업무를 담당했습니다. 약 70%의 지자체가 이 솔루션을 이용했습니다. 해당 솔루션이 설치된 서버가 지자체 내부망에 있었기 때문에 보안점검, 로그정리, DB 인덱스 재생성, 노후 서버 교체 등의 작업을 위해 지자체 출장을 주기적으로 다녔습니다. 또한 지방세 납부가 몰리는 시기의 경우 지자체의 원활한 수납처리를 위해 지원 작업도 병행했습니다. 뿐만아니라 세입세출외현금 수납 솔루션의 경우 새로운 사업으로써 신규 서버 도입, 설치 및 교육도 진행했습니다.';
 
   @override
-  String get cvHectoFinancial3 => '지자체에 납품한 가상계좌 서버의 보안 점검 및 노후 서버 교체작업을 했습니다.';
+  String get cvHectoFinancialContent1 => '지자체 세금 가상계좌 납부 서비스 개발 및 유지보수를 했습니다.';
 
   @override
-  String get cvHectoFinancial4 => '지자체에 납품한 가상계좌 서버에 신규 서비스 설치 및 공무원 교육을 진행했습니다.';
+  String get cvHectoFinancialContent2 => '지자체에 납품한 가상계좌 서버의 보안 점검 및 노후 서버 교체작업을 했습니다.';
 
   @override
-  String get cvHectoFinancial5 => '가상계좌 납부 서비스 관련 전화 CS를 응대했습니다.';
+  String get cvHectoFinancialContent3 => '지자체에 납품한 가상계좌 서버에 신규 서비스 설치 및 공무원 교육을 진행했습니다.';
 
   @override
-  String get cvUniversity1 => '고려대학교';
+  String get cvHectoFinancialContent4 => '가상계좌 납부 서비스 관련 전화 CS를 응대했습니다.';
 
   @override
-  String get cvUniversity2 => '일반대학원 메카트로닉스 전공 (석사 중퇴)';
+  String get cvHectoFinancialContent5 => '약 10년 동안의 히스토리를 정리하여 통합 업무 가이드 문서를 컨플루언스로 작성했습니다.';
 
   @override
-  String get cvUniversity3 => '과학기술대학 제어계측공학 전공 (학사 졸업)';
+  String get cvWoowaTitle => '우아한 테크코스 프리코스(코틀린)';
+
+  @override
+  String get cvWoowaSubtitle => '코틀린에 익숙해지기 위한 과정으로 4개의 토이 프로젝트를 특정 조건(메서드 줄 수, 메서드 파라미터 수 등)에 맞춰 구현합니다. 추가적으로 구현한 메서드에 대한 테스트 코드를 작성하여 해당 메서드가 원하는 결과값을 도출하는지 확인합니다. 해당 과정은 직접적인 교육이 목적이 아니기 때문에 가이드라인만 제시하고 각 토이 프로젝트의 최종 테스트 코드만 통과하면 구현 방식에는 제한이 없습니다. 따라서 저는 해당 가이드라인을 참고하여 TDD를 연습하는 것에 집중했습니다.';
+
+  @override
+  String get cvItAcademyTitle => '자바 ORM 기반 응용SW 개발자';
+
+  @override
+  String get cvItAcademySubtitle => '대학원 중퇴 후 앞으로 무엇을 할지 고민을 했습니다. 대학교 재학 당시 재밌게 배웠던 프로그래밍 언어에 제가 알던 임베디드 이외에 웹 개발이라는 분야가 있다는 것을 알게되어 약 2개월 간의 리서치 후 백엔드 개발자를 목표로  JAVA와 Spring framwork에 대해 배우는 수업 중 가장 빠르게 시작하는 과정에 등록했습니다. 해당 과정에서 웹 개발에 필요한 많은 기초 지식을 배웠지만 최종 빌드 및 배포에 대해선 배우지 못했습니다. 그래서 개인적으로 공부하여 라즈베리파이, 우분투 서버, 톰캣, 젠킨스로 빌드 및 배포 서버를 구성하여 실제 배포까지 진행했고 이를 공유기의 포트포워딩과 DDNS를 통해 실제 사이트처럼 도메인을 통해 외부에서 접근할 수 있는 것까지 완성했습니다.';
+
+  @override
+  String get cvItAcademyContent1 => '수업에서 배운 것: Java, Spring Framework, Sql, Javascript, JSP, jQuery';
+
+  @override
+  String get cvItAcademyContent2 => '개인적으로 학습한 것: Build & Deployment, Version Control (Git), Data Structure, Algorithms';
+
+  @override
+  String get cvGraduateSchoolTitle => '고려대학교 일반대학원 - 메카트로닉스 전공 (석사 중퇴)';
+
+  @override
+  String get cvGraduateSchoolSubtitle => '학점: 3.83/4.5';
+
+  @override
+  String get cvGraduateSchoolContent1 => '주요 수강 과목: 응용수학, 제어공학특론, 확률시스템공학연구 등';
+
+  @override
+  String get cvGraduateSchoolContent2 => '주요 연구 과제: 동물 뼈 내부의 미세한 공극에서 유체가 흐를 경우 유체의 상호작용을 시뮬레이션, 인간 뼈에 미세 마이크로 컴퓨터를 이식해 골다공증을 치료할 수 있는가에 관한 연구';
+
+  @override
+  String get cvUniversityTitle => '고려대학교 - 제어계측공학 전공 (학사 졸업)';
+
+  @override
+  String get cvUniversitySubtitle => '학점: 3.5/4.5 (전공학점: 3.81/4.5)';
+
+  @override
+  String get cvUniversityContent1 => '주요 수강 과목: 메카트로닉스, 고급임베디드시스템활용, 유공압제어, 전자회로, 자동제어, 마이크로프로세서, 동역학, 생체공학개론, 컴퓨터언어, 고체역학, 열유체역학, 공업수학';
+
+  @override
+  String get cvUniversityContent2 => '졸업 작품: Unity를 이용한 게임 개발 및 대응하는 컨트롤러 제작';
+
+  @override
+  String get cvMoneytoringTitle => '머니터링';
+
+  @override
+  String get cvMoneytoringSubtitle => '계열사 퀀팃의 신규 프로젝트 머니터링을 지원하기 위해 약 4개월 간 파견 중에 있습니다. 해당 프로젝트는 Next.js를 사용하는 프로젝트로 이를 위해 TypeScript, Next.js, Recoil, Relay 등을 공부하여 현재 여러 기능 및 페이지를 개발하고 있습니다.';
+
+  @override
+  String get cvMoneytoringContent1 => '회원가입 후 나타나는 온보딩 화면 개선 버전을 개발했습니다. 개선 버전에 맞게 기존 API를 신규 API로 교체하고 바뀐 데이터 타입에 맞게 구조를 변경했습니다. 기존에는 온보딩 각 스텝 마다 데이터를 처리했기 때문에 useState로 각 스텝 단위에서 상태를 관리했지만 개선 버전에서는 모든 스텝을 연결해 마지막 스텝에서 데이터를 처리하도록 바뀌어서 Recoil을 이용해 상태관리를 통합해서 할 수 있도록 수정했습니다.';
+
+  @override
+  String get cvMoneytoringContent2 => '종목 상세 페이지의 매매동향 모달을 개발했습니다. 해당 모달은 기관, 외국인, 개인의 상장 이후 모든 일일 거래량 및 거래 대금을 보여주는 모달입니다. Relay를 이용해 세로 무한스크롤을 적용했고 가로 스크롤 시 날짜 column 옆에 음영 효과가 나타나도록 했습니다.';
+
+  @override
+  String get cvMoneytoringContent3 => '밸류체인, 알림 관리자 화면을 개발했습니다. 해당 기능들은 베트남 외주팀과 협업하여 작업했습니다.';
+
+  @override
+  String get cvMoneytoringContent4 => '푸터 등 간단한 UI 개발 및 베트남 외주에 필요한 특정 라이브러리들을 선정하는 작업을 했습니다.';
 }

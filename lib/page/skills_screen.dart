@@ -20,7 +20,7 @@ class _SkillsScreenState extends State<SkillsScreen> {
     if (key.currentContext == null) return;
     Scrollable.ensureVisible(
       key.currentContext!,
-      duration: Duration(milliseconds: 500),
+      duration: const Duration(milliseconds: 500),
       curve: Curves.decelerate,
     );
   }
@@ -241,7 +241,7 @@ class _SkillsScreenState extends State<SkillsScreen> {
                     context.locale!.skillsLibrarySQFLite,
                     style: CustomTextTheme.boldTextStyle(fontSize: 32),
                   ),
-                  Text(
+                  const Text(
                     'Flutter Gen',
                   ),
                   Text(
