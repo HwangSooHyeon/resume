@@ -39,6 +39,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get sendingEmail => 'Sending-email';
 
   @override
+  String get readMore => 'Read more';
+
+  @override
   String get homeTitle1 => 'Developing Cross-platform app';
 
   @override
@@ -291,209 +294,266 @@ class AppLocalizationsEn extends AppLocalizations {
   String get skillsLanguage => 'Languages I can use';
 
   @override
-  String get cvDirectional => 'Directional';
+  String get cvDirectionalTitle => 'Directional';
 
   @override
-  String get cvInvestar => 'Investar';
+  String get cvDirectionalSubtitle => 'I joined as a Flutter Developer and participated in four Flutter-based projects over approximately two years. This role provided extensive experience, ranging from initial development and internal testing to actively addressing feedback from iOS and Android app store reviews, including feature updates and continuous improvements. Currently, all Flutter projects have concluded, and I have been assigned temporarily to support frontend web development on “Moneytoring”, a project by our affiliate, Quantit, preparing for an official release. In preparation for this new role, I have proactively studied TypeScript, Next.js, Recoil, and Relay, actively contributing to various feature developments. Below is a summary of projects I participated in. For further details, please click the project titles listed in the timeline.';
 
   @override
-  String get cvInvestar1 => 'When I joined the company, the service was already in live operation. I contributed approximately 60% of the overall development tasks, including developing new features and providing ongoing maintenance.';
+  String get cvDirectionalContent1 => 'Investar - Crypto Currency Information App';
 
   @override
-  String get cvInvestarDailyCoin1 => 'Daily Coin Analysis Page';
+  String get cvDirectionalContent2 => 'SBL APP - Stock Lending and Borrowing Relay App';
 
   @override
-  String get cvInvestarDailyCoin2 => 'Developed a page allowing users to check coin analysis data once per day. Upon accessing, a loading screen appears, and data is cached via providers. Depending on the data state, the page either requests new data or displays cached results.';
+  String get cvDirectionalContent3 => 'Investar Back Office - Community Administration Tool';
 
   @override
-  String get cvInvestarRisingScore1 => '30-Minute Opportunities Page';
+  String get cvDirectionalContent4 => 'Fire Ant - Stock Short Selling Information App';
 
   @override
-  String get cvInvestarRisingScore2 => 'Built a page that updates a list of coins with high growth potential every 30 minutes. The server provides a validity period for current data, displayed as a countdown timer decreasing each second. When the timer reaches zero, the page indicates that data has expired and continuously requests updated validity periods from the server. Once new validity is received, fresh data is fetched and cached via providers.';
+  String get cvDirectionalContent5 => 'Moneytoring - Investment Information Community';
 
   @override
-  String get cvInvestarCarousel1 => 'Home Screen Carousel Banner';
+  String get cvInvestarTitle => 'Investar';
 
   @override
-  String get cvInvestarCarousel2 => 'Developed a feature that initializes carousel-related page providers and caches their data during the home screen build phase. Banners are rendered conditionally, based on whether relevant cached data is available.';
+  String get cvInvestarSubtitle => 'When I joined the company, the service was already in live operation. I contributed approximately 60% of the overall development tasks, including developing new features and providing ongoing maintenance.';
 
   @override
-  String get cvInvestarWhale1 => 'Information Tab - Whale Page';
+  String get cvInvestarDailyCoinSubtitle => 'Daily Coin Analysis Page';
 
   @override
-  String get cvInvestarWhale2 => 'Developed a page displaying key on-chain data of major cryptocurrencies. Users can tap on cryptocurrency cards to navigate to detailed screens containing charts. Additionally implemented a search feature for “Coins Frequently Bought by Whales” accessible via an in-page banner.';
+  String get cvInvestarDailyCoinContent => 'Developed a page allowing users to check coin analysis data once per day. Upon accessing, a loading screen appears, and data is cached via providers. Depending on the data state, the page either requests new data or displays cached results.';
 
   @override
-  String get cvInvestarFavorite1 => 'Favorites Tab - Favorite Coins Page Improvement';
+  String get cvInvestarRisingScoreSubtitle => '30-Minute Opportunities Page';
 
   @override
-  String get cvInvestarFavorite2 => 'Initially, the page only displayed coins in the order users added them to their favorites. Enhanced UX by implementing sorting logic. Considering users typically have limited favorite coins, I optimized performance by caching all data upfront in a provider and handling sorting logic within the frontend.';
+  String get cvInvestarRisingScoreContent => 'Built a page that updates a list of coins with high growth potential every 30 minutes. The server provides a validity period for current data, displayed as a countdown timer decreasing each second. When the timer reaches zero, the page indicates that data has expired and continuously requests updated validity periods from the server. Once new validity is received, fresh data is fetched and cached via providers.';
 
   @override
-  String get cvInvestarCommunity1 => 'Community Tab - TokTok Page Improvement';
+  String get cvInvestarCarouselSubtitle => 'Home Screen Carousel Banner';
 
   @override
-  String get cvInvestarCommunity2 => 'Enhanced an existing text-only feature by enabling image uploads. Additionally, developed a backend admin (back-office) interface to support iOS app approval and community management.';
+  String get cvInvestarCarouselContent => 'Developed a feature that initializes carousel-related page providers and caches their data during the home screen build phase. Banners are rendered conditionally, based on whether relevant cached data is available.';
 
   @override
-  String get cvInvestarMy1 => 'My Tab - Comprehensive Improvement';
+  String get cvInvestarWhaleSubtitle => 'Information Tab - Whale Page';
 
   @override
-  String get cvInvestarMy2 => 'Consolidated previously fragmented GraphQL queries for the My Page into a unified query, ensuring consistent data management. Developed a new adaptive UI enabling users to visually check their information, a feature that previously did not exist.';
+  String get cvInvestarWhaleContent => 'Developed a page displaying key on-chain data of major cryptocurrencies. Users can tap on cryptocurrency cards to navigate to detailed screens containing charts. Additionally implemented a search feature for “Coins Frequently Bought by Whales” accessible via an in-page banner.';
 
   @override
-  String get cvInvestarSearch1 => 'Coin Search Page Improvement';
+  String get cvInvestarFavoriteSubtitle => 'Favorites Tab - Favorite Coins Page Improvement';
 
   @override
-  String get cvInvestarSearch2 => 'Improved the existing search functionality by enhancing the UI and integrating sorting options.';
+  String get cvInvestarFavoriteContent => 'Initially, the page only displayed coins in the order users added them to their favorites. Enhanced UX by implementing sorting logic. Considering users typically have limited favorite coins, I optimized performance by caching all data upfront in a provider and handling sorting logic within the frontend.';
 
   @override
-  String get cvInvestarAll1 => 'Common Tasks';
+  String get cvInvestarCommunitySubtitle => 'Community Tab - TokTok Page Improvement';
 
   @override
-  String get cvInvestarAll2 => 'Applied a new adaptive UI across the application.';
+  String get cvInvestarCommunityContent => 'Enhanced an existing text-only feature by enabling image uploads. Additionally, developed a backend admin (back-office) interface to support iOS app approval and community management.';
 
   @override
-  String get cvInvestarAll3 => 'Implemented Korean and English localization to support global launch.';
+  String get cvInvestarMySubtitle => 'My Tab - Comprehensive Improvement';
 
   @override
-  String get cvInvestarAll4 => 'Conducted comprehensive UI redesign in preparation for global release.';
+  String get cvInvestarMyContent => 'Consolidated previously fragmented GraphQL queries for the My Page into a unified query, ensuring consistent data management. Developed a new adaptive UI enabling users to visually check their information, a feature that previously did not exist.';
 
   @override
-  String get cvInvestarAll5 => 'Automated and generalized previously manual tasks such as JSON serialization and creation of common widgets.';
+  String get cvInvestarSearchSubtitle => 'Coin Search Page Improvement';
 
   @override
-  String get cvSbl => 'SBL APP';
+  String get cvInvestarSearchContent => 'Improved the existing search functionality by enhancing the UI and integrating sorting options.';
 
   @override
-  String get cvSbl1 => 'Applied libraries and technologies not used in the previous app, contributing approximately 90% to the overall development.';
+  String get cvInvestarCommonSubtitle => 'Common Tasks';
 
   @override
-  String get cvSbl2 => 'Utilized the latest Flutter libraries like Riverpod, Retrofit, and Go Router.';
+  String get cvInvestarCommonContent1 => 'Applied a new adaptive UI across the application.';
 
   @override
-  String get cvSbl3 => 'Actively used code-generation libraries.';
+  String get cvInvestarCommonContent2 => 'Implemented Korean and English localization to support global launch.';
 
   @override
-  String get cvSbl4 => 'Applied the MVVM architectural pattern.';
+  String get cvInvestarCommonContent3 => 'Conducted comprehensive UI redesign in preparation for global release.';
 
   @override
-  String get cvSbl5 => 'Developed a redirection feature based on login state.';
+  String get cvInvestarCommonContent4 => 'Automated and generalized previously manual tasks such as JSON serialization and creation of common widgets.';
 
   @override
-  String get cvSbl6 => 'Implemented Custom Interceptor using the Dio library to handle requests, responses, and errors effectively.';
+  String get cvSblTitle => 'SBL APP';
 
   @override
-  String get cvSbl7 => 'Managed state using Riverpod, ensuring proper instance maintenance or disposal based on context.';
+  String get cvSblSubtitle => 'Applied libraries and technologies not used in the previous app, contributing approximately 90% to the overall development.';
 
   @override
-  String get cvSbl8 => 'Defined generic models using Freezed and generalized infinite scroll pagination screens.';
+  String get cvSblContent1 => 'Utilized the latest Flutter libraries like Riverpod, Retrofit, and Go Router.';
 
   @override
-  String get cvSbl9 => 'Prevented redundant requests by applying Throttle and Debouncer techniques.';
+  String get cvSblContent2 => 'Actively used code-generation libraries.';
 
   @override
-  String get cvInvestarBackOffice => 'Investar Back Office';
+  String get cvSblContent3 => 'Applied the MVVM architectural pattern.';
 
   @override
-  String get cvInvestarBackOffice1 => 'Developed a Flutter web-based back office using SBL app technology (100% contribution).';
+  String get cvSblContent4 => 'Developed a redirection feature based on login state.';
 
   @override
-  String get cvInvestarBackOffice2 => 'Focused on community post management for iOS review approval.';
+  String get cvSblContent5 => 'Implemented Custom Interceptor using the Dio library to handle requests, responses, and errors effectively.';
 
   @override
-  String get cvFireAnt => 'Fire Ant';
+  String get cvSblContent6 => 'Managed state using Riverpod, ensuring proper instance maintenance or disposal based on context.';
 
   @override
-  String get cvFireAnt1 => 'Developed using the SBL APP platform as a base. Moved the existing implementation pages to the Short Sale tab and converted them into a new functional app. (100% contribution).';
+  String get cvSblContent7 => 'Defined generic models using Freezed and generalized infinite scroll pagination screens.';
 
   @override
-  String get cvFireAnt2 => 'Developed generalized common widgets as per Figma specifications, segmenting list components into leading, content, and trailing formats.';
+  String get cvSblContent8 => 'Prevented redundant requests by applying Throttle and Debouncer techniques.';
 
   @override
-  String get cvFireAnt3 => 'Developed a CustomAnimatedInkWell widget to add animated touch effects to tappable areas like icons and list tiles.';
+  String get cvInvestarBackOfficeTitle => 'Investar Back Office';
 
   @override
-  String get cvFireAnt4 => 'Implemented hiding of the bottom navigation bar and app bar during scrolling using NestedScrollView.';
+  String get cvInvestarBackOfficeSubtitle => 'Developed a Flutter web-based back office using SBL app technology (100% contribution).';
 
   @override
-  String get cvFireAnt5 => 'Combined ReorderableListView and Dismissible widgets to allow list deletion by swiping and reordering by long-pressing within the same screen.';
+  String get cvInvestarBackOfficeContent => 'Focused on community post management for iOS review approval.';
 
   @override
-  String get cvFireAnt6 => 'Applied a local database library to store all short-selling items at app startup.';
+  String get cvFireAntTitle => 'Fire Ant';
 
   @override
-  String get cvFireAnt7 => 'Enabled light/dark mode switching without restarting the app using Riverpod for theme management.';
+  String get cvFireAntSubtitle => 'Developed using the SBL APP platform as a base. Moved the existing implementation pages to the Short Sale tab and converted them into a new functional app. (100% contribution).';
 
   @override
-  String get cvFireAnt8 => 'Used Google Sheets and Flutter localization libraries to manage app languages dynamically, enabling real-time switching without restarting the app.';
+  String get cvFireAntContent1 => 'Developed generalized common widgets as per Figma specifications, segmenting list components into leading, content, and trailing formats.';
 
   @override
-  String get cvFireAnt9 => 'Developed a DefaultLayout widget for implementing commonly required functionalities across all pages, such as the Android back button.';
+  String get cvFireAntContent2 => 'Developed a CustomAnimatedInkWell widget to add animated touch effects to tappable areas like icons and list tiles.';
 
   @override
-  String get cvFireAnt10 => 'Added a highlight feature for matched text when searching items.';
+  String get cvFireAntContent3 => 'Implemented hiding of the bottom navigation bar and app bar during scrolling using NestedScrollView.';
 
   @override
-  String get cvFireAnt11 => 'Generalized line chart widgets for app usage.';
+  String get cvFireAntContent4 => 'Combined ReorderableListView and Dismissible widgets to allow list deletion by swiping and reordering by long-pressing within the same screen.';
 
   @override
-  String get cvFireAnt12 => 'Performed logging tasks to easily verify API requests, responses, and errors.';
+  String get cvFireAntContent5 => 'Applied a local database library to store all short-selling items at app startup.';
 
   @override
-  String get cvFireAnt13 => 'Developed an automatic asset code generation feature for app images.';
+  String get cvFireAntContent6 => 'Enabled light/dark mode switching without restarting the app using Riverpod for theme management.';
 
   @override
-  String get cvFireAnt14 => 'Explicitly defined loading, error, empty, and success cases for data-request-related widgets.';
+  String get cvFireAntContent7 => 'Used Google Sheets and Flutter localization libraries to manage app languages dynamically, enabling real-time switching without restarting the app.';
 
   @override
-  String get cvFireAnt15 => 'Applied Firebase Push Notification and Local Notification functionalities.';
+  String get cvFireAntContent8 => 'Developed a DefaultLayout widget for implementing commonly required functionalities across all pages, such as the Android back button.';
 
   @override
-  String get cvFireAnt16 => 'Integrated Widgetbook to test and preview UI on the web before deployment.';
+  String get cvFireAntContent9 => 'Added a highlight feature for matched text when searching items.';
 
   @override
-  String get cvFireAnt17 => 'Developed a balloon-style UI using CustomClipper with calculated coordinates.';
+  String get cvFireAntContent10 => 'Generalized line chart widgets for app usage.';
 
   @override
-  String get cvHectoFinancial => 'Hecto Financial';
+  String get cvFireAntContent11 => 'Performed logging tasks to easily verify API requests, responses, and errors.';
 
   @override
-  String get cvHectoFinancial1 => 'Developed and maintained a municipal tax virtual account payment service.';
+  String get cvFireAntContent12 => 'Developed an automatic asset code generation feature for app images.';
 
   @override
-  String get cvHectoFinancial2 => 'Security checks on virtual account servers and replacement of aging servers.';
+  String get cvFireAntContent13 => 'Explicitly defined loading, error, empty, and success cases for data-request-related widgets.';
 
   @override
-  String get cvHectoFinancial3 => 'Installed new services on virtual account servers and trained government officials.';
+  String get cvFireAntContent14 => 'Applied Firebase Push Notification and Local Notification functionalities.';
 
   @override
-  String get cvHectoFinancial4 => 'Answered phone CS for virtual account payment service.';
+  String get cvFireAntContent15 => 'Integrated Widgetbook to test and preview UI on the web before deployment.';
 
   @override
-  String get cvHectoFinancial5 => 'Organized about 10 years of history into an integrated operations guide document';
+  String get cvFireAntContent16 => 'Developed a balloon-style UI using CustomClipper with calculated coordinates.';
 
   @override
-  String get cvEducation => 'Education';
+  String get cvHectoFinancialTitle => 'Hecto Financial';
 
   @override
-  String get cvEducationBootCamp => 'Woowacourse pre-course(Kotlin)';
+  String get cvHectoFinancialSubtitle => 'Joined as a backend developer, responsible for maintaining a virtual account-based municipal tax payment solution for approximately 9 months. This solution was adopted by around 70% of local governments nationwide. Due to the servers being installed within the local governments’ internal networks, I regularly traveled to various municipalities to perform security inspections, log management, database index rebuilding, and replacement of outdated servers. Additionally, during peak municipal tax payment periods, I provided technical support to ensure smooth payment processing. I also participated actively in launching a new project related to a cash receipt and disbursement management solution, overseeing server procurement, installation, and conducting training sessions.';
 
   @override
-  String get cvEducationBootCamp1 => 'To familiariz with Kotlin, participants implement four toy projects with specific requirements (number of method lines, number of method parameters, etc.). Additionally, participants write test code for the implemented methods to verify that they produce the desired results. Since the course is not intended to be a direct training, it only provides guidelines and there are no restrictions on how paticipants implement it as long as the final test code for each toy project passes, so I focused on practicing TDD using those guidelines as a reference.';
+  String get cvHectoFinancialContent1 => 'Developed and maintained a municipal tax virtual account payment service.';
 
   @override
-  String get cvEducationUniversity => 'Korea University';
+  String get cvHectoFinancialContent2 => 'Security checks on virtual account servers and replacement of aging servers.';
 
   @override
-  String get cvEducationUniversity1 => 'Mechatronics Major (Master\'s Dropout), General Graduate School';
+  String get cvHectoFinancialContent3 => 'Installed new services on virtual account servers and trained government officials.';
 
   @override
-  String get cvEducationUniversity2 => 'GPA: 3.83/4.5';
+  String get cvHectoFinancialContent4 => 'Answered phone CS for virtual account payment service.';
 
   @override
-  String get cvEducationUniversity3 => 'Control and Instrumentation Engineering major (B.S.), College of Science and Technology';
+  String get cvHectoFinancialContent5 => 'Organized about 10 years of history into an integrated operations guide document';
 
   @override
-  String get cvEducationUniversity4 => 'GPA: 3.5/4.5 (Major GPA: 3.81/4.5)';
+  String get cvWoowaTitle => 'Woowacourse pre-course(Kotlin)';
+
+  @override
+  String get cvWoowaSubtitle => 'To familiariz with Kotlin, participants implement four toy projects with specific requirements (number of method lines, number of method parameters, etc.). Additionally, participants write test code for the implemented methods to verify that they produce the desired results. Since the course is not intended to be a direct training, it only provides guidelines and there are no restrictions on how paticipants implement it as long as the final test code for each toy project passes, so I focused on practicing TDD using those guidelines as a reference.';
+
+  @override
+  String get cvItAcademyTitle => 'Java ORM-based Application Software Developer';
+
+  @override
+  String get cvItAcademySubtitle => 'After leaving graduate school, I took some time to consider my future career path. While reflecting, I recalled how much I enjoyed programming during my undergraduate studies. Upon discovering the field of web development (distinct from embedded systems, which I was previously familiar with), I conducted approximately two months of research before deciding to pursue backend development. I enrolled in an accelerated training course focused on Java and the Spring Framework, through which I gained a solid foundational knowledge of web application development. However, the course did not cover the deployment and final build processes. To bridge this gap, I independently studied and successfully built and deployed applications using technologies including Raspberry Pi, Ubuntu Server, Tomcat, and Jenkins. Additionally, I configured port-forwarding and DDNS to enable external domain-based access, effectively simulating a fully operational website accessible from outside networks.';
+
+  @override
+  String get cvItAcademyContent1 => 'Skills Acquired through Coursework: Java, Spring Framework, SQL, JavaScript, JSP, jQuery';
+
+  @override
+  String get cvItAcademyContent2 => 'Independently Learned Skills: Build & Deployment Processes, Version Control (Git), Data Structures, Algorithms';
+
+  @override
+  String get cvGraduateSchoolTitle => 'Korea University, Graduate School - Master’s Program in Mechatronics (Incomplete)';
+
+  @override
+  String get cvGraduateSchoolSubtitle => 'GPA: 3.83/4.5';
+
+  @override
+  String get cvGraduateSchoolContent1 => 'Relevant Courses: Applied Mathematics, Advanced Control Engineering, Probabilistic Systems Engineering';
+
+  @override
+  String get cvGraduateSchoolContent2 => 'Research Projects: Simulation of fluid interactions within microscopic pores of animal bones, Investigating feasibility of osteoporosis treatment through microcomputer implantation in human bones';
+
+  @override
+  String get cvUniversityTitle => 'Korea University - Bachelor of Engineering in Control and Instrumentation Engineering';
+
+  @override
+  String get cvUniversitySubtitle => 'GPA: 3.5/4.5 (Major GPA: 3.81/4.5)';
+
+  @override
+  String get cvUniversityContent1 => 'Relevant Courses: Mechatronics, Advanced Embedded Systems, Pneumatic and Hydraulic Control, Electronic Circuits, Automatic Control, Microprocessor Systems, Dynamics, Introduction to Bioengineering, Programming Languages, Solid Mechanics, Thermo-Fluid Mechanics, Engineering Mathematics';
+
+  @override
+  String get cvUniversityContent2 => 'Graduation Project: Developed a video game using Unity along with a corresponding custom-built hardware controller.';
+
+  @override
+  String get cvMoneytoringTitle => 'Moneytoring';
+
+  @override
+  String get cvMoneytoringSubtitle => 'Currently dispatched for approximately 4 months to support “Moneytoring,” a new project by our affiliate, Quantit. As this project is built on Next.js, I proactively studied technologies including TypeScript, Next.js, Recoil, and Relay, contributing actively to the development of various features and pages.';
+
+  @override
+  String get cvMoneytoringContent1 => 'Developed an improved version of the onboarding screens displayed after user registration. Integrated new APIs replacing legacy endpoints and adjusted data structures accordingly. Transitioned state management from individual useState hooks per onboarding step to a unified solution using Recoil, allowing centralized state handling across all onboarding steps.';
+
+  @override
+  String get cvMoneytoringContent2 => 'Created a modal displaying daily trading volumes and transaction values for institutions, foreign investors, and individuals since IPO. Implemented infinite vertical scrolling functionality using Relay, alongside horizontal scrolling with visual shading effects next to date columns.';
+
+  @override
+  String get cvMoneytoringContent3 => 'Developed collaboratively in partnership with an external team based in Vietnam.';
+
+  @override
+  String get cvMoneytoringContent4 => 'Developed simple UI components including page footers. Evaluated and selected specific libraries required by the Vietnamese outsourcing team to streamline collaboration.';
 }
