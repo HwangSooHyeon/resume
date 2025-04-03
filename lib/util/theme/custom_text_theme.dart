@@ -13,33 +13,37 @@ class CustomTextTheme {
   static TextStyle regularTextStyle({
     required double fontSize,
     double? height,
+    Color? color,
     FontWeight fontWeight = FontWeight.w400,
   }) =>
       TextStyle(
         fontSize: fontSize,
         height: height ?? getFontHeight(fontSize: fontSize),
+        color: color,
         fontWeight: fontWeight,
       );
 
   static TextStyle boldTextStyle({
     required double fontSize,
     double? height,
+    Color? color,
   }) =>
       regularTextStyle(
         fontSize: fontSize,
         height: height,
-      ).copyWith(
+        color: color,
         fontWeight: FontWeight.w700,
       );
 
   static TextStyle lightTextStyle({
     required double fontSize,
     double? height,
+    Color? color,
   }) =>
       regularTextStyle(
         fontSize: fontSize,
         height: height,
-      ).copyWith(
+        color: color,
         fontWeight: FontWeight.w300,
       );
 

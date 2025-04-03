@@ -20,7 +20,7 @@ class CustomColorScheme {
     onError: Color(0xFFFFFFFF),
   );
 
-// Dark Mode ColorScheme
+  // Dark Mode ColorScheme
   static const darkColorScheme = ColorScheme(
     brightness: Brightness.dark,
     primary: Color(0xFFD1FF59),
