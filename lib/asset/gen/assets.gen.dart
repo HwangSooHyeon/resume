@@ -100,9 +100,9 @@ class $AssetImageGen {
   AssetGenImage get imageInvestarKor8 =>
       const AssetGenImage('asset/image/image_investar_kor_8.png');
 
-  /// File path: asset/image/image_main.jpg
+  /// File path: asset/image/image_main.png
   AssetGenImage get imageMain =>
-      const AssetGenImage('asset/image/image_main.jpg');
+      const AssetGenImage('asset/image/image_main.png');
 
   /// File path: asset/image/image_sbl_app_1.png
   AssetGenImage get imageSblApp1 =>
