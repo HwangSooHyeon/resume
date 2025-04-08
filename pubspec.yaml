@@ -52,7 +52,6 @@ dependencies:
   flutter_animate: ^4.5.2
 
   collection: any
-  flutter_localizations: any
 dev_dependencies:
   flutter_test:
     sdk: flutter
