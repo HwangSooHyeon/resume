@@ -3,15 +3,14 @@ import 'package:resume/util/theme/custom_color_scheme.dart';
 import 'package:resume/util/theme/custom_text_theme.dart';
 
 class CustomTheme {
-  static const Color investarColor = Colors.yellow;
-  static const Color koreaUnivColor = Color(0xffDC143C);
-  static const Color woowaColor = Colors.lightBlue;
-  static const Color directionalColor = Colors.blueAccent;
-
   static ThemeData themeData({
     bool isDark = false,
   }) =>
       ThemeData(
+        brightness: isDark ? Brightness.dark : Brightness.light,
+        primaryColor: const Color(0xFF2BAF7E),
+        scaffoldBackgroundColor:
+            isDark ? const Color(0xFF121212) : const Color(0xFFFAFAFC),
         colorScheme: isDark
             ? CustomColorScheme.darkColorScheme
             : CustomColorScheme.lightColorScheme,
@@ -19,5 +18,16 @@ class CustomTheme {
         textTheme: CustomTextTheme.textTheme,
         hoverColor: Colors.transparent,
         useMaterial3: true,
+        appBarTheme: isDark
+            ? const AppBarTheme(
+                backgroundColor: Color(0xFF121212),
+                foregroundColor: Colors.white,
+                elevation: 0,
+              )
+            : const AppBarTheme(
+                backgroundColor: Color(0xFFFAFAFC),
+                foregroundColor: Color(0xFF1D1D1F),
+                elevation: 0,
+              ),
       );
 }
