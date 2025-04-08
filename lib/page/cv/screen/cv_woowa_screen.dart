@@ -13,7 +13,7 @@ class CvWoowaScreen extends StatelessWidget {
       subtitles: [
         DescriptionSubtitle(
           subtitle: context.locale!.cvWoowaSubtitle,
-          contents: [],
+          contents: const [],
         ),
       ],
     );
