@@ -48,31 +48,22 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeTitle2 => '준비된 플러터 개발자 황수현과 함께';
 
   @override
-  String get homeTitle3 => 'AOS, IOS 개발 및 출시를 한 번에 해결하세요';
+  String get homeTitle3 => 'AOS, IOS 개발 및 출시를 한 번에 해결하세요.';
 
   @override
   String get homeTitle4 => '황수현과 함께라면,';
 
   @override
-  String get homeTitle5 => '원하는 앱을 만들 수 있을거에요';
+  String get homeTitle5 => '원하는 앱을 만들 수 있을거에요.';
 
   @override
   String get homeInvestar1 => '인베스타';
 
   @override
-  String get homeInvestar2_1 => '암호화폐';
+  String get homeInvestar2 => '암호화폐 정보 앱';
 
   @override
-  String get homeInvestar2_2 => '정보 앱';
-
-  @override
-  String get homeInvestar3 => 'UI, UX, 로직 개선 작업을 했어요';
-
-  @override
-  String get homeInvestar4_1 => '신규 페이지 개발과';
-
-  @override
-  String get homeInvestar4_2 => '유지보수를 했어요';
+  String get homeInvestar3 => 'UI, UX, 로직 개선 작업 및 신규 페이지 개발과 유지보수를 했어요.';
 
   @override
   String get homeInvestar5 => '주요기술: GraphQL, Provider, Firebase';
@@ -81,10 +72,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeInvestarBackoffice1 => '인베스타 백오피스';
 
   @override
-  String get homeInvestarBackoffice2_1 => '커뮤니티 관리를 위해';
-
-  @override
-  String get homeInvestarBackoffice2_2 => '전체 시스템 개발을 했어요';
+  String get homeInvestarBackoffice2 => '커뮤니티 관리를 위해 전체 시스템 개발을 했어요.';
 
   @override
   String get homeInvestarBackoffice3 => '주요기술: Retrofit, Riverpod, Dio, Freezed';
@@ -93,19 +81,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeSbl1 => 'SBL APP';
 
   @override
-  String get homeSbl2_1 => '주식';
+  String get homeSbl2 => '주식 대차거래 중계 앱';
 
   @override
-  String get homeSbl2_2 => '대차거래';
-
-  @override
-  String get homeSbl2_3 => '중계 앱';
-
-  @override
-  String get homeSbl3_1 => '핵심 로직을 포함하여';
-
-  @override
-  String get homeSbl3_2 => '대부분의 기능을 개발했어요';
+  String get homeSbl3 => '핵심 로직을 포함하여 대부분의 기능을 개발했어요.';
 
   @override
   String get homeSbl4 => '주요기술: Retrofit, Riverpod, Dio, Freezed';
@@ -114,19 +93,10 @@ class AppLocalizationsKo extends AppLocalizations {
   String get homeFireAnt1 => '불개미';
 
   @override
-  String get homeFireAnt2_1 => '주식';
+  String get homeFireAnt2 => '주식 공매도 정보 앱';
 
   @override
-  String get homeFireAnt2_2 => '공매도';
-
-  @override
-  String get homeFireAnt2_3 => '정보 앱';
-
-  @override
-  String get homeFireAnt3_1 => '핵심 로직을 포함하여';
-
-  @override
-  String get homeFireAnt3_2 => '전체 기능을 개발했어요';
+  String get homeFireAnt3 => '핵심 로직을 포함하여 전체 기능을 개발했어요.';
 
   @override
   String get homeFireAnt4 => '주요기술: Optimistic Response, SQLite, Firebase';
@@ -135,7 +105,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get seeMore => '자세히 알아보기';
 
   @override
-  String get coverLetterTitle1 => '저는 열정의 힘을 믿습니다';
+  String get coverLetterTitle1 => '저는 열정의 힘을 믿습니다.';
 
   @override
   String get coverLetterTitle2 => '만약 비전공자인 제가 열정이 없었다면, 개발자의 길을 걸을 수 없었을 것입니다.';
