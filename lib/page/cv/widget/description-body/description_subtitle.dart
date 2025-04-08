@@ -37,7 +37,7 @@ class DescriptionSubtitle extends StatelessWidget {
         ),
         if (contents.isNotEmpty)
           Padding(
-            padding: EdgeInsets.only(left: 20),
+            padding: const EdgeInsets.only(left: 20),
             child: Column(
               spacing: 24,
               children: [

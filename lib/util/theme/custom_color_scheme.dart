@@ -12,8 +12,6 @@ class CustomColorScheme {
     onTertiary: Colors.white,
     error: Color(0xFFFF4C4C),
     onError: Colors.white,
-    background: Color(0xFFFAFAFC),
-    onBackground: Color(0xFF1D1D1F),
     surface: Color(0xFFFFFFFF),
     onSurface: Color(0xFF1D1D1F),
   );
@@ -29,8 +27,6 @@ class CustomColorScheme {
     onTertiary: Colors.black,
     error: Color(0xFFFF4C4C),
     onError: Colors.black,
-    background: Color(0xFF121212),
-    onBackground: Colors.white,
     surface: Color(0xFF1E1E1E),
     onSurface: Colors.white,
   );

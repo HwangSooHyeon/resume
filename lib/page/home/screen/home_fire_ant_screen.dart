@@ -6,7 +6,6 @@ import 'package:resume/page/home/widget/home_image_box_widget.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/util/function/duration.dart';
 import 'package:resume/util/theme/custom_text_theme.dart';
-import 'package:collection/collection.dart';
 import 'package:resume/widget/common/custom_text.dart';
 import 'package:resume/widget/common/scroll_aware_widget.dart';
 
@@ -32,40 +31,45 @@ class HomeFireAntScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         spacing: 30,
         children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(right: 10),
-                child: Text(
-                  context.locale!.homeFireAnt1,
-                  style: CustomTextTheme.boldTextStyle(fontSize: 48)
-                      .copyWith(color: context.colorScheme.primary),
+          ScrollAwareWidget(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(right: 10),
+                  child: Text(
+                    context.locale!.homeFireAnt1,
+                    style: CustomTextTheme.boldTextStyle(fontSize: 48)
+                        .copyWith(color: context.colorScheme.primary),
+                  ),
                 ),
-              ),
-              CustomText.bold(
-                context.locale!.homeFireAnt2,
-                fontSize: 32,
-              ),
-            ],
+                CustomText.bold(
+                  context.locale!.homeFireAnt2,
+                  fontSize: 32,
+                ),
+              ],
+            ),
           ),
-          Row(
-            children: [
-              CustomText.bold(
-                context.locale!.homeFireAnt3,
-                fontSize: 28,
-                textColor: TextColorEnum.sub,
-              ),
-            ],
+          ScrollAwareWidget(
+            delay: animationDelay(order: 0),
+            child: Row(
+              children: [
+                CustomText.bold(
+                  context.locale!.homeFireAnt3,
+                  fontSize: 28,
+                  textColor: TextColorEnum.sub,
+                ),
+              ],
+            ),
           ),
-          SizedBox(
-            width: context.width,
-            height: 700,
-            child: ScrollConfiguration(
-              behavior: ScrollConfiguration.of(context).copyWith(
-                physics: const BouncingScrollPhysics(),
-                dragDevices: {PointerDeviceKind.touch, PointerDeviceKind.mouse},
-              ),
+          ScrollConfiguration(
+            behavior: ScrollConfiguration.of(context).copyWith(
+              physics: const BouncingScrollPhysics(),
+              dragDevices: {PointerDeviceKind.touch, PointerDeviceKind.mouse},
+            ),
+            child: SizedBox(
+              width: context.width,
+              height: 700,
               child: ListView.separated(
                 clipBehavior: Clip.none,
                 scrollDirection: Axis.horizontal,

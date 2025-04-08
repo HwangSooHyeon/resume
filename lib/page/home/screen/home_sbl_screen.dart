@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:resume/asset/gen/assets.gen.dart';
 import 'package:resume/page/home/widget/home_image_box_widget.dart';

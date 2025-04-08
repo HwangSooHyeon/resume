@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:resume/asset/gen/assets.gen.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/util/theme/custom_text_theme.dart';

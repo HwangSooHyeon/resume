@@ -19,7 +19,7 @@ class DescriptionContent extends StatelessWidget {
         Container(
           width: 8,
           height: 8,
-          margin: EdgeInsets.only(top: 16),
+          margin: const EdgeInsets.only(top: 16),
           decoration: BoxDecoration(
             color: context.colorScheme.primary,
             borderRadius: BorderRadius.circular(8),
