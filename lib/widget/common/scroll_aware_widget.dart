@@ -15,26 +15,34 @@ class ScrollAwareWidget extends ConsumerStatefulWidget {
   /// * [displayOnce]: Whether to display the animation only once.
   /// * [fadeIn]: Whether to fade in the widget.
   /// * [slide]: Whether to slide the widget.
+  /// * [scale]: Whether to scale the widget.
+  /// * [beginScale]: The initial scale of the animation.
   const ScrollAwareWidget({
     super.key,
     required this.child,
     this.animationThreshold = 0.5,
     this.duration = const Duration(milliseconds: 600),
+    this.delay = Duration.zero,
     this.beginOffset = const Offset(0, 0.5),
     this.curve = Curves.easeInOut,
     this.displayOnce = true,
     this.fadeIn = true,
     this.slide = true,
+    this.scale = false,
+    this.beginScale = 0.8,
   });
 
   final Widget child;
   final double animationThreshold;
   final Duration duration;
+  final Duration delay;
   final Offset beginOffset;
   final Curve curve;
   final bool displayOnce;
   final bool fadeIn;
   final bool slide;
+  final bool scale;
+  final double beginScale;
 
   @override
   ConsumerState<ScrollAwareWidget> createState() => _ScrollAwareWidgetState();
@@ -82,7 +90,11 @@ class _ScrollAwareWidgetState extends ConsumerState<ScrollAwareWidget>
     // animation starts after the widget visible fraction exceeds the threshold
     if (visibleFraction > widget.animationThreshold) {
       if (!_controller.isAnimating && _controller.value < 1.0) {
-        _controller.forward();
+        Future.delayed(widget.delay, () {
+          if (mounted) {
+            _controller.forward();
+          }
+        });
         if (widget.displayOnce) {
           _hasAnimated = true;
         }
@@ -111,11 +123,20 @@ class _ScrollAwareWidgetState extends ConsumerState<ScrollAwareWidget>
                       CurvedAnimation(parent: _controller, curve: widget.curve))
               : Offset.zero;
 
+          // scale
+          final scale = widget.scale
+              ? Tween<double>(begin: widget.beginScale, end: 1.0).evaluate(
+                  CurvedAnimation(parent: _controller, curve: widget.curve))
+              : 1.0;
+
           return Opacity(
             opacity: opacity,
             child: Transform.translate(
               offset: Offset(offset.dx * 100, offset.dy * 100),
-              child: widget.child,
+              child: Transform.scale(
+                scale: scale,
+                child: widget.child,
+              ),
             ),
           );
         },
