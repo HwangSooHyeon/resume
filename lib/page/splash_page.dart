@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:resume/page/home_screen.dart';
+import 'package:resume/page/home/home_screen.dart';
 import 'package:resume/widget/common/default_layout.dart';
 
 class SplashScreen extends StatefulWidget {

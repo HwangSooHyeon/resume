@@ -4,8 +4,8 @@ import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 import 'package:resume/page/config_screen.dart';
 import 'package:resume/page/cover_letter_screen.dart';
-import 'package:resume/page/cv_screen.dart';
-import 'package:resume/page/home_screen.dart';
+import 'package:resume/page/cv/cv_screen.dart';
+import 'package:resume/page/home/home_screen.dart';
 import 'package:resume/page/skills_screen.dart';
 import 'package:resume/view_model/bottom_navigation_view_model.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
@@ -19,20 +19,20 @@ enum BottomNavigationBarEnum {
   config;
 
   String get path => switch (this) {
-    BottomNavigationBarEnum.home => HomeScreen.path,
-    BottomNavigationBarEnum.coverLetter => CoverLetterScreen.path,
-    BottomNavigationBarEnum.skills => SkillsScreen.path,
-    BottomNavigationBarEnum.cv => CvScreen.path,
-    BottomNavigationBarEnum.config => ConfigScreen.path,
-  };
+        BottomNavigationBarEnum.home => HomeScreen.path,
+        BottomNavigationBarEnum.coverLetter => CoverLetterScreen.path,
+        BottomNavigationBarEnum.skills => SkillsScreen.path,
+        BottomNavigationBarEnum.cv => CvScreen.path,
+        BottomNavigationBarEnum.config => ConfigScreen.path,
+      };
 
   Widget get screen => switch (this) {
-    BottomNavigationBarEnum.home => const HomeScreen(),
-    BottomNavigationBarEnum.coverLetter => const CoverLetterScreen(),
-    BottomNavigationBarEnum.skills => const SkillsScreen(),
-    BottomNavigationBarEnum.cv => const CvScreen(),
-    BottomNavigationBarEnum.config => const ConfigScreen(),
-  };
+        BottomNavigationBarEnum.home => const HomeScreen(),
+        BottomNavigationBarEnum.coverLetter => const CoverLetterScreen(),
+        BottomNavigationBarEnum.skills => const SkillsScreen(),
+        BottomNavigationBarEnum.cv => const CvScreen(),
+        BottomNavigationBarEnum.config => const ConfigScreen(),
+      };
 
   String label(BuildContext context) => switch (this) {
         BottomNavigationBarEnum.home => context.locale!.home,

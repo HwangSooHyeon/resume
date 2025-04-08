@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:resume/util/function/duration.dart';
+import 'package:resume/widget/common/fade_slide_widget.dart';
 
 class DefaultLayout extends StatelessWidget {
   const DefaultLayout({
@@ -20,7 +22,10 @@ class DefaultLayout extends StatelessWidget {
       canPop: canPop,
       onPopInvokedWithResult: onPopInvokedWithResult,
       child: Scaffold(
-        body: body,
+        body: FadeSlideWidget(
+          delay: animationDelay(order: 0),
+          child: body,
+        ),
         bottomNavigationBar: bottomNavigationBar,
       ),
     );
