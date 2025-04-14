@@ -117,6 +117,15 @@ class AppLocalizationsKo extends AppLocalizations {
   String get coverLetterTitle4 => '열정은 현재도 저의 원동력입니다.';
 
   @override
+  String get coverLetterTitle5 => '노력은 능력임을 믿습니다.';
+
+  @override
+  String get coverLetterTitle5_1 => '열정과 노력이 저를 여기까지 이끌어 주었습니다.';
+
+  @override
+  String get coverLetterTitle5_2 => '포기하지 않는 자세와 주인의식을 가지고 더 나은 서비스를 만들어가겠습니다.';
+
+  @override
   String get coverLetterCard1_1 => '포기하지 않습니다.';
 
   @override

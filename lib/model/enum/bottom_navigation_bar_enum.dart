@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 import 'package:resume/page/config_screen.dart';
-import 'package:resume/page/cover_letter_screen.dart';
+import 'package:resume/page/cover-letter/cover_letter_screen.dart';
 import 'package:resume/page/cv/cv_screen.dart';
 import 'package:resume/page/home/home_screen.dart';
 import 'package:resume/page/skills_screen.dart';

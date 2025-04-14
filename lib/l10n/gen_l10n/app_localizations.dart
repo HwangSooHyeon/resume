@@ -311,6 +311,24 @@ abstract class AppLocalizations {
   /// **'열정은 현재도 저의 원동력입니다.'**
   String get coverLetterTitle4;
 
+  /// No description provided for @coverLetterTitle5.
+  ///
+  /// In ko, this message translates to:
+  /// **'노력은 능력임을 믿습니다.'**
+  String get coverLetterTitle5;
+
+  /// No description provided for @coverLetterTitle5_1.
+  ///
+  /// In ko, this message translates to:
+  /// **'열정과 노력이 저를 여기까지 이끌어 주었습니다.'**
+  String get coverLetterTitle5_1;
+
+  /// No description provided for @coverLetterTitle5_2.
+  ///
+  /// In ko, this message translates to:
+  /// **'포기하지 않는 자세와 주인의식을 가지고 더 나은 서비스를 만들어가겠습니다.'**
+  String get coverLetterTitle5_2;
+
   /// No description provided for @coverLetterCard1_1.
   ///
   /// In ko, this message translates to:
