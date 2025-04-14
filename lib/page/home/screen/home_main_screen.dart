@@ -20,10 +20,13 @@ class HomeMainScreen extends StatelessWidget {
       child: Stack(
         alignment: Alignment.topCenter,
         children: [
-          Assets.image.imageMain.image(
-            height: context.height,
-            width: double.infinity,
-            fit: BoxFit.fill,
+          FadeSlideWidget(
+            delay: animationDelay(order: 0),
+            child: Assets.image.imageMain.image(
+              height: context.height,
+              width: double.infinity,
+              fit: BoxFit.fill,
+            ),
           ),
           BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
