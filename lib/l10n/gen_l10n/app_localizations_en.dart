@@ -117,6 +117,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get coverLetterTitle4 => 'Passion is still my motivation.';
 
   @override
+  String get coverLetterTitle5 => 'I believe that effort is a skill in itself.';
+
+  @override
+  String get coverLetterTitle5_1 => 'Passion and hard work have brought me this far.';
+
+  @override
+  String get coverLetterTitle5_2 => 'With unwavering perseverance and a strong sense of ownership, I will continue to create better services.';
+
+  @override
   String get coverLetterCard1_1 => 'Never give up';
 
   @override
@@ -126,7 +135,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get coverLetterCard1_3 => 'I approach my work with the goal of completing it to the best of my abilities.';
 
   @override
-  String get coverLetterCard2_1 => 'I work with a strong sense of responsibility.';
+  String get coverLetterCard2_1 => 'Work with a responsibility.';
 
   @override
   String get coverLetterCard2_2 => 'I do not avoid the tasks assigned to me.';
@@ -135,7 +144,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get coverLetterCard2_3 => 'I always strive to find better solutions and approach my work with a sense of ownership.';
 
   @override
-  String get coverLetterCard3_1 => 'I am prepared.';
+  String get coverLetterCard3_1 => 'Well Prepared.';
 
   @override
   String get coverLetterCard3_2 => 'I have no fear of learning.';
@@ -144,7 +153,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get coverLetterCard3_3 => 'I make an effort to develop my skills and apply them to projects using all available resources, such as lectures, YouTube, colleagues, and friends.';
 
   @override
-  String get coverLetterCard4_1 => 'I prioritize the customers.';
+  String get coverLetterCard4_1 => 'Prioritize customers.';
 
   @override
   String get coverLetterCard4_2 => 'The products I create are ultimately designed to provide services to customers.';
