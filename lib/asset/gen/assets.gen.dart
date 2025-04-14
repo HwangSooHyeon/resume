@@ -12,6 +12,30 @@ import 'package:flutter/widgets.dart';
 class $AssetImageGen {
   const $AssetImageGen();
 
+  /// File path: asset/image/image_cover_letter_1.png
+  AssetGenImage get imageCoverLetter1 =>
+      const AssetGenImage('asset/image/image_cover_letter_1.png');
+
+  /// File path: asset/image/image_cover_letter_2.png
+  AssetGenImage get imageCoverLetter2 =>
+      const AssetGenImage('asset/image/image_cover_letter_2.png');
+
+  /// File path: asset/image/image_cover_letter_3.png
+  AssetGenImage get imageCoverLetter3 =>
+      const AssetGenImage('asset/image/image_cover_letter_3.png');
+
+  /// File path: asset/image/image_cover_letter_4.png
+  AssetGenImage get imageCoverLetter4 =>
+      const AssetGenImage('asset/image/image_cover_letter_4.png');
+
+  /// File path: asset/image/image_cover_letter_background_1.png
+  AssetGenImage get imageCoverLetterBackground1 =>
+      const AssetGenImage('asset/image/image_cover_letter_background_1.png');
+
+  /// File path: asset/image/image_cover_letter_background_2.png
+  AssetGenImage get imageCoverLetterBackground2 =>
+      const AssetGenImage('asset/image/image_cover_letter_background_2.png');
+
   /// File path: asset/image/image_fire_ant_1.png
   AssetGenImage get imageFireAnt1 =>
       const AssetGenImage('asset/image/image_fire_ant_1.png');
@@ -122,6 +146,12 @@ class $AssetImageGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
+        imageCoverLetter1,
+        imageCoverLetter2,
+        imageCoverLetter3,
+        imageCoverLetter4,
+        imageCoverLetterBackground1,
+        imageCoverLetterBackground2,
         imageFireAnt1,
         imageFireAnt2,
         imageFireAnt3,
