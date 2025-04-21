@@ -177,100 +177,367 @@ class AppLocalizationsEn extends AppLocalizations {
   String get skillsLanguageLevel5 => 'Capable of developing and maintaining projects';
 
   @override
-  String get skillsLibraryRiverpod1 => 'Able to manage state and consider the dispose timing of instances.';
+  String get skillsLanguageDartDetailedDescription1 => 'I have used it for personal and enterprise projects for approximately 2 years.';
 
   @override
-  String get skillsLibraryRiverpod2 => 'Able to manage the state of specific widgets only.';
+  String get skillsLanguageDartDetailedDescription2 => 'I am proficient in cross-platform app development using Flutter, skilled in Widget lifecycle and state management using Provider.';
 
   @override
-  String get skillsLibraryRetrofit => 'Able to define repositories using the given REST API.';
+  String get skillsLanguageDartDetailedDescription3 => 'Capable of writing unit tests for Rest APIs.';
 
   @override
-  String get skillsLibraryDio => 'Able to define interceptors to handle API requests, responses, and errors.';
+  String get skillsLanguageDartDetailedDescription4 => 'Familiar with Dart asynchronous programming (Future, async/await) and stream processing, enabling efficient network communication.';
 
   @override
-  String get skillsLibraryFirebase1 => 'Able to apply push notifications and local notifications.';
+  String get skillsLanguageTypeScriptDetailedDescription1 => 'I studied for approximately 6 months to support the subsidiary Quantit’s upcoming project “Monitorring”.';
 
   @override
-  String get skillsLibraryFirebase2 => 'Able to use Firebase Storage.';
+  String get skillsLanguageTypeScriptDetailedDescription2 => 'Able to develop Next.js-based web applications using TypeScript.';
 
   @override
-  String get skillsLibraryStorage => 'Able to store and use app-required data based on whether data security is necessary.';
+  String get skillsLanguageTypeScriptDetailedDescription3 => 'Able to communicate with GraphQL APIs using Relay.';
 
   @override
-  String get skillsLibraryGraphQL => 'Able to request data using given GraphQL queries.';
+  String get skillsLanguageTypeScriptDetailedDescription4 => 'Able to perform state management using Recoil.';
 
   @override
-  String get skillsLibraryLogger => 'Able to perform logging tasks for debugging.';
+  String get skillsLanguageTypeScriptDetailedDescription5 => 'Able to manage component states using React Hooks like useEffect, useState, useMemo, and useCallback.';
 
   @override
-  String get skillsLibraryImagePicker => 'Able to import images from the device gallery into the app.';
+  String get skillsLanguageTypeScriptDetailedDescription6 => 'Able to write stable and maintainable code utilizing TypeScript’s type system.';
 
   @override
-  String get skillsLibrarySyncfusionChart => 'Able to implement charts in the desired format.';
+  String get skillsLanguageKotlinDetailedDescription1 => 'Participated in a 1-month course to become familiar with Kotlin.';
 
   @override
-  String get skillsLibraryFreezed => 'Able to define both general and generic models.';
+  String get skillsLanguageKotlinDetailedDescription2 => 'Conducted about 6 toy projects to learn unit testing concepts and clean architecture.';
 
   @override
-  String get skillsLibraryWidgetbook => 'Able to preview implemented UI on the web before deployment.';
+  String get skillsLanguageKotlinDetailedDescription3 => 'Practiced TDD using what I learned for the next 2 months.';
 
   @override
-  String get skillsLibraryGoRouter1 => 'Able to apply routing between pages.';
+  String get skillsLanguageJavaDetailedDescription1 => 'Participated in a web development course for 7 months learning Java.';
 
   @override
-  String get skillsLibraryGoRouter2 => 'Able to redirect to specific pages based on data state.';
+  String get skillsLanguageJavaDetailedDescription2 => 'Worked as a backend developer for about 9 months afterward, developing a municipal virtual account payment service using the Spring framework.';
 
   @override
-  String get skillsLibrarySkeletonizer => 'Able to implement loading UI.';
+  String get skillsLanguageCDetailedDescription1 => 'Learned basic programming using the C language for one semester in university.';
 
   @override
-  String get skillsLibraryLocalization1 => 'Able to implement a language-switching feature.';
+  String get skillsLanguageCDetailedDescription2 => 'Studied embedded systems utilizing microprocessors for 5 semesters afterward.';
 
   @override
-  String get skillsLibraryLocalization2 => 'Able to update the app language immediately without restarting using state management.';
+  String get skillsLanguageCDetailedDescription3 => 'Conducted projects like robots escaping mazes and balance robots using differential equation solutions and dynamics theory.';
 
   @override
-  String get skillsLibraryLocalization3 => 'Able to manage multiple languages per country using Google Spreadsheets.';
+  String get skillsLanguageSQLDetailedDescription1 => 'Participated in a web development course for 7 months learning SQL.';
 
   @override
-  String get skillsLibrarySQFLite => 'Able to create and control a local database.';
+  String get skillsLanguageSQLDetailedDescription2 => 'Worked as a backend developer for about 9 months afterward, experiencing complex data queries joining two or more tables, DB performance improvements via indexing, and migration between different databases.';
 
   @override
-  String get skillsLibraryFlutterGen => 'Able to generate code of required assets.';
+  String get skillsLanguageCPPDetailedDescription1 => 'Studied C++ for one semester at university.';
 
   @override
-  String get skillsTechniquePagination1 => 'Able to implement infinite scroll pagination.';
+  String get skillsLanguageCPPDetailedDescription2 => 'Created embedded toy projects applying object-oriented programming concepts.';
 
   @override
-  String get skillsTechniquePagination2 => 'Able to apply the throttling technique to prevent duplicate requests.';
+  String get skillsLanguagePythonDetailedDescription1 => 'Used Python for solving algorithm problems.';
 
   @override
-  String get skillsTechniqueOptimisticResponse => 'Able to improve UX by displaying expected responses first under the assumption of smooth network';
+  String get skillsLanguagePythonDetailedDescription2 => 'Understand basic Python syntax and data structures; able to write simple scripts.';
 
   @override
-  String get skillsTechniqueSorting => 'Able to reduce server load by applying sorting logic within the app.';
+  String get skillsLibraryRiverpodDescription => 'Capable of managing state and considering instance lifecycle timings.';
 
   @override
-  String get skillsTechniqueAnimation => 'Able to apply desired animations to widgets.';
+  String get skillsLibraryRiverpodDetailedDescription1 => 'Able to implement state management using Riverpod.';
 
   @override
-  String get skillsTechniqueSliver => 'Able to utilize NestedScrollView by combining Sliver Widgets and Box Widgets.';
+  String get skillsLibraryRiverpodDetailedDescription2 => 'Able to rebuild specific UIs using the Consumer widget.';
 
   @override
-  String get skillsTechniqueReorder => 'Able to implement functionality by combining ReorderableListView and Dismissible widgets.';
+  String get skillsLibraryRiverpodDetailedDescription3 => 'Capable of managing state considering the disposal timing of Provider instances.';
 
   @override
-  String get skillsTechniqueCodeGeneration => 'Able to use features of libraries that support code generation.';
+  String get skillsLibraryRiverpodDetailedDescription4 => 'Able to apply the MVVM architecture pattern using Riverpod.';
 
   @override
-  String get skillsCoWork => 'Collaboration tools I have experience with';
+  String get skillsLibraryRiverpodDetailedDescription5 => 'Able to apply code generation.';
 
   @override
-  String get skillsIde => 'The IDEs I mainly use';
+  String get skillsLibraryRetrofitDescription => 'Able to call Rest APIs using Retrofit.';
 
   @override
-  String get skillsLanguage => 'Languages I can use';
+  String get skillsLibraryRetrofitDetailedDescription1 => 'Able to omit boilerplate code in Rest API repositories using Retrofit, enhancing readability.';
+
+  @override
+  String get skillsLibraryRetrofitDetailedDescription2 => 'Able to apply code generation.';
+
+  @override
+  String get skillsLibraryDioDescription => 'Able to call Rest APIs using Dio.';
+
+  @override
+  String get skillsLibraryDioDetailedDescription1 => 'Capable of logging and handling errors before and after API calls using Interceptor.';
+
+  @override
+  String get skillsLibraryDioDetailedDescription2 => 'Able to upload image files using MultipartRequest.';
+
+  @override
+  String get skillsLibraryFirebaseDescription => 'Able to use various Firebase tools.';
+
+  @override
+  String get skillsLibraryFirebaseDetailedDescription1 => 'Able to implement notifications using Push Notification and Local Notification.';
+
+  @override
+  String get skillsLibraryFirebaseDetailedDescription2 => 'Able to collect app usage statistics using Analytics.';
+
+  @override
+  String get skillsLibraryFirebaseDetailedDescription3 => 'Able to implement real-time databases using Database.';
+
+  @override
+  String get skillsLibraryFirebaseDetailedDescription4 => 'Able to implement user authentication using Authentication.';
+
+  @override
+  String get skillsLibraryStorageDescription => 'Able to store and use app data according to security needs.';
+
+  @override
+  String get skillsLibraryStorageDetailedDescription1 => 'Able to store simple data using Shared Preferences.';
+
+  @override
+  String get skillsLibraryStorageDetailedDescription2 => 'Able to store sensitive data using Secure Storage.';
+
+  @override
+  String get skillsLibraryGraphQLDescription => 'Able to request data using given GraphQL queries.';
+
+  @override
+  String get skillsLibraryGraphQLDetailedDescription1 => 'Able to communicate data using GraphQL APIs.';
+
+  @override
+  String get skillsLibraryLoggerDescription => 'Able to log events using Logger.';
+
+  @override
+  String get skillsLibraryLoggerDetailedDescription1 => 'Able to set log levels.';
+
+  @override
+  String get skillsLibraryLoggerDetailedDescription2 => 'Able to filter logs.';
+
+  @override
+  String get skillsLibraryImagePickerDescription => 'Able to import images from the device gallery into the app.';
+
+  @override
+  String get skillsLibraryImagePickerDetailedDescription1 => 'Able to select images from the gallery and display them in the app using Image Picker.';
+
+  @override
+  String get skillsLibrarySyncfusionChartDescription => 'Able to implement desired charts.';
+
+  @override
+  String get skillsLibrarySyncfusionChartDetailedDescription1 => 'Able to implement various charts using Syncfusion Chart.';
+
+  @override
+  String get skillsLibrarySyncfusionChartDetailedDescription2 => 'Able to customize chart styles.';
+
+  @override
+  String get skillsLibraryFreezedDescription => 'Able to define generic and regular models.';
+
+  @override
+  String get skillsLibraryFreezedDetailedDescription1 => 'Able to generate immutable objects using Freezed.';
+
+  @override
+  String get skillsLibraryFreezedDetailedDescription2 => 'Able to handle various states with a single type using union types.';
+
+  @override
+  String get skillsLibraryFreezedDetailedDescription3 => 'Able to apply code generation.';
+
+  @override
+  String get skillsLibraryWidgetbookDescription => 'Able to document and test implemented UIs.';
+
+  @override
+  String get skillsLibraryWidgetbookDetailedDescription1 => 'Able to document widgets.';
+
+  @override
+  String get skillsLibraryWidgetbookDetailedDescription2 => 'Able to test widgets.';
+
+  @override
+  String get skillsLibraryGoRouterDescription => 'Able to apply routing between pages.';
+
+  @override
+  String get skillsLibraryGoRouterDetailedDescription1 => 'Able to implement navigation using Go Router.';
+
+  @override
+  String get skillsLibraryGoRouterDetailedDescription2 => 'Able to implement redirection to specific pages based on data states.';
+
+  @override
+  String get skillsLibrarySkeletonizerDescription => 'Able to implement loading UIs.';
+
+  @override
+  String get skillsLibrarySkeletonizerDetailedDescription1 => 'Able to implement skeleton UIs using Skeletonizer.';
+
+  @override
+  String get skillsLibrarySkeletonizerDetailedDescription2 => 'Able to customize skeleton UI styles.';
+
+  @override
+  String get skillsLibraryLocalizationDescription => 'Able to implement language-switching functionality.';
+
+  @override
+  String get skillsLibraryLocalizationDetailedDescription1 => 'Able to support multiple languages using Flutter Localization and Arb files.';
+
+  @override
+  String get skillsLibraryLocalizationDetailedDescription2 => 'Able to change language through state management without app restart by applying Provider.';
+
+  @override
+  String get skillsLibraryLocalizationDetailedDescription3 => 'Able to apply code generation.';
+
+  @override
+  String get skillsLibrarySQFLiteDescription => 'Able to create and manipulate local databases.';
+
+  @override
+  String get skillsLibrarySQFLiteDetailedDescription1 => 'Able to implement local databases using SQFLite.';
+
+  @override
+  String get skillsLibrarySQFLiteDetailedDescription2 => 'Able to implement CRUD functionality.';
+
+  @override
+  String get skillsLibraryFlutterGenDescription => 'Able to automatically generate assets required for the app.';
+
+  @override
+  String get skillsLibraryFlutterGenDetailedDescription1 => 'Able to manage images, fonts, and icons using Flutter Gen.';
+
+  @override
+  String get skillsLibraryFlutterGenDetailedDescription2 => 'Able to apply code generation.';
+
+  @override
+  String get skillsTechniquePaginationDescription => 'Able to directly implement pagination.';
+
+  @override
+  String get skillsTechniquePaginationDetailedDescription1 => 'Able to implement pagination without libraries.';
+
+  @override
+  String get skillsTechniqueInfiniteScrollDescription => 'Able to directly implement infinite scrolling.';
+
+  @override
+  String get skillsTechniqueInfiniteScrollDetailedDescription1 => 'Able to implement infinite scrolling without libraries.';
+
+  @override
+  String get skillsTechniqueInfiniteScrollDetailedDescription2 => 'Able to optimize performance using throttle.';
+
+  @override
+  String get skillsTechniqueOptimisticResponseDescription => 'Able to enhance UX using Optimistic Response.';
+
+  @override
+  String get skillsTechniqueOptimisticResponseDetailedDescription1 => 'Able to immediately update UI upon events and optimize server communication to improve user experience.';
+
+  @override
+  String get skillsTechniqueThrottlingDebounceDescription => 'Able to optimize API requests using Throttling & Debounce.';
+
+  @override
+  String get skillsTechniqueThrottlingDebounceDetailedDescription1 => 'Able to prevent additional requests for a certain period after the first API request using Throttling.';
+
+  @override
+  String get skillsTechniqueThrottlingDebounceDetailedDescription2 => 'Able to make API requests after waiting for the final result using Debounce.';
+
+  @override
+  String get skillsTechniqueIntersectionObserverDescription => 'Able to optimize scroll events using Intersection Observer.';
+
+  @override
+  String get skillsTechniqueIntersectionObserverDetailedDescription1 => 'Able to trigger events only when specific elements are visible during scrolling using Intersection Observer.';
+
+  @override
+  String get skillsTechniqueSortingDescription => 'Able to apply sorting logic within the app.';
+
+  @override
+  String get skillsTechniqueSortingDetailedDescription1 => 'Able to implement client-side sorting to reduce server load.';
+
+  @override
+  String get skillsTechniqueAnimationDescription => 'Able to apply desired animations to widgets.';
+
+  @override
+  String get skillsTechniqueAnimationDetailedDescription1 => 'Able to implement various animations using Flutter’s animation library.';
+
+  @override
+  String get skillsTechniqueAnimationDetailedDescription2 => 'Able to implement generalized, reusable animations.';
+
+  @override
+  String get skillsTechniqueSliverDescription => 'Able to utilize Sliver Widget and NestedScrollView.';
+
+  @override
+  String get skillsTechniqueSliverDetailedDescription1 => 'Able to optimize UI during scrolling using Sliver Widget.';
+
+  @override
+  String get skillsTechniqueSliverDetailedDescription2 => 'Able to implement desired scrolling effects.';
+
+  @override
+  String get skillsTechniqueReorderDescription => 'Able to combine ReorderableListView and Dismissible widgets.';
+
+  @override
+  String get skillsTechniqueReorderDetailedDescription1 => 'Able to reorder list items by dragging using ReorderableListView.';
+
+  @override
+  String get skillsTechniqueReorderDetailedDescription2 => 'Able to delete list items by swiping using Dismissible.';
+
+  @override
+  String get skillsTechniqueReorderDetailedDescription3 => 'Able to combine both widgets to reorder list items by dragging and delete by swiping.';
+
+  @override
+  String get skillsTechniqueReorderDetailedDescription4 => 'Able to prevent errors by applying key management to list items during reordering and index changes.';
+
+  @override
+  String get skillsTechniqueReorderDetailedDescription5 => 'Able to optimize performance using Debounce.';
+
+  @override
+  String get skillsTechniqueCodeGenerationDescription => 'Able to reduce boilerplate code using code generation.';
+
+  @override
+  String get skillsTechniqueCodeGenerationDetailedDescription1 => 'Able to reduce boilerplate code via code generation for supported libraries.';
+
+  @override
+  String get skillsTechniqueUnitTestDescription => 'Able to write unit tests.';
+
+  @override
+  String get skillsTechniqueUnitTestDetailedDescription1 => 'Able to enhance code quality by writing unit tests.';
+
+  @override
+  String get skillsTechniqueUnitTestDetailedDescription2 => 'Able to isolate dependencies using mocking.';
+
+  @override
+  String get skillsTechniqueUnitTestDetailedDescription3 => 'Able to perform API request tests.';
+
+  @override
+  String get skillsToolSlackDescription => 'Able to communicate with team members using Slack.';
+
+  @override
+  String get skillsToolFigmaDescription => 'Able to apply designs defined in Figma into development.';
+
+  @override
+  String get skillsToolNotionDescription => 'Able to document using Notion.';
+
+  @override
+  String get skillsToolJiraDescription => 'Able to manage projects using Jira.';
+
+  @override
+  String get skillsToolConfluenceDescription => 'Able to document using Confluence.';
+
+  @override
+  String get skillsToolGoogleSheetDescription => 'Able to manage data and apply processing macros using Google Sheets.';
+
+  @override
+  String get skillsToolIntelliJDescription => 'Able to develop Kotlin using IntelliJ IDEA.';
+
+  @override
+  String get skillsToolWebStormDescription => 'Able to develop TypeScript using WebStorm.';
+
+  @override
+  String get skillsToolAndroidStudioDescription => 'Able to develop Dart using Android Studio.';
+
+  @override
+  String get skillsToolVisualStudioCodeDescription => 'Able to develop Dart and TypeScript using Visual Studio Code.';
+
+  @override
+  String get skillsToolGitDescription => 'Able to perform version control using Git.';
+
+  @override
+  String get skillsToolSvnDescription => 'Able to perform version control using SVN.';
 
   @override
   String get cvDirectionalTitle => 'Directional';

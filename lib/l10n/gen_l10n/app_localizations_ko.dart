@@ -177,100 +177,367 @@ class AppLocalizationsKo extends AppLocalizations {
   String get skillsLanguageLevel5 => '프로젝트 개발 및 유지보수가 가능한 수준';
 
   @override
-  String get skillsLibraryRiverpod1 => '상태 관리를 할 수 있으며, 인스턴스의 처리 타이밍을 고려할 수 있다.';
+  String get skillsLanguageDartDetailedDescription1 => '약 2년간 개인 프로젝트 및 기업 프로젝트를 위해 사용했습니다.';
 
   @override
-  String get skillsLibraryRiverpod2 => '특정 위젯만 상태 관리를 할 수 있다.';
+  String get skillsLanguageDartDetailedDescription2 => 'Flutter를 활용한 크로스 플랫폼 앱 개발에 능숙하며, Widget 생애주기 및 provider를 이용한 상태관리에 숙달되어있습니다.';
 
   @override
-  String get skillsLibraryRetrofit => '주어진 RestAPI를 이용해 레포지토리를 정의할 수 있다.';
+  String get skillsLanguageDartDetailedDescription3 => 'Rest API에 대한 유닛테스트 작성이 가능합니다.';
 
   @override
-  String get skillsLibraryDio => '인터셉터를 정의하여 API 요청, 응답, 에러 발생 시 상황을 핸들링할 수 있다.';
+  String get skillsLanguageDartDetailedDescription4 => 'Dart의 비동기 프로그래밍(Future, async/await) 및 스트림(Stream) 처리에 익숙하며, 효율적인 네트워크 통신 구현 가능합니다.';
 
   @override
-  String get skillsLibraryFirebase1 => 'Push notification, Local notification을 적용할 수 있다.';
+  String get skillsLanguageTypeScriptDetailedDescription1 => '약 6개월간 계열사 퀀팃의 출시 예정 프로젝트인 머니터링을 지원하기 위해 학습했습니다.';
 
   @override
-  String get skillsLibraryFirebase2 => 'Firebase storage를 사용할 수 있다.';
+  String get skillsLanguageTypeScriptDetailedDescription2 => 'TypeScript를 이용해 Next.js 기반의 웹 애플리케이션을 개발할 수 있습니다.';
 
   @override
-  String get skillsLibraryStorage => '앱에 필요한 데이터를 보안 필요 여부에 따라 구분하여 저장 및 사용할 수 있다.';
+  String get skillsLanguageTypeScriptDetailedDescription3 => 'Relay를 이용해 GraphQL API와 통신할 수 있습니다.';
 
   @override
-  String get skillsLibraryGraphQL => '주어진 GraphQL 쿼리를 이용해 데이터를 요청할 수 있다.';
+  String get skillsLanguageTypeScriptDetailedDescription4 => 'Recoil을 이용해 상태관리를 할 수 있습니다.';
 
   @override
-  String get skillsLibraryLogger => '디버깅을 위한 로깅 작업을 할 수 있다.';
+  String get skillsLanguageTypeScriptDetailedDescription5 => 'useEffect, useState, useMemo, useCallback과 같은 React Hook을 활용하여 컴포넌트의 상태를 관리할 수 있습니다.';
 
   @override
-  String get skillsLibraryImagePicker => '장치 내 갤러리의 이미지를 앱으로 가져올 수 있다.';
+  String get skillsLanguageTypeScriptDetailedDescription6 => 'TypeScript의 타입 시스템을 활용하여 안정적이고 유지보수가 용이한 코드를 작성할 수 있습니다.';
 
   @override
-  String get skillsLibrarySyncfusionChart => '원하는 형태의 차트를 구현할 수 있다.';
+  String get skillsLanguageKotlinDetailedDescription1 => '1개월간 코틀린에 익숙해지기 위한 코스에 참여했습니다.';
 
   @override
-  String get skillsLibraryFreezed => '일반 및 제네릭 모델을 정의할 수 있다.';
+  String get skillsLanguageKotlinDetailedDescription2 => '약 6개의 토이 프로젝트를 진행하며 유닛테스트에 대한 개념과 클린 아키텍쳐를 익혔습니다.';
 
   @override
-  String get skillsLibraryWidgetbook => '배포 전 구현한 UI를 웹으로 확인할 수 있다.';
+  String get skillsLanguageKotlinDetailedDescription3 => '이후 2개월간 배운 것을 활용해 TDD를 연습했습니다.';
 
   @override
-  String get skillsLibraryGoRouter1 => '페이지 간 라우팅을 적용할 수 있다.';
+  String get skillsLanguageJavaDetailedDescription1 => '7개월간 웹 개발 코스에 참여하며 Java를 학습했습니다.';
 
   @override
-  String get skillsLibraryGoRouter2 => '데이터 상태에 따라 특정 페이지로 리다이렉팅 하도록 구현할 수 있다.';
+  String get skillsLanguageJavaDetailedDescription2 => '이후 약 9개월 간 백엔드 개발자로서 Spring framework를 활용해 가상계좌 지방세 수납 서비스를 개발했습니다.';
 
   @override
-  String get skillsLibrarySkeletonizer => '로딩 UI를 구현할 수 있다.';
+  String get skillsLanguageCDetailedDescription1 => '대학교에서 한 학기 동안 C 언어를 통해 기초 프로그래밍을 학습 했습니다.';
 
   @override
-  String get skillsLibraryLocalization1 => '언어 변경 기능을 구현할 수 있다.';
+  String get skillsLanguageCDetailedDescription2 => '이후 5학기 동안 마이크로프로세서를 활용한 임베디드 시스템 학습을 했습니다.';
 
   @override
-  String get skillsLibraryLocalization2 => '언어 변경 시 상태 관리를 이용해 앱 재시작 없이 즉시 변경할 수 있다.';
+  String get skillsLanguageCDetailedDescription3 => '미분방정식 해를 구하고 동역학 이론을 활용해 미로를 탈출하는 로봇, 밸런스 로봇 등을 프로젝트로 진행했습니다.';
 
   @override
-  String get skillsLibraryLocalization3 => '구글 스프레드 시트를 이용하여 국가 별 언어를 관리할 수 있다.';
+  String get skillsLanguageSQLDetailedDescription1 => '7개월간 웹 개발 코스에 참여하며 SQL을 학습했습니다.';
 
   @override
-  String get skillsLibrarySQFLite => '로컬 데이터베이스 생성 및 조작을 할 수 있다.';
+  String get skillsLanguageSQLDetailedDescription2 => '이후 약 9개월 간 백엔드 개발자로서 2개 이상의 table을 Join한 복잡한 데이터 조회, 인덱스 처리를 통한 DB 속도 개선 및 서로 다른 DB 마이그레이션 등을 경험했습니다.';
 
   @override
-  String get skillsLibraryFlutterGen => '앱에 필요한 애셋들을 자동 생성할 수 있다.';
+  String get skillsLanguageCPPDetailedDescription1 => '대학교에서 한 학기 동안 C++을 학습했습니다.';
 
   @override
-  String get skillsTechniquePagination1 => '무한 스크롤 페이지네이션을 구현할 수 있다.';
+  String get skillsLanguageCPPDetailedDescription2 => '객체지향 이론을 활용해 임베디드 토이 프로젝트를 작성했습니다.';
 
   @override
-  String get skillsTechniquePagination2 => 'Throttle 기법을 적용하여 중복 요청을 방지할 수 있다.';
+  String get skillsLanguagePythonDetailedDescription1 => '알고리즘 문제 풀이를 위해 Python을 사용했습니다.';
 
   @override
-  String get skillsTechniqueOptimisticResponse => '통신에 문제가 없다는 가정하에 예상 응답 먼저 표시하여 UX를 향상 시킬 수 있다.';
+  String get skillsLanguagePythonDetailedDescription2 => 'Python의 기본 문법과 자료구조를 이해하고 있으며, 간단한 스크립트 작성이 가능합니다.';
 
   @override
-  String get skillsTechniqueSorting => '서버 부하를 줄이기 위해 앱 내에 정렬 로직을 적용할 수 있다.';
+  String get skillsLibraryRiverpodDescription => '상태 관리를 할 수 있으며, 인스턴스의 처리 타이밍을 고려할 수 있습니다.';
 
   @override
-  String get skillsTechniqueAnimation => '원하는 애니메이션을 위젯에 적용할 수 있다.';
+  String get skillsLibraryRiverpodDetailedDescription1 => 'Riverpod을 사용하여 상태 관리를 구현할 수 있습니다.';
 
   @override
-  String get skillsTechniqueSliver => 'Sliver Widget과 Box Widget을 결합한 NestedScrollView를 활용할 수 있다.';
+  String get skillsLibraryRiverpodDetailedDescription2 => 'Consumer 위젯을 활용하여 특정 UI만 리빌드할 수 있습니다.';
 
   @override
-  String get skillsTechniqueReorder => 'ReorderableListView와 Dismissible 위젯들을 결합하여 구현할 수 있다.';
+  String get skillsLibraryRiverpodDetailedDescription3 => 'Provider 인스턴스의 dispose 타이밍을 고려하여 상태를 관리할 수 있습니다.';
 
   @override
-  String get skillsTechniqueCodeGeneration => '코드 자동 생성을 지원하는 라이브러리의 경우 해당 기능을 사용할 수 있다.';
+  String get skillsLibraryRiverpodDetailedDescription4 => 'Riverpod을 활용해 MVVM 아키텍처 패턴을 적용할 수 있습니다.';
 
   @override
-  String get skillsCoWork => '경험해 본 협업 툴';
+  String get skillsLibraryRiverpodDetailedDescription5 => 'Code Generation을 적용할 수 있습니다.';
 
   @override
-  String get skillsIde => '주로 사용하는 IDE';
+  String get skillsLibraryRetrofitDescription => 'Retrofit을 활용해 Rest API 호출을 할 수 있습니다.';
 
   @override
-  String get skillsLanguage => '사용 가능한 언어';
+  String get skillsLibraryRetrofitDetailedDescription1 => 'Retrofit을 활용해 Rest API 레포지터리의 보일러플레이트 코드를 생략하고 가독성을 증가시킬 수 있습니다.';
+
+  @override
+  String get skillsLibraryRetrofitDetailedDescription2 => 'Code Generation을 적용할 수 있습니다.';
+
+  @override
+  String get skillsLibraryDioDescription => 'Dio를 활용해 Rest API 호출을 할 수 있습니다.';
+
+  @override
+  String get skillsLibraryDioDetailedDescription1 => 'Interceptor를 활용해 API 호출 전후에 로깅 및 에러 처리를 할 수 있습니다.';
+
+  @override
+  String get skillsLibraryDioDetailedDescription2 => 'MultipartRequest를 활용해 이미지 파일 업로드를 할 수 있습니다.';
+
+  @override
+  String get skillsLibraryFirebaseDescription => 'Firebase의 여러 툴을 활용할 수 있습니다.';
+
+  @override
+  String get skillsLibraryFirebaseDetailedDescription1 => 'Push Notification와 Local Notification을 활용해 알림을 구현할 수 있습니다.';
+
+  @override
+  String get skillsLibraryFirebaseDetailedDescription2 => 'Analytics를 활용해 앱 사용 통계를 수집할 수 있습니다.';
+
+  @override
+  String get skillsLibraryFirebaseDetailedDescription3 => 'Database를 활용해 실시간 데이터베이스를 구현할 수 있습니다.';
+
+  @override
+  String get skillsLibraryFirebaseDetailedDescription4 => 'Authentication을 활용해 사용자 인증을 구현할 수 있습니다.';
+
+  @override
+  String get skillsLibraryStorageDescription => '앱에 필요한 데이터를 보안 필요 여부에 따라 구분하여 저장 및 사용할 수 있습니다.';
+
+  @override
+  String get skillsLibraryStorageDetailedDescription1 => 'Shared Preference를 활용해 간단한 데이터 저장을 할 수 있습니다.';
+
+  @override
+  String get skillsLibraryStorageDetailedDescription2 => 'Secure Storage를 활용해 민감한 데이터 저장을 할 수 있습니다.';
+
+  @override
+  String get skillsLibraryGraphQLDescription => '주어진 GraphQL 쿼리를 이용해 데이터를 요청할 수 있습니다.';
+
+  @override
+  String get skillsLibraryGraphQLDetailedDescription1 => 'GraphQL API를 활용해 데이터 통신을 할 수 있습니다.';
+
+  @override
+  String get skillsLibraryLoggerDescription => 'Logger를 활용해 로그를 남길 수 있습니다.';
+
+  @override
+  String get skillsLibraryLoggerDetailedDescription1 => '로그 레벨을 설정할 수 있습니다.';
+
+  @override
+  String get skillsLibraryLoggerDetailedDescription2 => '로그 필터링을 할 수 있습니다.';
+
+  @override
+  String get skillsLibraryImagePickerDescription => '장치 내 갤러리의 이미지를 앱으로 가져올 수 있습니다.';
+
+  @override
+  String get skillsLibraryImagePickerDetailedDescription1 => 'Image Picker를 활용해 갤러리에서 이미지를 선택하여 앱에 표시할 수 있습니다.';
+
+  @override
+  String get skillsLibrarySyncfusionChartDescription => '원하는 형태의 차트를 구현할 수 있습니다.';
+
+  @override
+  String get skillsLibrarySyncfusionChartDetailedDescription1 => 'Syncfusion Chart를 활용해 다양한 차트를 구현할 수 있습니다.';
+
+  @override
+  String get skillsLibrarySyncfusionChartDetailedDescription2 => '차트의 스타일을 커스터마이징할 수 있습니다.';
+
+  @override
+  String get skillsLibraryFreezedDescription => '일반 및 제네릭 모델을 정의할 수 있습니다.';
+
+  @override
+  String get skillsLibraryFreezedDetailedDescription1 => 'Freezed를 활용해 불변 객체를 생성할 수 있습니다.';
+
+  @override
+  String get skillsLibraryFreezedDetailedDescription2 => '유니온 타입을 이용해 다양한 상태를 하나의 타입으로 처리할 수 있습니다.';
+
+  @override
+  String get skillsLibraryFreezedDetailedDescription3 => 'Code Generation을 적용할 수 있습니다.';
+
+  @override
+  String get skillsLibraryWidgetbookDescription => '구현한 UI를 문서화 및 테스트할 수 있습니다.';
+
+  @override
+  String get skillsLibraryWidgetbookDetailedDescription1 => '위젯을 문서화할 수 있습니다.';
+
+  @override
+  String get skillsLibraryWidgetbookDetailedDescription2 => '위젯을 테스트할 수 있습니다.';
+
+  @override
+  String get skillsLibraryGoRouterDescription => '페이지 간 라우팅을 적용할 수 있습니다.';
+
+  @override
+  String get skillsLibraryGoRouterDetailedDescription1 => 'Go Router를 활용해 네비게이션을 구현할 수 있습니다.';
+
+  @override
+  String get skillsLibraryGoRouterDetailedDescription2 => '데이터 상태에 따라 특정 페이지로 리다이렉팅 하도록 구현할 수 있습니다.';
+
+  @override
+  String get skillsLibrarySkeletonizerDescription => '로딩 UI를 구현할 수 있습니다.';
+
+  @override
+  String get skillsLibrarySkeletonizerDetailedDescription1 => 'Skeletonizer를 활용해 스켈레톤 UI를 구현할 수 있습니다.';
+
+  @override
+  String get skillsLibrarySkeletonizerDetailedDescription2 => '스켈레톤 UI의 스타일을 커스터마이징할 수 있습니다.';
+
+  @override
+  String get skillsLibraryLocalizationDescription => '언어 변경 기능을 구현할 수 있습니다.';
+
+  @override
+  String get skillsLibraryLocalizationDetailedDescription1 => 'Flutter Localization, Arb파일을 활용해 다국어 지원을 할 수 있습니다.';
+
+  @override
+  String get skillsLibraryLocalizationDetailedDescription2 => 'Provider를 적용하여 앱 종료 없이 상태 관리로 언어를 변경할 수 있습니다.';
+
+  @override
+  String get skillsLibraryLocalizationDetailedDescription3 => 'Code Generation을 적용할 수 있습니다.';
+
+  @override
+  String get skillsLibrarySQFLiteDescription => '로컬 데이터베이스 생성 및 조작을 할 수 있습니다.';
+
+  @override
+  String get skillsLibrarySQFLiteDetailedDescription1 => 'SQFLite를 활용해 로컬 데이터베이스를 구현할 수 있습니다.';
+
+  @override
+  String get skillsLibrarySQFLiteDetailedDescription2 => 'CRUD 기능을 구현할 수 있습니다.';
+
+  @override
+  String get skillsLibraryFlutterGenDescription => '앱에 필요한 애셋들을 자동 생성할 수 있습니다.';
+
+  @override
+  String get skillsLibraryFlutterGenDetailedDescription1 => 'Flutter Gen을 활용해 이미지, 폰트, 아이콘 등을 관리할 수 있습니다.';
+
+  @override
+  String get skillsLibraryFlutterGenDetailedDescription2 => 'Code Generation을 적용할 수 있습니다.';
+
+  @override
+  String get skillsTechniquePaginationDescription => 'Pagination을 직접 구현할 수 있습니다.';
+
+  @override
+  String get skillsTechniquePaginationDetailedDescription1 => '라이브러리 없이 페이지네이션을 직접 구현할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueInfiniteScrollDescription => 'Infinite Scroll을 직접 구현할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueInfiniteScrollDetailedDescription1 => '라이브러리 없이 무한 스크롤을 직접 구현할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueInfiniteScrollDetailedDescription2 => 'Throttle을 활용해 성능을 최적화할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueOptimisticResponseDescription => 'Optimistic Response로 UX를 향상시킬 수 있습니다.';
+
+  @override
+  String get skillsTechniqueOptimisticResponseDetailedDescription1 => '이벤트 발생 시 UI를 즉각적으로 업데이트하고 서버와의 통신을 최적화하여 유저 경험을 향상시킬 수 있습니다.';
+
+  @override
+  String get skillsTechniqueThrottlingDebounceDescription => 'Throttling & Debounce를 활용해 API 요청을 최적화할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueThrottlingDebounceDetailedDescription1 => 'Throttling을 활용해 첫 번째 API 요청 후 일정 시간 동안 추가 요청을 방지할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueThrottlingDebounceDetailedDescription2 => 'Debounce를 활용해 최종 결과를 기다린 후 API 요청을 할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueIntersectionObserverDescription => 'Intersection Observer를 활용해 스크롤 이벤트를 최적화할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueIntersectionObserverDetailedDescription1 => 'Intersection Observer를 활용해 스크롤 시 특정 요소가 화면에 보일 때만 이벤트를 발생시킬 수 있습니다.';
+
+  @override
+  String get skillsTechniqueSortingDescription => '앱 내에 정렬 로직을 적용할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueSortingDetailedDescription1 => '서버 부하를 줄이기 위해 클라이언트에서 정렬을 구현할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueAnimationDescription => '원하는 애니메이션을 위젯에 적용할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueAnimationDetailedDescription1 => 'Flutter의 애니메이션 라이브러리를 활용해 다양한 애니메이션을 구현할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueAnimationDetailedDescription2 => '일반화하여 재사용할 수 있는 애니메이션을 구현할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueSliverDescription => 'Sliver Widget과 NestedScrollView를 활용할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueSliverDetailedDescription1 => 'Sliver Widget을 활용해 스크롤 시 UI를 최적화할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueSliverDetailedDescription2 => '원하는 스크롤 효과를 구현할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueReorderDescription => 'ReorderableListView와 Dismissible 위젯들을 결합하여 구현할 수 있다.';
+
+  @override
+  String get skillsTechniqueReorderDetailedDescription1 => 'ReorderableListView를 활용해 리스트 아이템을 드래그하여 순서를 변경할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueReorderDetailedDescription2 => 'Dissmisible을 활용해 리스트 아이템을 스와이프하여 삭제할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueReorderDetailedDescription3 => '두 위젯을 조합하여 리스트 아이템을 드래그하여 순서를 변경하고 스와이프하여 삭제할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueReorderDetailedDescription4 => 'key를 활용해 리스트 아이템의 순서 변경 및 인덱스 변경을 적용하여 에러를 방지합니다.';
+
+  @override
+  String get skillsTechniqueReorderDetailedDescription5 => 'Debounce를 활용해 성능을 최적화할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueCodeGenerationDescription => '코드 생성을 활용해 보일러플레이트 코드를 줄일 수 있습니다.';
+
+  @override
+  String get skillsTechniqueCodeGenerationDetailedDescription1 => '지원하는 라이브러리일 경우 코드 생성을 활용해 보일러플레이트 코드를 줄일 수 있습니다.';
+
+  @override
+  String get skillsTechniqueUnitTestDescription => 'Unit Test를 작성할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueUnitTestDetailedDescription1 => '단위 테스트를 작성하여 코드의 품질을 높일 수 있습니다.';
+
+  @override
+  String get skillsTechniqueUnitTestDetailedDescription2 => 'Mocking을 활용해 의존성을 분리할 수 있습니다.';
+
+  @override
+  String get skillsTechniqueUnitTestDetailedDescription3 => 'API 요청 테스트를 할 수 있습니다.';
+
+  @override
+  String get skillsToolSlackDescription => 'Slack을 활용해 팀원과 소통할 수 있습니다.';
+
+  @override
+  String get skillsToolFigmaDescription => 'Figma에 정의된 디자인을 개발에 적용 할 수 있습니다.';
+
+  @override
+  String get skillsToolNotionDescription => 'Notion을 활용해 문서화를 할 수 있습니다.';
+
+  @override
+  String get skillsToolJiraDescription => 'Jira를 활용해 프로젝트 관리를 할 수 있습니다.';
+
+  @override
+  String get skillsToolConfluenceDescription => 'Confluence를 활용해 문서화를 할 수 있습니다.';
+
+  @override
+  String get skillsToolGoogleSheetDescription => 'Google Sheet를 활용해 데이터 관리 및 처리 매크로를 적용할 수 있습니다.';
+
+  @override
+  String get skillsToolIntelliJDescription => 'IntelliJ IDEA를 활용해 Kotlin 개발을 할 수 있습니다.';
+
+  @override
+  String get skillsToolWebStormDescription => 'WebStorm을 활용해 TypeScript 개발을 할 수 있습니다.';
+
+  @override
+  String get skillsToolAndroidStudioDescription => 'Android Studio를 활용해 Dart 개발을 할 수 있습니다.';
+
+  @override
+  String get skillsToolVisualStudioCodeDescription => 'Visual Studio Code를 활용해 Dart, TypeScript 개발을 할 수 있습니다.';
+
+  @override
+  String get skillsToolGitDescription => 'Git을 활용해 버전 관리를 할 수 있습니다.';
+
+  @override
+  String get skillsToolSvnDescription => 'SVN을 활용해 버전 관리를 할 수 있습니다.';
 
   @override
   String get cvDirectionalTitle => '디렉셔널';

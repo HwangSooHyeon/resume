@@ -431,197 +431,731 @@ abstract class AppLocalizations {
   /// **'프로젝트 개발 및 유지보수가 가능한 수준'**
   String get skillsLanguageLevel5;
 
-  /// No description provided for @skillsLibraryRiverpod1.
+  /// No description provided for @skillsLanguageDartDetailedDescription1.
   ///
   /// In ko, this message translates to:
-  /// **'상태 관리를 할 수 있으며, 인스턴스의 처리 타이밍을 고려할 수 있다.'**
-  String get skillsLibraryRiverpod1;
+  /// **'약 2년간 개인 프로젝트 및 기업 프로젝트를 위해 사용했습니다.'**
+  String get skillsLanguageDartDetailedDescription1;
 
-  /// No description provided for @skillsLibraryRiverpod2.
+  /// No description provided for @skillsLanguageDartDetailedDescription2.
   ///
   /// In ko, this message translates to:
-  /// **'특정 위젯만 상태 관리를 할 수 있다.'**
-  String get skillsLibraryRiverpod2;
+  /// **'Flutter를 활용한 크로스 플랫폼 앱 개발에 능숙하며, Widget 생애주기 및 provider를 이용한 상태관리에 숙달되어있습니다.'**
+  String get skillsLanguageDartDetailedDescription2;
 
-  /// No description provided for @skillsLibraryRetrofit.
+  /// No description provided for @skillsLanguageDartDetailedDescription3.
   ///
   /// In ko, this message translates to:
-  /// **'주어진 RestAPI를 이용해 레포지토리를 정의할 수 있다.'**
-  String get skillsLibraryRetrofit;
+  /// **'Rest API에 대한 유닛테스트 작성이 가능합니다.'**
+  String get skillsLanguageDartDetailedDescription3;
 
-  /// No description provided for @skillsLibraryDio.
+  /// No description provided for @skillsLanguageDartDetailedDescription4.
   ///
   /// In ko, this message translates to:
-  /// **'인터셉터를 정의하여 API 요청, 응답, 에러 발생 시 상황을 핸들링할 수 있다.'**
-  String get skillsLibraryDio;
+  /// **'Dart의 비동기 프로그래밍(Future, async/await) 및 스트림(Stream) 처리에 익숙하며, 효율적인 네트워크 통신 구현 가능합니다.'**
+  String get skillsLanguageDartDetailedDescription4;
 
-  /// No description provided for @skillsLibraryFirebase1.
+  /// No description provided for @skillsLanguageTypeScriptDetailedDescription1.
   ///
   /// In ko, this message translates to:
-  /// **'Push notification, Local notification을 적용할 수 있다.'**
-  String get skillsLibraryFirebase1;
+  /// **'약 6개월간 계열사 퀀팃의 출시 예정 프로젝트인 머니터링을 지원하기 위해 학습했습니다.'**
+  String get skillsLanguageTypeScriptDetailedDescription1;
 
-  /// No description provided for @skillsLibraryFirebase2.
+  /// No description provided for @skillsLanguageTypeScriptDetailedDescription2.
   ///
   /// In ko, this message translates to:
-  /// **'Firebase storage를 사용할 수 있다.'**
-  String get skillsLibraryFirebase2;
+  /// **'TypeScript를 이용해 Next.js 기반의 웹 애플리케이션을 개발할 수 있습니다.'**
+  String get skillsLanguageTypeScriptDetailedDescription2;
 
-  /// No description provided for @skillsLibraryStorage.
+  /// No description provided for @skillsLanguageTypeScriptDetailedDescription3.
   ///
   /// In ko, this message translates to:
-  /// **'앱에 필요한 데이터를 보안 필요 여부에 따라 구분하여 저장 및 사용할 수 있다.'**
-  String get skillsLibraryStorage;
+  /// **'Relay를 이용해 GraphQL API와 통신할 수 있습니다.'**
+  String get skillsLanguageTypeScriptDetailedDescription3;
 
-  /// No description provided for @skillsLibraryGraphQL.
+  /// No description provided for @skillsLanguageTypeScriptDetailedDescription4.
   ///
   /// In ko, this message translates to:
-  /// **'주어진 GraphQL 쿼리를 이용해 데이터를 요청할 수 있다.'**
-  String get skillsLibraryGraphQL;
+  /// **'Recoil을 이용해 상태관리를 할 수 있습니다.'**
+  String get skillsLanguageTypeScriptDetailedDescription4;
 
-  /// No description provided for @skillsLibraryLogger.
+  /// No description provided for @skillsLanguageTypeScriptDetailedDescription5.
   ///
   /// In ko, this message translates to:
-  /// **'디버깅을 위한 로깅 작업을 할 수 있다.'**
-  String get skillsLibraryLogger;
+  /// **'useEffect, useState, useMemo, useCallback과 같은 React Hook을 활용하여 컴포넌트의 상태를 관리할 수 있습니다.'**
+  String get skillsLanguageTypeScriptDetailedDescription5;
 
-  /// No description provided for @skillsLibraryImagePicker.
+  /// No description provided for @skillsLanguageTypeScriptDetailedDescription6.
   ///
   /// In ko, this message translates to:
-  /// **'장치 내 갤러리의 이미지를 앱으로 가져올 수 있다.'**
-  String get skillsLibraryImagePicker;
+  /// **'TypeScript의 타입 시스템을 활용하여 안정적이고 유지보수가 용이한 코드를 작성할 수 있습니다.'**
+  String get skillsLanguageTypeScriptDetailedDescription6;
 
-  /// No description provided for @skillsLibrarySyncfusionChart.
+  /// No description provided for @skillsLanguageKotlinDetailedDescription1.
   ///
   /// In ko, this message translates to:
-  /// **'원하는 형태의 차트를 구현할 수 있다.'**
-  String get skillsLibrarySyncfusionChart;
+  /// **'1개월간 코틀린에 익숙해지기 위한 코스에 참여했습니다.'**
+  String get skillsLanguageKotlinDetailedDescription1;
 
-  /// No description provided for @skillsLibraryFreezed.
+  /// No description provided for @skillsLanguageKotlinDetailedDescription2.
   ///
   /// In ko, this message translates to:
-  /// **'일반 및 제네릭 모델을 정의할 수 있다.'**
-  String get skillsLibraryFreezed;
+  /// **'약 6개의 토이 프로젝트를 진행하며 유닛테스트에 대한 개념과 클린 아키텍쳐를 익혔습니다.'**
+  String get skillsLanguageKotlinDetailedDescription2;
 
-  /// No description provided for @skillsLibraryWidgetbook.
+  /// No description provided for @skillsLanguageKotlinDetailedDescription3.
   ///
   /// In ko, this message translates to:
-  /// **'배포 전 구현한 UI를 웹으로 확인할 수 있다.'**
-  String get skillsLibraryWidgetbook;
+  /// **'이후 2개월간 배운 것을 활용해 TDD를 연습했습니다.'**
+  String get skillsLanguageKotlinDetailedDescription3;
 
-  /// No description provided for @skillsLibraryGoRouter1.
+  /// No description provided for @skillsLanguageJavaDetailedDescription1.
   ///
   /// In ko, this message translates to:
-  /// **'페이지 간 라우팅을 적용할 수 있다.'**
-  String get skillsLibraryGoRouter1;
+  /// **'7개월간 웹 개발 코스에 참여하며 Java를 학습했습니다.'**
+  String get skillsLanguageJavaDetailedDescription1;
 
-  /// No description provided for @skillsLibraryGoRouter2.
+  /// No description provided for @skillsLanguageJavaDetailedDescription2.
   ///
   /// In ko, this message translates to:
-  /// **'데이터 상태에 따라 특정 페이지로 리다이렉팅 하도록 구현할 수 있다.'**
-  String get skillsLibraryGoRouter2;
+  /// **'이후 약 9개월 간 백엔드 개발자로서 Spring framework를 활용해 가상계좌 지방세 수납 서비스를 개발했습니다.'**
+  String get skillsLanguageJavaDetailedDescription2;
 
-  /// No description provided for @skillsLibrarySkeletonizer.
+  /// No description provided for @skillsLanguageCDetailedDescription1.
   ///
   /// In ko, this message translates to:
-  /// **'로딩 UI를 구현할 수 있다.'**
-  String get skillsLibrarySkeletonizer;
+  /// **'대학교에서 한 학기 동안 C 언어를 통해 기초 프로그래밍을 학습 했습니다.'**
+  String get skillsLanguageCDetailedDescription1;
 
-  /// No description provided for @skillsLibraryLocalization1.
+  /// No description provided for @skillsLanguageCDetailedDescription2.
   ///
   /// In ko, this message translates to:
-  /// **'언어 변경 기능을 구현할 수 있다.'**
-  String get skillsLibraryLocalization1;
+  /// **'이후 5학기 동안 마이크로프로세서를 활용한 임베디드 시스템 학습을 했습니다.'**
+  String get skillsLanguageCDetailedDescription2;
 
-  /// No description provided for @skillsLibraryLocalization2.
+  /// No description provided for @skillsLanguageCDetailedDescription3.
   ///
   /// In ko, this message translates to:
-  /// **'언어 변경 시 상태 관리를 이용해 앱 재시작 없이 즉시 변경할 수 있다.'**
-  String get skillsLibraryLocalization2;
+  /// **'미분방정식 해를 구하고 동역학 이론을 활용해 미로를 탈출하는 로봇, 밸런스 로봇 등을 프로젝트로 진행했습니다.'**
+  String get skillsLanguageCDetailedDescription3;
 
-  /// No description provided for @skillsLibraryLocalization3.
+  /// No description provided for @skillsLanguageSQLDetailedDescription1.
   ///
   /// In ko, this message translates to:
-  /// **'구글 스프레드 시트를 이용하여 국가 별 언어를 관리할 수 있다.'**
-  String get skillsLibraryLocalization3;
+  /// **'7개월간 웹 개발 코스에 참여하며 SQL을 학습했습니다.'**
+  String get skillsLanguageSQLDetailedDescription1;
 
-  /// No description provided for @skillsLibrarySQFLite.
+  /// No description provided for @skillsLanguageSQLDetailedDescription2.
   ///
   /// In ko, this message translates to:
-  /// **'로컬 데이터베이스 생성 및 조작을 할 수 있다.'**
-  String get skillsLibrarySQFLite;
+  /// **'이후 약 9개월 간 백엔드 개발자로서 2개 이상의 table을 Join한 복잡한 데이터 조회, 인덱스 처리를 통한 DB 속도 개선 및 서로 다른 DB 마이그레이션 등을 경험했습니다.'**
+  String get skillsLanguageSQLDetailedDescription2;
 
-  /// No description provided for @skillsLibraryFlutterGen.
+  /// No description provided for @skillsLanguageCPPDetailedDescription1.
   ///
   /// In ko, this message translates to:
-  /// **'앱에 필요한 애셋들을 자동 생성할 수 있다.'**
-  String get skillsLibraryFlutterGen;
+  /// **'대학교에서 한 학기 동안 C++을 학습했습니다.'**
+  String get skillsLanguageCPPDetailedDescription1;
 
-  /// No description provided for @skillsTechniquePagination1.
+  /// No description provided for @skillsLanguageCPPDetailedDescription2.
   ///
   /// In ko, this message translates to:
-  /// **'무한 스크롤 페이지네이션을 구현할 수 있다.'**
-  String get skillsTechniquePagination1;
+  /// **'객체지향 이론을 활용해 임베디드 토이 프로젝트를 작성했습니다.'**
+  String get skillsLanguageCPPDetailedDescription2;
 
-  /// No description provided for @skillsTechniquePagination2.
+  /// No description provided for @skillsLanguagePythonDetailedDescription1.
   ///
   /// In ko, this message translates to:
-  /// **'Throttle 기법을 적용하여 중복 요청을 방지할 수 있다.'**
-  String get skillsTechniquePagination2;
+  /// **'알고리즘 문제 풀이를 위해 Python을 사용했습니다.'**
+  String get skillsLanguagePythonDetailedDescription1;
 
-  /// No description provided for @skillsTechniqueOptimisticResponse.
+  /// No description provided for @skillsLanguagePythonDetailedDescription2.
   ///
   /// In ko, this message translates to:
-  /// **'통신에 문제가 없다는 가정하에 예상 응답 먼저 표시하여 UX를 향상 시킬 수 있다.'**
-  String get skillsTechniqueOptimisticResponse;
+  /// **'Python의 기본 문법과 자료구조를 이해하고 있으며, 간단한 스크립트 작성이 가능합니다.'**
+  String get skillsLanguagePythonDetailedDescription2;
 
-  /// No description provided for @skillsTechniqueSorting.
+  /// No description provided for @skillsLibraryRiverpodDescription.
   ///
   /// In ko, this message translates to:
-  /// **'서버 부하를 줄이기 위해 앱 내에 정렬 로직을 적용할 수 있다.'**
-  String get skillsTechniqueSorting;
+  /// **'상태 관리를 할 수 있으며, 인스턴스의 처리 타이밍을 고려할 수 있습니다.'**
+  String get skillsLibraryRiverpodDescription;
 
-  /// No description provided for @skillsTechniqueAnimation.
+  /// No description provided for @skillsLibraryRiverpodDetailedDescription1.
   ///
   /// In ko, this message translates to:
-  /// **'원하는 애니메이션을 위젯에 적용할 수 있다.'**
-  String get skillsTechniqueAnimation;
+  /// **'Riverpod을 사용하여 상태 관리를 구현할 수 있습니다.'**
+  String get skillsLibraryRiverpodDetailedDescription1;
 
-  /// No description provided for @skillsTechniqueSliver.
+  /// No description provided for @skillsLibraryRiverpodDetailedDescription2.
   ///
   /// In ko, this message translates to:
-  /// **'Sliver Widget과 Box Widget을 결합한 NestedScrollView를 활용할 수 있다.'**
-  String get skillsTechniqueSliver;
+  /// **'Consumer 위젯을 활용하여 특정 UI만 리빌드할 수 있습니다.'**
+  String get skillsLibraryRiverpodDetailedDescription2;
 
-  /// No description provided for @skillsTechniqueReorder.
+  /// No description provided for @skillsLibraryRiverpodDetailedDescription3.
+  ///
+  /// In ko, this message translates to:
+  /// **'Provider 인스턴스의 dispose 타이밍을 고려하여 상태를 관리할 수 있습니다.'**
+  String get skillsLibraryRiverpodDetailedDescription3;
+
+  /// No description provided for @skillsLibraryRiverpodDetailedDescription4.
+  ///
+  /// In ko, this message translates to:
+  /// **'Riverpod을 활용해 MVVM 아키텍처 패턴을 적용할 수 있습니다.'**
+  String get skillsLibraryRiverpodDetailedDescription4;
+
+  /// No description provided for @skillsLibraryRiverpodDetailedDescription5.
+  ///
+  /// In ko, this message translates to:
+  /// **'Code Generation을 적용할 수 있습니다.'**
+  String get skillsLibraryRiverpodDetailedDescription5;
+
+  /// No description provided for @skillsLibraryRetrofitDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Retrofit을 활용해 Rest API 호출을 할 수 있습니다.'**
+  String get skillsLibraryRetrofitDescription;
+
+  /// No description provided for @skillsLibraryRetrofitDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Retrofit을 활용해 Rest API 레포지터리의 보일러플레이트 코드를 생략하고 가독성을 증가시킬 수 있습니다.'**
+  String get skillsLibraryRetrofitDetailedDescription1;
+
+  /// No description provided for @skillsLibraryRetrofitDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'Code Generation을 적용할 수 있습니다.'**
+  String get skillsLibraryRetrofitDetailedDescription2;
+
+  /// No description provided for @skillsLibraryDioDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Dio를 활용해 Rest API 호출을 할 수 있습니다.'**
+  String get skillsLibraryDioDescription;
+
+  /// No description provided for @skillsLibraryDioDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Interceptor를 활용해 API 호출 전후에 로깅 및 에러 처리를 할 수 있습니다.'**
+  String get skillsLibraryDioDetailedDescription1;
+
+  /// No description provided for @skillsLibraryDioDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'MultipartRequest를 활용해 이미지 파일 업로드를 할 수 있습니다.'**
+  String get skillsLibraryDioDetailedDescription2;
+
+  /// No description provided for @skillsLibraryFirebaseDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Firebase의 여러 툴을 활용할 수 있습니다.'**
+  String get skillsLibraryFirebaseDescription;
+
+  /// No description provided for @skillsLibraryFirebaseDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Push Notification와 Local Notification을 활용해 알림을 구현할 수 있습니다.'**
+  String get skillsLibraryFirebaseDetailedDescription1;
+
+  /// No description provided for @skillsLibraryFirebaseDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'Analytics를 활용해 앱 사용 통계를 수집할 수 있습니다.'**
+  String get skillsLibraryFirebaseDetailedDescription2;
+
+  /// No description provided for @skillsLibraryFirebaseDetailedDescription3.
+  ///
+  /// In ko, this message translates to:
+  /// **'Database를 활용해 실시간 데이터베이스를 구현할 수 있습니다.'**
+  String get skillsLibraryFirebaseDetailedDescription3;
+
+  /// No description provided for @skillsLibraryFirebaseDetailedDescription4.
+  ///
+  /// In ko, this message translates to:
+  /// **'Authentication을 활용해 사용자 인증을 구현할 수 있습니다.'**
+  String get skillsLibraryFirebaseDetailedDescription4;
+
+  /// No description provided for @skillsLibraryStorageDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'앱에 필요한 데이터를 보안 필요 여부에 따라 구분하여 저장 및 사용할 수 있습니다.'**
+  String get skillsLibraryStorageDescription;
+
+  /// No description provided for @skillsLibraryStorageDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Shared Preference를 활용해 간단한 데이터 저장을 할 수 있습니다.'**
+  String get skillsLibraryStorageDetailedDescription1;
+
+  /// No description provided for @skillsLibraryStorageDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'Secure Storage를 활용해 민감한 데이터 저장을 할 수 있습니다.'**
+  String get skillsLibraryStorageDetailedDescription2;
+
+  /// No description provided for @skillsLibraryGraphQLDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'주어진 GraphQL 쿼리를 이용해 데이터를 요청할 수 있습니다.'**
+  String get skillsLibraryGraphQLDescription;
+
+  /// No description provided for @skillsLibraryGraphQLDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'GraphQL API를 활용해 데이터 통신을 할 수 있습니다.'**
+  String get skillsLibraryGraphQLDetailedDescription1;
+
+  /// No description provided for @skillsLibraryLoggerDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Logger를 활용해 로그를 남길 수 있습니다.'**
+  String get skillsLibraryLoggerDescription;
+
+  /// No description provided for @skillsLibraryLoggerDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'로그 레벨을 설정할 수 있습니다.'**
+  String get skillsLibraryLoggerDetailedDescription1;
+
+  /// No description provided for @skillsLibraryLoggerDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'로그 필터링을 할 수 있습니다.'**
+  String get skillsLibraryLoggerDetailedDescription2;
+
+  /// No description provided for @skillsLibraryImagePickerDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'장치 내 갤러리의 이미지를 앱으로 가져올 수 있습니다.'**
+  String get skillsLibraryImagePickerDescription;
+
+  /// No description provided for @skillsLibraryImagePickerDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Image Picker를 활용해 갤러리에서 이미지를 선택하여 앱에 표시할 수 있습니다.'**
+  String get skillsLibraryImagePickerDetailedDescription1;
+
+  /// No description provided for @skillsLibrarySyncfusionChartDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'원하는 형태의 차트를 구현할 수 있습니다.'**
+  String get skillsLibrarySyncfusionChartDescription;
+
+  /// No description provided for @skillsLibrarySyncfusionChartDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Syncfusion Chart를 활용해 다양한 차트를 구현할 수 있습니다.'**
+  String get skillsLibrarySyncfusionChartDetailedDescription1;
+
+  /// No description provided for @skillsLibrarySyncfusionChartDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'차트의 스타일을 커스터마이징할 수 있습니다.'**
+  String get skillsLibrarySyncfusionChartDetailedDescription2;
+
+  /// No description provided for @skillsLibraryFreezedDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'일반 및 제네릭 모델을 정의할 수 있습니다.'**
+  String get skillsLibraryFreezedDescription;
+
+  /// No description provided for @skillsLibraryFreezedDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Freezed를 활용해 불변 객체를 생성할 수 있습니다.'**
+  String get skillsLibraryFreezedDetailedDescription1;
+
+  /// No description provided for @skillsLibraryFreezedDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'유니온 타입을 이용해 다양한 상태를 하나의 타입으로 처리할 수 있습니다.'**
+  String get skillsLibraryFreezedDetailedDescription2;
+
+  /// No description provided for @skillsLibraryFreezedDetailedDescription3.
+  ///
+  /// In ko, this message translates to:
+  /// **'Code Generation을 적용할 수 있습니다.'**
+  String get skillsLibraryFreezedDetailedDescription3;
+
+  /// No description provided for @skillsLibraryWidgetbookDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'구현한 UI를 문서화 및 테스트할 수 있습니다.'**
+  String get skillsLibraryWidgetbookDescription;
+
+  /// No description provided for @skillsLibraryWidgetbookDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'위젯을 문서화할 수 있습니다.'**
+  String get skillsLibraryWidgetbookDetailedDescription1;
+
+  /// No description provided for @skillsLibraryWidgetbookDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'위젯을 테스트할 수 있습니다.'**
+  String get skillsLibraryWidgetbookDetailedDescription2;
+
+  /// No description provided for @skillsLibraryGoRouterDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'페이지 간 라우팅을 적용할 수 있습니다.'**
+  String get skillsLibraryGoRouterDescription;
+
+  /// No description provided for @skillsLibraryGoRouterDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Go Router를 활용해 네비게이션을 구현할 수 있습니다.'**
+  String get skillsLibraryGoRouterDetailedDescription1;
+
+  /// No description provided for @skillsLibraryGoRouterDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'데이터 상태에 따라 특정 페이지로 리다이렉팅 하도록 구현할 수 있습니다.'**
+  String get skillsLibraryGoRouterDetailedDescription2;
+
+  /// No description provided for @skillsLibrarySkeletonizerDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'로딩 UI를 구현할 수 있습니다.'**
+  String get skillsLibrarySkeletonizerDescription;
+
+  /// No description provided for @skillsLibrarySkeletonizerDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Skeletonizer를 활용해 스켈레톤 UI를 구현할 수 있습니다.'**
+  String get skillsLibrarySkeletonizerDetailedDescription1;
+
+  /// No description provided for @skillsLibrarySkeletonizerDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'스켈레톤 UI의 스타일을 커스터마이징할 수 있습니다.'**
+  String get skillsLibrarySkeletonizerDetailedDescription2;
+
+  /// No description provided for @skillsLibraryLocalizationDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'언어 변경 기능을 구현할 수 있습니다.'**
+  String get skillsLibraryLocalizationDescription;
+
+  /// No description provided for @skillsLibraryLocalizationDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Flutter Localization, Arb파일을 활용해 다국어 지원을 할 수 있습니다.'**
+  String get skillsLibraryLocalizationDetailedDescription1;
+
+  /// No description provided for @skillsLibraryLocalizationDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'Provider를 적용하여 앱 종료 없이 상태 관리로 언어를 변경할 수 있습니다.'**
+  String get skillsLibraryLocalizationDetailedDescription2;
+
+  /// No description provided for @skillsLibraryLocalizationDetailedDescription3.
+  ///
+  /// In ko, this message translates to:
+  /// **'Code Generation을 적용할 수 있습니다.'**
+  String get skillsLibraryLocalizationDetailedDescription3;
+
+  /// No description provided for @skillsLibrarySQFLiteDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'로컬 데이터베이스 생성 및 조작을 할 수 있습니다.'**
+  String get skillsLibrarySQFLiteDescription;
+
+  /// No description provided for @skillsLibrarySQFLiteDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'SQFLite를 활용해 로컬 데이터베이스를 구현할 수 있습니다.'**
+  String get skillsLibrarySQFLiteDetailedDescription1;
+
+  /// No description provided for @skillsLibrarySQFLiteDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'CRUD 기능을 구현할 수 있습니다.'**
+  String get skillsLibrarySQFLiteDetailedDescription2;
+
+  /// No description provided for @skillsLibraryFlutterGenDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'앱에 필요한 애셋들을 자동 생성할 수 있습니다.'**
+  String get skillsLibraryFlutterGenDescription;
+
+  /// No description provided for @skillsLibraryFlutterGenDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Flutter Gen을 활용해 이미지, 폰트, 아이콘 등을 관리할 수 있습니다.'**
+  String get skillsLibraryFlutterGenDetailedDescription1;
+
+  /// No description provided for @skillsLibraryFlutterGenDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'Code Generation을 적용할 수 있습니다.'**
+  String get skillsLibraryFlutterGenDetailedDescription2;
+
+  /// No description provided for @skillsTechniquePaginationDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Pagination을 직접 구현할 수 있습니다.'**
+  String get skillsTechniquePaginationDescription;
+
+  /// No description provided for @skillsTechniquePaginationDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'라이브러리 없이 페이지네이션을 직접 구현할 수 있습니다.'**
+  String get skillsTechniquePaginationDetailedDescription1;
+
+  /// No description provided for @skillsTechniqueInfiniteScrollDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Infinite Scroll을 직접 구현할 수 있습니다.'**
+  String get skillsTechniqueInfiniteScrollDescription;
+
+  /// No description provided for @skillsTechniqueInfiniteScrollDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'라이브러리 없이 무한 스크롤을 직접 구현할 수 있습니다.'**
+  String get skillsTechniqueInfiniteScrollDetailedDescription1;
+
+  /// No description provided for @skillsTechniqueInfiniteScrollDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'Throttle을 활용해 성능을 최적화할 수 있습니다.'**
+  String get skillsTechniqueInfiniteScrollDetailedDescription2;
+
+  /// No description provided for @skillsTechniqueOptimisticResponseDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Optimistic Response로 UX를 향상시킬 수 있습니다.'**
+  String get skillsTechniqueOptimisticResponseDescription;
+
+  /// No description provided for @skillsTechniqueOptimisticResponseDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'이벤트 발생 시 UI를 즉각적으로 업데이트하고 서버와의 통신을 최적화하여 유저 경험을 향상시킬 수 있습니다.'**
+  String get skillsTechniqueOptimisticResponseDetailedDescription1;
+
+  /// No description provided for @skillsTechniqueThrottlingDebounceDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Throttling & Debounce를 활용해 API 요청을 최적화할 수 있습니다.'**
+  String get skillsTechniqueThrottlingDebounceDescription;
+
+  /// No description provided for @skillsTechniqueThrottlingDebounceDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Throttling을 활용해 첫 번째 API 요청 후 일정 시간 동안 추가 요청을 방지할 수 있습니다.'**
+  String get skillsTechniqueThrottlingDebounceDetailedDescription1;
+
+  /// No description provided for @skillsTechniqueThrottlingDebounceDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'Debounce를 활용해 최종 결과를 기다린 후 API 요청을 할 수 있습니다.'**
+  String get skillsTechniqueThrottlingDebounceDetailedDescription2;
+
+  /// No description provided for @skillsTechniqueIntersectionObserverDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Intersection Observer를 활용해 스크롤 이벤트를 최적화할 수 있습니다.'**
+  String get skillsTechniqueIntersectionObserverDescription;
+
+  /// No description provided for @skillsTechniqueIntersectionObserverDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Intersection Observer를 활용해 스크롤 시 특정 요소가 화면에 보일 때만 이벤트를 발생시킬 수 있습니다.'**
+  String get skillsTechniqueIntersectionObserverDetailedDescription1;
+
+  /// No description provided for @skillsTechniqueSortingDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'앱 내에 정렬 로직을 적용할 수 있습니다.'**
+  String get skillsTechniqueSortingDescription;
+
+  /// No description provided for @skillsTechniqueSortingDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'서버 부하를 줄이기 위해 클라이언트에서 정렬을 구현할 수 있습니다.'**
+  String get skillsTechniqueSortingDetailedDescription1;
+
+  /// No description provided for @skillsTechniqueAnimationDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'원하는 애니메이션을 위젯에 적용할 수 있습니다.'**
+  String get skillsTechniqueAnimationDescription;
+
+  /// No description provided for @skillsTechniqueAnimationDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Flutter의 애니메이션 라이브러리를 활용해 다양한 애니메이션을 구현할 수 있습니다.'**
+  String get skillsTechniqueAnimationDetailedDescription1;
+
+  /// No description provided for @skillsTechniqueAnimationDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'일반화하여 재사용할 수 있는 애니메이션을 구현할 수 있습니다.'**
+  String get skillsTechniqueAnimationDetailedDescription2;
+
+  /// No description provided for @skillsTechniqueSliverDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Sliver Widget과 NestedScrollView를 활용할 수 있습니다.'**
+  String get skillsTechniqueSliverDescription;
+
+  /// No description provided for @skillsTechniqueSliverDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'Sliver Widget을 활용해 스크롤 시 UI를 최적화할 수 있습니다.'**
+  String get skillsTechniqueSliverDetailedDescription1;
+
+  /// No description provided for @skillsTechniqueSliverDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'원하는 스크롤 효과를 구현할 수 있습니다.'**
+  String get skillsTechniqueSliverDetailedDescription2;
+
+  /// No description provided for @skillsTechniqueReorderDescription.
   ///
   /// In ko, this message translates to:
   /// **'ReorderableListView와 Dismissible 위젯들을 결합하여 구현할 수 있다.'**
-  String get skillsTechniqueReorder;
+  String get skillsTechniqueReorderDescription;
 
-  /// No description provided for @skillsTechniqueCodeGeneration.
+  /// No description provided for @skillsTechniqueReorderDetailedDescription1.
   ///
   /// In ko, this message translates to:
-  /// **'코드 자동 생성을 지원하는 라이브러리의 경우 해당 기능을 사용할 수 있다.'**
-  String get skillsTechniqueCodeGeneration;
+  /// **'ReorderableListView를 활용해 리스트 아이템을 드래그하여 순서를 변경할 수 있습니다.'**
+  String get skillsTechniqueReorderDetailedDescription1;
 
-  /// No description provided for @skillsCoWork.
+  /// No description provided for @skillsTechniqueReorderDetailedDescription2.
   ///
   /// In ko, this message translates to:
-  /// **'경험해 본 협업 툴'**
-  String get skillsCoWork;
+  /// **'Dissmisible을 활용해 리스트 아이템을 스와이프하여 삭제할 수 있습니다.'**
+  String get skillsTechniqueReorderDetailedDescription2;
 
-  /// No description provided for @skillsIde.
+  /// No description provided for @skillsTechniqueReorderDetailedDescription3.
   ///
   /// In ko, this message translates to:
-  /// **'주로 사용하는 IDE'**
-  String get skillsIde;
+  /// **'두 위젯을 조합하여 리스트 아이템을 드래그하여 순서를 변경하고 스와이프하여 삭제할 수 있습니다.'**
+  String get skillsTechniqueReorderDetailedDescription3;
 
-  /// No description provided for @skillsLanguage.
+  /// No description provided for @skillsTechniqueReorderDetailedDescription4.
   ///
   /// In ko, this message translates to:
-  /// **'사용 가능한 언어'**
-  String get skillsLanguage;
+  /// **'key를 활용해 리스트 아이템의 순서 변경 및 인덱스 변경을 적용하여 에러를 방지합니다.'**
+  String get skillsTechniqueReorderDetailedDescription4;
+
+  /// No description provided for @skillsTechniqueReorderDetailedDescription5.
+  ///
+  /// In ko, this message translates to:
+  /// **'Debounce를 활용해 성능을 최적화할 수 있습니다.'**
+  String get skillsTechniqueReorderDetailedDescription5;
+
+  /// No description provided for @skillsTechniqueCodeGenerationDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'코드 생성을 활용해 보일러플레이트 코드를 줄일 수 있습니다.'**
+  String get skillsTechniqueCodeGenerationDescription;
+
+  /// No description provided for @skillsTechniqueCodeGenerationDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'지원하는 라이브러리일 경우 코드 생성을 활용해 보일러플레이트 코드를 줄일 수 있습니다.'**
+  String get skillsTechniqueCodeGenerationDetailedDescription1;
+
+  /// No description provided for @skillsTechniqueUnitTestDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Unit Test를 작성할 수 있습니다.'**
+  String get skillsTechniqueUnitTestDescription;
+
+  /// No description provided for @skillsTechniqueUnitTestDetailedDescription1.
+  ///
+  /// In ko, this message translates to:
+  /// **'단위 테스트를 작성하여 코드의 품질을 높일 수 있습니다.'**
+  String get skillsTechniqueUnitTestDetailedDescription1;
+
+  /// No description provided for @skillsTechniqueUnitTestDetailedDescription2.
+  ///
+  /// In ko, this message translates to:
+  /// **'Mocking을 활용해 의존성을 분리할 수 있습니다.'**
+  String get skillsTechniqueUnitTestDetailedDescription2;
+
+  /// No description provided for @skillsTechniqueUnitTestDetailedDescription3.
+  ///
+  /// In ko, this message translates to:
+  /// **'API 요청 테스트를 할 수 있습니다.'**
+  String get skillsTechniqueUnitTestDetailedDescription3;
+
+  /// No description provided for @skillsToolSlackDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Slack을 활용해 팀원과 소통할 수 있습니다.'**
+  String get skillsToolSlackDescription;
+
+  /// No description provided for @skillsToolFigmaDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Figma에 정의된 디자인을 개발에 적용 할 수 있습니다.'**
+  String get skillsToolFigmaDescription;
+
+  /// No description provided for @skillsToolNotionDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Notion을 활용해 문서화를 할 수 있습니다.'**
+  String get skillsToolNotionDescription;
+
+  /// No description provided for @skillsToolJiraDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Jira를 활용해 프로젝트 관리를 할 수 있습니다.'**
+  String get skillsToolJiraDescription;
+
+  /// No description provided for @skillsToolConfluenceDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Confluence를 활용해 문서화를 할 수 있습니다.'**
+  String get skillsToolConfluenceDescription;
+
+  /// No description provided for @skillsToolGoogleSheetDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Google Sheet를 활용해 데이터 관리 및 처리 매크로를 적용할 수 있습니다.'**
+  String get skillsToolGoogleSheetDescription;
+
+  /// No description provided for @skillsToolIntelliJDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'IntelliJ IDEA를 활용해 Kotlin 개발을 할 수 있습니다.'**
+  String get skillsToolIntelliJDescription;
+
+  /// No description provided for @skillsToolWebStormDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'WebStorm을 활용해 TypeScript 개발을 할 수 있습니다.'**
+  String get skillsToolWebStormDescription;
+
+  /// No description provided for @skillsToolAndroidStudioDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Android Studio를 활용해 Dart 개발을 할 수 있습니다.'**
+  String get skillsToolAndroidStudioDescription;
+
+  /// No description provided for @skillsToolVisualStudioCodeDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Visual Studio Code를 활용해 Dart, TypeScript 개발을 할 수 있습니다.'**
+  String get skillsToolVisualStudioCodeDescription;
+
+  /// No description provided for @skillsToolGitDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'Git을 활용해 버전 관리를 할 수 있습니다.'**
+  String get skillsToolGitDescription;
+
+  /// No description provided for @skillsToolSvnDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'SVN을 활용해 버전 관리를 할 수 있습니다.'**
+  String get skillsToolSvnDescription;
 
   /// No description provided for @cvDirectionalTitle.
   ///

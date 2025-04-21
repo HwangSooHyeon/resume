@@ -6,7 +6,7 @@ import 'package:resume/page/config_screen.dart';
 import 'package:resume/page/cover-letter/cover_letter_screen.dart';
 import 'package:resume/page/cv/cv_screen.dart';
 import 'package:resume/page/home/home_screen.dart';
-import 'package:resume/page/skills_screen.dart';
+import 'package:resume/page/skills/skills_screen.dart';
 import 'package:resume/view_model/bottom_navigation_view_model.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/widget/common/custom_animated_ink_well.dart';
