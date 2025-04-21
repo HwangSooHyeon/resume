@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gap/gap.dart';
 import 'package:go_router/go_router.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/util/theme/custom_text_theme.dart';
@@ -295,8 +296,6 @@ class _SkillCardWidgetState extends State<SkillCardWidget> {
         fontSize: 14,
         color: context.colorScheme.onSurface.withValues(alpha: 0.7),
       ),
-      maxLines: 2,
-      overflow: TextOverflow.ellipsis,
     );
   }
 
@@ -332,13 +331,12 @@ class _SkillCardWidgetState extends State<SkillCardWidget> {
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            spacing: 16,
             children: [
               _buildCardHeader(),
               if (widget.level != null) ...[
-                const SizedBox(height: 16),
                 _buildCardProgressInfo(context),
               ] else if (widget.description != null) ...[
-                const SizedBox(height: 12),
                 Container(
                   height: 2,
                   width: 40,
@@ -349,7 +347,6 @@ class _SkillCardWidgetState extends State<SkillCardWidget> {
                 ),
               ],
               if (widget.description != null) ...[
-                const SizedBox(height: 16),
                 _buildCardDescription(context),
               ],
             ],

@@ -56,7 +56,7 @@ class _SkillsScreenState extends State<SkillsScreen>
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.only(bottom: 32.0),
+              padding: const EdgeInsets.symmetric(vertical: 32.0),
               child: Text(
                 'Skills',
                 style: CustomTextTheme.boldTextStyle(
