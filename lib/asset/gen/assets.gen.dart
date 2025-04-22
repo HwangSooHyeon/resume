@@ -36,6 +36,10 @@ class $AssetImageGen {
   AssetGenImage get imageCoverLetterBackground2 =>
       const AssetGenImage('asset/image/image_cover_letter_background_2.png');
 
+  /// File path: asset/image/image_daily_coin.gif
+  AssetGenImage get imageDailyCoin =>
+      const AssetGenImage('asset/image/image_daily_coin.gif');
+
   /// File path: asset/image/image_fire_ant_1.png
   AssetGenImage get imageFireAnt1 =>
       const AssetGenImage('asset/image/image_fire_ant_1.png');
@@ -124,9 +128,17 @@ class $AssetImageGen {
   AssetGenImage get imageInvestarKor8 =>
       const AssetGenImage('asset/image/image_investar_kor_8.png');
 
+  /// File path: asset/image/image_investar_my.png
+  AssetGenImage get imageInvestarMy =>
+      const AssetGenImage('asset/image/image_investar_my.png');
+
   /// File path: asset/image/image_main.png
   AssetGenImage get imageMain =>
       const AssetGenImage('asset/image/image_main.png');
+
+  /// File path: asset/image/image_profile.jpeg
+  AssetGenImage get imageProfile =>
+      const AssetGenImage('asset/image/image_profile.jpeg');
 
   /// File path: asset/image/image_sbl_app_1.png
   AssetGenImage get imageSblApp1 =>
@@ -152,6 +164,7 @@ class $AssetImageGen {
         imageCoverLetter4,
         imageCoverLetterBackground1,
         imageCoverLetterBackground2,
+        imageDailyCoin,
         imageFireAnt1,
         imageFireAnt2,
         imageFireAnt3,
@@ -174,7 +187,9 @@ class $AssetImageGen {
         imageInvestarKor6,
         imageInvestarKor7,
         imageInvestarKor8,
+        imageInvestarMy,
         imageMain,
+        imageProfile,
         imageSblApp1,
         imageSblApp2,
         imageSblApp3,
