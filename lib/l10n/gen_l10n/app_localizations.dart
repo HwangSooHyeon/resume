@@ -1684,6 +1684,12 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'푸터 등 간단한 UI 개발 및 베트남 외주에 필요한 특정 라이브러리들을 선정하는 작업을 했습니다.'**
   String get cvMoneytoringContent4;
+
+  /// No description provided for @cvProfileComment.
+  ///
+  /// In ko, this message translates to:
+  /// **'안녕하세요, 크로스플랫폼 앱 개발자(Flutter) 황수현입니다.\n타임라인의 각 버튼을 클릭하면 상세 내용을 확인하실 수 있습니다.'**
+  String get cvProfileComment;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

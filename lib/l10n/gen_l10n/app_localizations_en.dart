@@ -802,4 +802,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get cvMoneytoringContent4 => 'Developed simple UI components including page footers. Evaluated and selected specific libraries required by the Vietnamese outsourcing team to streamline collaboration.';
+
+  @override
+  String get cvProfileComment => 'Hello, I’m Soohyeon Hwang, a cross-platform app developer (Flutter).\nYou can view detailed information by clicking each button on the timeline.';
 }
