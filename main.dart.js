@@ -81716,8 +81716,8 @@ gV9(){return"\ubc38\ub958\uccb4\uc778, \uc54c\ub9bc \uad00\ub9ac\uc790 \ud654\ub
 gVa(){return"\ud478\ud130 \ub4f1 \uac04\ub2e8\ud55c UI \uac1c\ubc1c \ubc0f \ubca0\ud2b8\ub0a8 \uc678\uc8fc\uc5d0 \ud544\uc694\ud55c \ud2b9\uc815 \ub77c\uc774\ube0c\ub7ec\ub9ac\ub4e4\uc744 \uc120\uc815\ud558\ub294 \uc791\uc5c5\uc744 \ud588\uc2b5\ub2c8\ub2e4."},
 gVc(){return"\uc548\ub155\ud558\uc138\uc694, \ud06c\ub85c\uc2a4\ud50c\ub7ab\ud3fc \uc571 \uac1c\ubc1c\uc790(Flutter) \ud669\uc218\ud604\uc785\ub2c8\ub2e4.\n\ud0c0\uc784\ub77c\uc778\uc758 \uac01 \ubc84\ud2bc\uc744 \ud074\ub9ad\ud558\uba74 \uc0c1\uc138 \ub0b4\uc6a9\uc744 \ud655\uc778\ud558\uc2e4 \uc218 \uc788\uc2b5\ub2c8\ub2e4."}}
 A.NW.prototype={
-mG(a,b){var s=b.q_($.auT(),t.A),r=b.q_($.ayM(),t.jm),q=A.azJ(!1),p=A.azJ(!0)
-return new A.t3($.aG7(),"Resume",q,p,r,new A.h0(s.a,null),B.TU,B.NT,!1,null)}}
+mG(a,b){var s=b.q_($.auT(),t.A),r=b.q_($.ayM(),t.jm),q=s.a,p=q==="ko"?"\ud669\uc218\ud604 - \ud50c\ub7ec\ud130 \uac1c\ubc1c\uc790":"Soohyeon Hwang - Flutter Developer",o=A.azJ(!1),n=A.azJ(!0)
+return new A.t3($.aG7(),p,o,n,r,new A.h0(q,null),B.TU,B.NT,!1,null)}}
 A.k5.prototype={
 L(){return"AppBarEnum."+this.b},
 aqJ(a){return A.avj(new A.a1R(this))}}
