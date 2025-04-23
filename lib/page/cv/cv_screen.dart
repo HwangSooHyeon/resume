@@ -507,8 +507,11 @@ class _CvScreenState extends State<CvScreen> with TickerProviderStateMixin {
         runSpacing: 30,
         children: [
           FadeSlideWidget(
-              delay: animationDelay(order: 1), child: _buildProfile()),
+            delay: animationDelay(order: 1),
+            child: _buildProfile(),
+          ),
           Container(
+            height: context.height - 164 - 244,
             width: context.width,
             padding: const EdgeInsets.symmetric(horizontal: 100),
             child: Column(
@@ -523,18 +526,21 @@ class _CvScreenState extends State<CvScreen> with TickerProviderStateMixin {
                   delay: animationDelay(order: 3),
                   child: _buildYearLabel(),
                 ),
-                Timeline(
-                  timelines: [
-                    _directionalTimeline(),
-                    _woowaTimeline(),
-                    _hectoTimeline(),
-                    _itAcademyTimeline(),
-                    _graduateSchoolTimeline(),
-                    _universityTimeline(),
-                  ],
-                ),
                 FadeSlideWidget(
                   delay: animationDelay(order: 4),
+                  child: Timeline(
+                    timelines: [
+                      _directionalTimeline(),
+                      _woowaTimeline(),
+                      _hectoTimeline(),
+                      _itAcademyTimeline(),
+                      _graduateSchoolTimeline(),
+                      _universityTimeline(),
+                    ],
+                  ),
+                ),
+                FadeSlideWidget(
+                  delay: animationDelay(order: 5),
                   child: Timeline(
                     timelines: [
                       _sblTimeline(),
@@ -544,7 +550,7 @@ class _CvScreenState extends State<CvScreen> with TickerProviderStateMixin {
                   ),
                 ),
                 FadeSlideWidget(
-                  delay: animationDelay(order: 5),
+                  delay: animationDelay(order: 6),
                   child: Timeline(
                     timelines: [
                       _investarBackOfficeTimeline(),
@@ -552,7 +558,7 @@ class _CvScreenState extends State<CvScreen> with TickerProviderStateMixin {
                   ),
                 ),
                 FadeSlideWidget(
-                  delay: animationDelay(order: 6),
+                  delay: animationDelay(order: 7),
                   child: Timeline(
                     timelines: [
                       _investarTimeline(),

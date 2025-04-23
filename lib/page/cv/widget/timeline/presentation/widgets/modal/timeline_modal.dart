@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/page/cv/widget/timeline/domain/timeline_model.dart';
-import 'package:resume/page/cv/widget/timeline/domain/timeline_detail_model.dart';
 import 'package:resume/page/cv/widget/timeline/utils/timeline_formatter.dart';
 import 'package:resume/page/cv/widget/timeline/presentation/widgets/modal/modal_header.dart';
 import 'package:resume/page/cv/widget/timeline/presentation/widgets/modal/modal_body.dart';
@@ -64,13 +63,13 @@ class _TimelineDetailViewState extends State<_TimelineDetailView> {
         color: Colors.transparent,
         child: Container(
           margin: const EdgeInsets.symmetric(horizontal: 20),
-          constraints: BoxConstraints(maxWidth: 800),
+          constraints: const BoxConstraints(maxWidth: 800),
           decoration: BoxDecoration(
             color: context.colorScheme.surface,
             borderRadius: BorderRadius.circular(24),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.2),
+                color: Colors.black.withValues(alpha: 0.2),
                 blurRadius: 30,
                 offset: const Offset(0, 10),
               ),

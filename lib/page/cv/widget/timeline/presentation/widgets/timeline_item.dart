@@ -3,6 +3,7 @@ import 'package:resume/util/extension/build_context_extension.dart';
 import 'package:resume/util/theme/custom_text_theme.dart';
 import 'package:resume/page/cv/widget/timeline/domain/timeline_model.dart';
 import 'package:resume/page/cv/widget/timeline/presentation/widgets/modal/timeline_modal.dart';
+import 'package:resume/widget/common/hover_box_widget.dart';
 
 class TimelineItem extends StatelessWidget {
   const TimelineItem({
@@ -20,46 +21,7 @@ class TimelineItem extends StatelessWidget {
   final bool isDefaultDate;
   final ValueChanged<bool> onHoverChanged;
 
-  @override
-  Widget build(BuildContext context) {
-    final bool hasDetails = timeline.hasDetails;
-
-    return MouseRegion(
-      onEnter: (_) => onHoverChanged(true),
-      onExit: (_) => onHoverChanged(false),
-      cursor: hasDetails ? SystemMouseCursors.click : SystemMouseCursors.basic,
-      child: GestureDetector(
-        onTap: () => _handleTap(context),
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 300),
-          curve: const Cubic(0.0, 0.0, 0.5, 1.0),
-          width: width,
-          height: 48,
-          transformAlignment: Alignment.center,
-          transform: hasDetails
-              ? (Matrix4.identity()..scale(isHovered ? 1.009 : 1))
-              : null,
-          decoration: BoxDecoration(
-            color: context.colorScheme.surface,
-            borderRadius: BorderRadius.circular(16),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(isHovered ? 0.16 : 0.08),
-                offset: const Offset(2, 4),
-                blurRadius: 20,
-                spreadRadius: 0,
-              ),
-            ],
-          ),
-          alignment: Alignment.centerLeft,
-          padding: const EdgeInsets.only(left: 16),
-          child: _buildLabel(context, hasDetails),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildLabel(BuildContext context, bool hasDetails) {
+  Widget _buildItem(BuildContext context, bool hasDetails) {
     return ShaderMask(
       shaderCallback: (bounds) => LinearGradient(
         colors: hasDetails
@@ -72,7 +34,7 @@ class TimelineItem extends StatelessWidget {
         timeline.label,
         style: CustomTextTheme.boldTextStyle(
           fontSize: 18,
-          color: Colors.white, // ShaderMask 기본 색상
+          color: Colors.white,
         ),
         overflow: TextOverflow.ellipsis,
       ),
@@ -83,7 +45,20 @@ class TimelineItem extends StatelessWidget {
     if (timeline.isYearLabel || !timeline.hasDetails) {
       return;
     }
-
     TimelineModal.show(context, timeline);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final bool hasDetails = timeline.hasDetails;
+    return HoverBoxWidget(
+      onTap: () => _handleTap(context),
+      width: width,
+      height: 48,
+      borderRadius: 32,
+      alignment: Alignment.centerLeft,
+      padding: const EdgeInsets.only(left: 16),
+      child: _buildItem(context, hasDetails),
+    );
   }
 }

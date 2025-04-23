@@ -22,7 +22,6 @@ class ModalContent extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // 이미지 (있는 경우)
               if (detail.image != null)
                 Padding(
                   padding: const EdgeInsets.only(right: 24),
@@ -32,9 +31,9 @@ class ModalContent extends StatelessWidget {
                       borderRadius: BorderRadius.circular(12),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withOpacity(0.1),
+                          color: Colors.black.withValues(alpha: 0.08),
                           offset: const Offset(2, 4),
-                          blurRadius: 15,
+                          blurRadius: 10,
                           spreadRadius: 0,
                         ),
                       ],
@@ -45,22 +44,16 @@ class ModalContent extends StatelessWidget {
                     ),
                   ),
                 ),
-
-              // 설명
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  spacing: 16,
                   children: [
-                    // 제목
                     Text(
                       detail.title,
                       style: CustomTextTheme.boldTextStyle(fontSize: 20),
                     ),
-
-                    // 부제목 (있는 경우)
-                    if (detail.subTitle != null &&
-                        detail.subTitle!.isNotEmpty) ...[
-                      const SizedBox(height: 10),
+                    if (detail.subTitle != null && detail.subTitle!.isNotEmpty)
                       Container(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 12,
@@ -69,13 +62,11 @@ class ModalContent extends StatelessWidget {
                         decoration: BoxDecoration(
                           border: Border(
                             left: BorderSide(
-                              color:
-                                  context.colorScheme.primary.withOpacity(0.6),
+                              color: context.colorScheme.primary
+                                  .withValues(alpha: 0.6),
                               width: 2,
                             ),
                           ),
-                          color: context.colorScheme.surfaceVariant
-                              .withOpacity(0.3),
                           borderRadius: const BorderRadius.only(
                             topRight: Radius.circular(8),
                             bottomRight: Radius.circular(8),
@@ -92,23 +83,15 @@ class ModalContent extends StatelessWidget {
                           ),
                         ),
                       ),
-                    ],
-
-                    const SizedBox(height: 16),
-
-                    // 설명 목록 (여러 설명을 표시)
                     if (detail.descriptions.isNotEmpty)
-                      ...detail.descriptions.map((description) {
-                        // URL인지 확인
-                        final bool isUrl = description.startsWith('http://') ||
-                            description.startsWith('https://');
-
-                        return Padding(
-                          padding: const EdgeInsets.only(bottom: 12),
-                          child: Row(
+                      ...detail.descriptions.map(
+                        (description) {
+                          final bool isUrl =
+                              description.startsWith('http://') ||
+                                  description.startsWith('https://');
+                          return Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              // URL이 아닌 경우에만 불릿 포인트 표시
                               if (!isUrl)
                                 Container(
                                   margin:
@@ -120,8 +103,6 @@ class ModalContent extends StatelessWidget {
                                     shape: BoxShape.circle,
                                   ),
                                 ),
-
-                              // URL인 경우 버튼으로 표시, 아니면 일반 텍스트
                               Expanded(
                                 child: isUrl
                                     ? LinkButton(url: description)
@@ -135,9 +116,9 @@ class ModalContent extends StatelessWidget {
                                       ),
                               ),
                             ],
-                          ),
-                        );
-                      }).toList(),
+                          );
+                        },
+                      ),
                   ],
                 ),
               ),

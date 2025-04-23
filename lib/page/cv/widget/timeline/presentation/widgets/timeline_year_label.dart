@@ -21,7 +21,7 @@ class TimelineYearLabel extends StatelessWidget {
       decoration: BoxDecoration(
         border: Border(
           left: BorderSide(
-            color: context.colorScheme.onSurface.withOpacity(0.6),
+            color: context.colorScheme.onSurface.withValues(alpha: 0.6),
             width: 2,
           ),
         ),

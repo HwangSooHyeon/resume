@@ -27,7 +27,6 @@ class ModalBody extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          // 항상 좌측 영역 유지 (화살표 유무와 관계없이)
           Container(
             width: 50,
             color: Colors.transparent,
@@ -47,13 +46,9 @@ class ModalBody extends StatelessWidget {
                   )
                 : null,
           ),
-
-          // 내용
           Expanded(
             child: ModalContent(detail: detail),
           ),
-
-          // 항상 우측 영역 유지 (화살표 유무와 관계없이)
           Container(
             width: 50,
             color: Colors.transparent,
