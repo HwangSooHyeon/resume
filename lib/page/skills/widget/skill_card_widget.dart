@@ -102,6 +102,15 @@ class _SkillCardWidgetState extends State<SkillCardWidget> {
       ),
       child: Row(
         children: [
+          Container(
+            height: 24,
+            width: 4,
+            decoration: BoxDecoration(
+              color: context.colorScheme.onPrimary,
+              borderRadius: BorderRadius.circular(2),
+            ),
+          ),
+          const Gap(16),
           Expanded(
             child: Text(
               widget.name,
