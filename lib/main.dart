@@ -25,7 +25,9 @@ class MyApp extends ConsumerWidget {
     final themeMode = ref.watch(themeModeViewModelProvider);
 
     return MaterialApp.router(
-      title: 'Resume',
+      title: locale.localeName == 'ko'
+          ? '황수현 - 플러터 개발자'
+          : 'Soohyeon Hwang - Flutter Developer',
       theme: CustomTheme.themeData(),
       darkTheme: CustomTheme.themeData(isDark: true),
       themeMode: themeMode,
