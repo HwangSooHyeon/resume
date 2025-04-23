@@ -263,5 +263,6 @@
   "cvMoneytoringContent1": "Developed an improved version of the onboarding screens displayed after user registration. Integrated new APIs replacing legacy endpoints and adjusted data structures accordingly. Transitioned state management from individual useState hooks per onboarding step to a unified solution using Recoil, allowing centralized state handling across all onboarding steps.",
   "cvMoneytoringContent2": "Created a modal displaying daily trading volumes and transaction values for institutions, foreign investors, and individuals since IPO. Implemented infinite vertical scrolling functionality using Relay, alongside horizontal scrolling with visual shading effects next to date columns.",
   "cvMoneytoringContent3": "Developed collaboratively in partnership with an external team based in Vietnam.",
-  "cvMoneytoringContent4": "Developed simple UI components including page footers. Evaluated and selected specific libraries required by the Vietnamese outsourcing team to streamline collaboration."
+  "cvMoneytoringContent4": "Developed simple UI components including page footers. Evaluated and selected specific libraries required by the Vietnamese outsourcing team to streamline collaboration.",
+  "cvProfileComment": "Hello, I’m Soohyeon Hwang, a cross-platform app developer (Flutter).\nYou can view detailed information by clicking each button on the timeline."
 }
