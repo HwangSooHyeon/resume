@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:resume/core/extensions/locale_extension.dart';
 import 'package:resume/domain/entities/skills_model.dart';
