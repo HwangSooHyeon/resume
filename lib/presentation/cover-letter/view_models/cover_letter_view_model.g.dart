@@ -7,7 +7,7 @@ part of 'cover_letter_view_model.dart';
 // **************************************************************************
 
 String _$coverLetterViewModelHash() =>
-    r'fe5d3ae0ebff96cd77e39a5bb5705f16d611895d';
+    r'8d09db7bfeea0cd1d14bc0a3b10fb1b2418cf316';
 
 /// See also [CoverLetterViewModel].
 @ProviderFor(CoverLetterViewModel)

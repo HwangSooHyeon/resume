@@ -3,16 +3,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume/l10n/gen_l10n/app_localizations.dart';
 import 'package:resume/core/router/custom_router.dart';
 import 'package:resume/core/theme/custom_theme.dart';
-import 'package:resume/presentation/core/view_model/app_localizations_view_model.dart';
-import 'package:resume/presentation/core/view_model/theme_mode_view_model.dart';
+import 'package:resume/core/provider/app_localizations_state_provider.dart';
+import 'package:resume/core/provider/theme_mode_state_provider.dart';
 
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final locale = ref.watch(appLocalizationsViewModelProvider);
-    final themeMode = ref.watch(themeModeViewModelProvider);
+    final locale = ref.watch(appLocalizationsStateProvider);
+    final themeMode = ref.watch(themeModeStateProvider);
 
     return MaterialApp.router(
       title: locale.localeName == 'ko'

@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/functions/duration.dart';
-import 'package:resume/presentation/core/view_model/app_localizations_view_model.dart';
+import 'package:resume/core/provider/app_localizations_state_provider.dart';
 import 'package:resume/presentation/core/widgets/custom_text.dart';
 import 'package:resume/presentation/core/widgets/fade_slide_widget.dart';
 import 'package:resume/presentation/home/screens/home_screen.dart';
@@ -52,9 +52,7 @@ class _SplashScreenState extends ConsumerState<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final locale = ref.watch(
-      appLocalizationsViewModelProvider,
-    );
+    final locale = ref.watch(appLocalizationsStateProvider);
     return DefaultLayout(
       body: SizedBox(
         width: context.width,

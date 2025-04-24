@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume/l10n/gen_l10n/app_localizations.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
-import 'package:resume/presentation/core/view_model/app_localizations_view_model.dart';
-import 'package:resume/presentation/core/view_model/theme_mode_view_model.dart';
+import 'package:resume/core/provider/app_localizations_state_provider.dart';
+import 'package:resume/core/provider/theme_mode_state_provider.dart';
 import 'package:resume/presentation/core/widgets/custom_animated_ink_well.dart';
 
 enum AppBarEnum {
@@ -12,8 +12,8 @@ enum AppBarEnum {
   mailing;
 
   Widget widget(BuildContext context) => Consumer(builder: (context, ref, _) {
-        final themeMode = ref.watch(themeModeViewModelProvider.notifier);
-        final locale = ref.watch(appLocalizationsViewModelProvider.notifier);
+        final themeMode = ref.watch(themeModeStateProvider.notifier);
+        final locale = ref.watch(appLocalizationsStateProvider.notifier);
         return _renderWidget(
           context,
           onTap: switch (this) {

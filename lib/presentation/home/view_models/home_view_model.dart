@@ -2,7 +2,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:resume/asset/gen/assets.gen.dart';
 import 'package:resume/domain/entities/home_model.dart';
 import 'package:resume/l10n/gen_l10n/app_localizations.dart';
-import 'package:resume/presentation/core/view_model/app_localizations_view_model.dart';
+import 'package:resume/core/provider/app_localizations_state_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'home_view_model.freezed.dart';
@@ -21,7 +21,7 @@ abstract class HomeState with _$HomeState {
 class HomeViewModel extends _$HomeViewModel {
   @override
   HomeState build() {
-    final locale = ref.watch(appLocalizationsViewModelProvider);
+    final locale = ref.watch(appLocalizationsStateProvider);
 
     try {
       return HomeState(content: _getHomeContent(locale));
