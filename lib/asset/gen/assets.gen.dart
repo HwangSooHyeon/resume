@@ -158,57 +158,53 @@ class $AssetImageGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
-        imageCoverLetter1,
-        imageCoverLetter2,
-        imageCoverLetter3,
-        imageCoverLetter4,
-        imageCoverLetterBackground1,
-        imageCoverLetterBackground2,
-        imageDailyCoin,
-        imageFireAnt1,
-        imageFireAnt2,
-        imageFireAnt3,
-        imageFireAnt4,
-        imageFireAnt5,
-        imageFireAnt6,
-        imageInvestarBackoffice,
-        imageInvestarEng1,
-        imageInvestarEng2,
-        imageInvestarEng3,
-        imageInvestarEng4,
-        imageInvestarEng5,
-        imageInvestarEng6,
-        imageInvestarEng7,
-        imageInvestarKor1,
-        imageInvestarKor2,
-        imageInvestarKor3,
-        imageInvestarKor4,
-        imageInvestarKor5,
-        imageInvestarKor6,
-        imageInvestarKor7,
-        imageInvestarKor8,
-        imageInvestarMy,
-        imageMain,
-        imageProfile,
-        imageSblApp1,
-        imageSblApp2,
-        imageSblApp3,
-        imageSblApp4
-      ];
+    imageCoverLetter1,
+    imageCoverLetter2,
+    imageCoverLetter3,
+    imageCoverLetter4,
+    imageCoverLetterBackground1,
+    imageCoverLetterBackground2,
+    imageDailyCoin,
+    imageFireAnt1,
+    imageFireAnt2,
+    imageFireAnt3,
+    imageFireAnt4,
+    imageFireAnt5,
+    imageFireAnt6,
+    imageInvestarBackoffice,
+    imageInvestarEng1,
+    imageInvestarEng2,
+    imageInvestarEng3,
+    imageInvestarEng4,
+    imageInvestarEng5,
+    imageInvestarEng6,
+    imageInvestarEng7,
+    imageInvestarKor1,
+    imageInvestarKor2,
+    imageInvestarKor3,
+    imageInvestarKor4,
+    imageInvestarKor5,
+    imageInvestarKor6,
+    imageInvestarKor7,
+    imageInvestarKor8,
+    imageInvestarMy,
+    imageMain,
+    imageProfile,
+    imageSblApp1,
+    imageSblApp2,
+    imageSblApp3,
+    imageSblApp4,
+  ];
 }
 
 class Assets {
-  Assets._();
+  const Assets._();
 
   static const $AssetImageGen image = $AssetImageGen();
 }
 
 class AssetGenImage {
-  const AssetGenImage(
-    this._assetName, {
-    this.size,
-    this.flavors = const {},
-  });
+  const AssetGenImage(this._assetName, {this.size, this.flavors = const {}});
 
   final String _assetName;
 
@@ -236,7 +232,7 @@ class AssetGenImage {
     bool gaplessPlayback = true,
     bool isAntiAlias = false,
     String? package,
-    FilterQuality filterQuality = FilterQuality.low,
+    FilterQuality filterQuality = FilterQuality.medium,
     int? cacheWidth,
     int? cacheHeight,
   }) {
@@ -268,15 +264,8 @@ class AssetGenImage {
     );
   }
 
-  ImageProvider provider({
-    AssetBundle? bundle,
-    String? package,
-  }) {
-    return AssetImage(
-      _assetName,
-      bundle: bundle,
-      package: package,
-    );
+  ImageProvider provider({AssetBundle? bundle, String? package}) {
+    return AssetImage(_assetName, bundle: bundle, package: package);
   }
 
   String get path => _assetName;

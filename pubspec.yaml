@@ -46,7 +46,7 @@ dependencies:
 
   carousel_slider: ^5.0.0
 
-  flutter_gen:
+  flutter_gen: ^5.10.0
 
   logger: ^2.5.0
   flutter_animate: ^4.5.2
@@ -54,6 +54,8 @@ dependencies:
   collection: any
 
   url_launcher: ^6.3.1
+  freezed_annotation: ^3.0.0
+  json_annotation: ^4.9.0
 
 dev_dependencies:
   flutter_test:
@@ -66,12 +68,15 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
 
-  build_runner:
+  build_runner: ^2.4.15
   custom_lint:
   riverpod_generator: ^2.6.1
   riverpod_lint: ^2.6.1
 
-  flutter_gen_runner:
+  flutter_gen_runner: ^5.10.0
+
+  freezed: ^3.0.6
+  json_serializable: ^6.9.5
 
 flutter_gen:
   output: lib/asset/gen/ # Optional (default: lib/gen/)
@@ -79,8 +84,8 @@ flutter_gen:
 
   # Optional
   integrations:
+    image: true
     flutter_svg: true
-    flare_flutter: true
     rive: true
     lottie: true
 
