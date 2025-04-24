@@ -1,53 +1,99 @@
-import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
-import 'package:resume/presentation/skills/screens/skills_library_screen.dart';
-import 'package:resume/presentation/skills/screens/skills_programming_language_screen.dart';
-import 'package:resume/presentation/skills/screens/skills_technique_screen.dart';
-import 'package:resume/presentation/skills/screens/skills_tools_screen.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/functions/duration.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
 import 'package:resume/presentation/core/widgets/fade_slide_widget.dart';
-import 'package:resume/presentation/core/widgets/hover_box_widget.dart';
+import 'package:resume/presentation/skills/view_models/skills_view_model.dart';
+import 'package:resume/presentation/skills/widgets/category_tab_bar.dart';
+import 'package:resume/presentation/skills/widgets/skills_content.dart';
 
-class SkillsScreen extends StatefulWidget {
+class SkillsScreen extends ConsumerStatefulWidget {
   static const String path = '/skills';
   const SkillsScreen({super.key});
 
   @override
-  State<SkillsScreen> createState() => _SkillsScreenState();
+  ConsumerState<SkillsScreen> createState() => _SkillsScreenState();
 }
 
-class _SkillsScreenState extends State<SkillsScreen>
+class _SkillsScreenState extends ConsumerState<SkillsScreen>
     with SingleTickerProviderStateMixin {
-  late TabController _tabController;
-
-  final List<String> _tabs = [
-    'Programming Language',
-    'Flutter Library',
-    'Technique',
-    'Tools'
-  ];
+  late final TabController _tabController;
 
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: _tabs.length, vsync: this);
-    _tabController.addListener(() {
-      if (_tabController.indexIsChanging) {
-        setState(() {});
-      }
-    });
+
+    final categories = ref.read(skillsViewModelProvider).categories;
+
+    _tabController = TabController(
+      length: categories.length,
+      vsync: this,
+    );
+
+    _tabController.addListener(_handleTabChange);
+  }
+
+  void _handleTabChange() {
+    if (_tabController.indexIsChanging) {
+      ref
+          .read(skillsViewModelProvider.notifier)
+          .selectCategory(_tabController.index);
+    }
+  }
+
+  void _syncTabWithViewModel() {
+    final selectedIndex =
+        ref.read(skillsViewModelProvider).selectedCategoryIndex;
+    if (_tabController.index != selectedIndex) {
+      _tabController.animateTo(selectedIndex);
+    }
+  }
+
+  @override
+  void didUpdateWidget(SkillsScreen oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    _syncTabWithViewModel();
   }
 
   @override
   void dispose() {
+    _tabController.removeListener(_handleTabChange);
     _tabController.dispose();
     super.dispose();
   }
 
+  Widget _buildHeader() {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 32.0),
+      child: Text(
+        'Skills',
+        style: CustomTextTheme.boldTextStyle(
+          fontSize: 48,
+          color: context.colorScheme.onSurface,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
+    final skillsVM = ref.watch(skillsViewModelProvider);
+    final skillsNotifier = ref.read(skillsViewModelProvider.notifier);
+
+    ref.listen<SkillsState>(
+      skillsViewModelProvider,
+      (previous, current) {
+        if (previous?.selectedCategoryIndex != current.selectedCategoryIndex) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            if (_tabController.index != current.selectedCategoryIndex) {
+              _tabController.animateTo(current.selectedCategoryIndex);
+            }
+          });
+        }
+      },
+    );
+
     return FadeSlideWidget(
       delay: animationDelay(order: 0),
       child: Container(
@@ -57,57 +103,21 @@ class _SkillsScreenState extends State<SkillsScreen>
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 32.0),
-              child: Text(
-                'Skills',
-                style: CustomTextTheme.boldTextStyle(
-                  fontSize: 48,
-                  color: context.colorScheme.onSurface,
-                ),
-              ),
-            ),
-            Container(
-              margin: const EdgeInsets.only(bottom: 32.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: _tabs.mapIndexed((i, e) {
-                  final bool isSelected = _tabController.index == i;
-                  return HoverBoxWidget(
-                    onTap: () => _tabController.animateTo(i),
-                    margin: const EdgeInsets.only(right: 16.0),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 24.0, vertical: 12.0),
-                    backgroundColor: isSelected
-                        ? context.colorScheme.primary
-                        : context.colorScheme.surface,
-                    borderRadius: 32,
-                    child: Text(
-                      e,
-                      style: isSelected
-                          ? CustomTextTheme.boldTextStyle(
-                              fontSize: 16,
-                              color: context.colorScheme.onPrimary,
-                            )
-                          : CustomTextTheme.regularTextStyle(
-                              fontSize: 16,
-                              color: context.colorScheme.onSurface
-                                  .withValues(alpha: 0.8),
-                            ),
-                    ),
-                  );
-                }).toList(),
-              ),
+            _buildHeader(),
+            CategoryTabBar(
+              categories: skillsVM.categories,
+              selectedIndex: skillsVM.selectedCategoryIndex,
+              onCategorySelected: skillsNotifier.selectCategory,
             ),
             Expanded(
               child: TabBarView(
                 controller: _tabController,
                 clipBehavior: Clip.none,
-                children: const [
-                  SkillsProgrammingLanguageScreen(),
-                  SkillsLibraryScreen(),
-                  SkillsTechniqueScreen(),
-                  SkillsToolScreen(),
+                children: [
+                  SkillsContent(items: skillsVM.programmingLanguages),
+                  SkillsContent(items: skillsVM.libraries),
+                  SkillsContent(items: skillsVM.techniques),
+                  SkillsContent(items: skillsVM.tools),
                 ],
               ),
             ),
