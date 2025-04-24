@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:resume/asset/gen/assets.gen.dart';
+import 'package:resume/domain/entities/home_model.dart';
 import 'package:resume/presentation/home/widgets/home_image_box_widget.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/functions/duration.dart';
@@ -10,19 +10,15 @@ import 'package:resume/presentation/core/widgets/custom_text.dart';
 import 'package:resume/presentation/core/widgets/scroll_aware_widget.dart';
 
 class HomeFireAntScreen extends StatelessWidget {
-  const HomeFireAntScreen({super.key});
+  const HomeFireAntScreen({
+    super.key,
+    required this.fireAntContent,
+  });
+
+  final ProjectContent fireAntContent;
 
   @override
   Widget build(BuildContext context) {
-    final images = [
-      Assets.image.imageFireAnt1,
-      Assets.image.imageFireAnt2,
-      Assets.image.imageFireAnt3,
-      Assets.image.imageFireAnt4,
-      Assets.image.imageFireAnt5,
-      Assets.image.imageFireAnt6,
-    ];
-
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 25 + context.width * 0.05),
       width: context.width,
@@ -38,13 +34,13 @@ class HomeFireAntScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 10),
                   child: Text(
-                    context.locale!.homeFireAnt1,
+                    fireAntContent.title,
                     style: CustomTextTheme.boldTextStyle(fontSize: 48)
                         .copyWith(color: context.colorScheme.primary),
                   ),
                 ),
                 CustomText.bold(
-                  context.locale!.homeFireAnt2,
+                  fireAntContent.subtitle,
                   fontSize: 32,
                 ),
               ],
@@ -55,7 +51,7 @@ class HomeFireAntScreen extends StatelessWidget {
             child: Row(
               children: [
                 CustomText.bold(
-                  context.locale!.homeFireAnt3,
+                  fireAntContent.description,
                   fontSize: 28,
                   textColor: TextColorEnum.sub,
                 ),
@@ -79,12 +75,12 @@ class HomeFireAntScreen extends StatelessWidget {
                 ),
                 itemCount: 6,
                 separatorBuilder: (context, index) => const Gap(30),
-                itemBuilder: (context, index) {
+                itemBuilder: (context, i) {
                   return ScrollAwareWidget(
-                    delay: animationDelay(order: index),
+                    delay: animationDelay(order: i),
                     animationThreshold: 0.15,
                     child: HomeImageBoxWidget(
-                      child: images[index],
+                      child: fireAntContent.images[i].image,
                     ),
                   );
                 },

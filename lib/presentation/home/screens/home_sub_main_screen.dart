@@ -1,14 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
 import 'package:resume/presentation/core/widgets/scroll_aware_widget.dart';
 
-class HomeSubMainScreen extends ConsumerWidget {
-  const HomeSubMainScreen({super.key});
+class HomeSubMainScreen extends StatelessWidget {
+  const HomeSubMainScreen({
+    super.key,
+    required this.title3,
+    required this.title4,
+    required this.title5,
+  });
+
+  final String title3;
+  final String title4;
+  final String title5;
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return Container(
       width: context.width,
       color: context.colorScheme.surface,
@@ -22,15 +30,15 @@ class HomeSubMainScreen extends ConsumerWidget {
           spacing: 40,
           children: [
             Text(
-              context.locale!.homeTitle3,
+              title3,
               style: CustomTextTheme.boldTextStyle(fontSize: 32),
             ),
             Text(
-              context.locale!.homeTitle4,
+              title4,
               style: CustomTextTheme.boldTextStyle(fontSize: 32),
             ),
             Text(
-              context.locale!.homeTitle5,
+              title5,
               style: CustomTextTheme.boldTextStyle(fontSize: 32),
             ),
           ],

@@ -10,7 +10,14 @@ import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
 
 class HomeMainScreen extends StatelessWidget {
-  const HomeMainScreen({super.key});
+  const HomeMainScreen({
+    super.key,
+    required this.title1,
+    required this.title2,
+  });
+
+  final String title1;
+  final String title2;
 
   @override
   Widget build(BuildContext context) {
@@ -51,20 +58,23 @@ class HomeMainScreen extends StatelessWidget {
           ),
           Positioned(
             bottom: context.height / 2 - 320,
-            child: FadeSlideWidget(
-              delay: animationDelay(order: 2),
-              child: Column(
-                children: [
-                  const Gap(100),
-                  Text(
-                    context.locale!.homeTitle1,
+            child: Column(
+              children: [
+                const Gap(100),
+                FadeSlideWidget(
+                  delay: animationDelay(order: 2),
+                  child: Text(
+                    title1,
                     style: CustomTextTheme.boldTextStyle(
                       fontSize: 40,
                       color: Colors.white,
                     ),
                   ),
-                  const Gap(10),
-                  Container(
+                ),
+                const Gap(10),
+                FadeSlideWidget(
+                  delay: animationDelay(order: 3),
+                  child: Container(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 20,
                       vertical: 8,
@@ -74,21 +84,21 @@ class HomeMainScreen extends StatelessWidget {
                       color: context.colorScheme.primary,
                     ),
                     child: Text(
-                      context.locale!.homeTitle2,
+                      title2,
                       style: CustomTextTheme.boldTextStyle(
                         fontSize: 40,
                         color: context.colorScheme.onPrimary,
                       ),
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
           Positioned(
             bottom: context.height / 14,
             child: FadeSlideWidget(
-              delay: animationDelay(order: 3),
+              delay: animationDelay(order: 4),
               child: const TransitionTransformWidget(
                 child: Icon(
                   Icons.expand_more_rounded,

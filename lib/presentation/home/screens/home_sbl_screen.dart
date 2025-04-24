@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:resume/asset/gen/assets.gen.dart';
+import 'package:resume/domain/entities/home_model.dart';
 import 'package:resume/presentation/home/widgets/home_image_box_widget.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/functions/duration.dart';
@@ -9,7 +9,12 @@ import 'package:resume/presentation/core/widgets/scroll_aware_widget.dart';
 import 'package:collection/collection.dart';
 
 class HomeSblScreen extends StatelessWidget {
-  const HomeSblScreen({super.key});
+  const HomeSblScreen({
+    super.key,
+    required this.sblContent,
+  });
+
+  final ProjectContent sblContent;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +33,7 @@ class HomeSblScreen extends StatelessWidget {
               ScrollAwareWidget(
                 delay: animationDelay(order: 0),
                 child: Text(
-                  context.locale!.homeSbl1,
+                  sblContent.title,
                   style: CustomTextTheme.boldTextStyle(
                     fontSize: 48,
                     color: context.colorScheme.primary,
@@ -41,7 +46,7 @@ class HomeSblScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     CustomText.bold(
-                      context.locale!.homeSbl2,
+                      sblContent.subtitle,
                       fontSize: 32,
                     ),
                   ],
@@ -53,7 +58,7 @@ class HomeSblScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     CustomText.bold(
-                      context.locale!.homeSbl3,
+                      sblContent.description,
                       fontSize: 28,
                       textColor: TextColorEnum.sub,
                     ),
@@ -68,18 +73,13 @@ class HomeSblScreen extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               spacing: 30,
-              children: [
-                Assets.image.imageSblApp1,
-                Assets.image.imageSblApp2,
-                Assets.image.imageSblApp3,
-                Assets.image.imageSblApp4,
-              ]
+              children: sblContent.images
                   .mapIndexed(
-                    (index, image) => ScrollAwareWidget(
-                      delay: animationDelay(order: index),
+                    (i, e) => ScrollAwareWidget(
+                      delay: animationDelay(order: i),
                       animationThreshold: 0.15,
                       child: HomeImageBoxWidget(
-                        child: image,
+                        child: e.image,
                       ),
                     ),
                   )

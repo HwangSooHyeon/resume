@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:resume/asset/gen/assets.gen.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
+import 'package:resume/domain/entities/home_model.dart';
 import 'package:resume/presentation/core/widgets/custom_text.dart';
 import 'package:resume/presentation/core/widgets/scroll_aware_widget.dart';
 
 class HomeInvestarBackOfficeScreen extends StatelessWidget {
-  const HomeInvestarBackOfficeScreen({super.key});
+  const HomeInvestarBackOfficeScreen({
+    super.key,
+    required this.investarBackOfficeContent,
+  });
+
+  final ProjectContent investarBackOfficeContent;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +30,7 @@ class HomeInvestarBackOfficeScreen extends StatelessWidget {
                 ScrollAwareWidget(
                   beginOffset: const Offset(-1, 0),
                   child: Text(
-                    context.locale!.homeInvestarBackoffice1,
+                    investarBackOfficeContent.title,
                     style: CustomTextTheme.boldTextStyle(
                       fontSize: 48,
                       color: context.colorScheme.primary,
@@ -39,7 +44,7 @@ class HomeInvestarBackOfficeScreen extends StatelessWidget {
                     spacing: 10,
                     children: [
                       CustomText.bold(
-                        context.locale!.homeInvestarBackoffice2,
+                        investarBackOfficeContent.subtitle,
                         fontSize: 28,
                         textColor: TextColorEnum.sub,
                       ),
@@ -58,7 +63,7 @@ class HomeInvestarBackOfficeScreen extends StatelessWidget {
             beginScale: 0.85,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(30),
-              child: Assets.image.imageInvestarBackoffice.image(),
+              child: investarBackOfficeContent.images.first.image.image(),
             ),
           ),
         ],
