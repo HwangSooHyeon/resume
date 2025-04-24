@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:resume/domain/entities/timeline_model.dart';
+import 'package:resume/presentation/cv/widgets/timeline/models/timeline_model.dart';
 
 class TimelineCalculator {
   static int calculatePosition(TimelineModel timeline) {

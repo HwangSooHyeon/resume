@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
-import 'package:resume/domain/entities/timeline_model.dart';
+import 'package:resume/presentation/cv/widgets/timeline/models/timeline_model.dart';
 import 'package:resume/presentation/cv/widgets/timeline/utils/timeline_formatter.dart';
 import 'package:resume/presentation/cv/widgets/timeline/modal/modal_header.dart';
 import 'package:resume/presentation/cv/widgets/timeline/modal/modal_body.dart';

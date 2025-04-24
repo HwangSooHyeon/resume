@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
-import 'package:resume/domain/entities/timeline_model.dart';
+import 'package:resume/presentation/cv/widgets/timeline/models/timeline_model.dart';
 import 'package:resume/presentation/cv/widgets/timeline/utils/timeline_calculator.dart';
 import 'package:resume/presentation/cv/widgets/timeline/components/timeline_item.dart';
 import 'package:resume/presentation/cv/widgets/timeline/components/timeline_year_label.dart';

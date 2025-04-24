@@ -1,4 +1,4 @@
-import 'package:resume/domain/entities/timeline_detail_model.dart';
+import 'package:resume/presentation/cv/widgets/timeline/models/timeline_detail_model.dart';
 
 class TimelineModel {
   TimelineModel({
