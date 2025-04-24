@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'theme_mode_view_model.g.dart';

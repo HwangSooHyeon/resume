@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 
 final intersectionObserverProvider = Provider<IntersectionObserver>((ref) {
   final observer = IntersectionObserver();

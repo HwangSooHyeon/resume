@@ -2,10 +2,10 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:resume/asset/gen/assets.gen.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/theme/custom_color_scheme.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
-import 'package:resume/presentation/common/widgets/fade_slide_widget.dart';
+import 'package:resume/presentation/core/widgets/fade_slide_widget.dart';
 
 class CoverLetterImageBoxWidget extends StatefulWidget {
   const CoverLetterImageBoxWidget({

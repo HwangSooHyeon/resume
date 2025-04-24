@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/domain/entities/timeline_detail_model.dart';
-import 'package:resume/presentation/cv/widgets/modal/modal_content.dart';
+import 'package:resume/presentation/cv/widgets/timeline/modal/modal_content.dart';
 
 class ModalBody extends StatelessWidget {
   const ModalBody({

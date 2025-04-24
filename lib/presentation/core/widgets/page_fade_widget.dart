@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:resume/asset/gen/assets.gen.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 
 class PageFadeWidget extends StatefulWidget {
   const PageFadeWidget({

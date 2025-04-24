@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 
 class ConfigScreen extends StatelessWidget {
   static const String path = '/config';

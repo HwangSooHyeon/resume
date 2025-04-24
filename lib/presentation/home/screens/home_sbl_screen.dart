@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:resume/asset/gen/assets.gen.dart';
 import 'package:resume/presentation/home/widgets/home_image_box_widget.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
-import 'package:resume/core/util/function/duration.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
+import 'package:resume/core/functions/duration.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
-import 'package:resume/presentation/common/widgets/custom_text.dart';
-import 'package:resume/presentation/common/widgets/scroll_aware_widget.dart';
+import 'package:resume/presentation/core/widgets/custom_text.dart';
+import 'package:resume/presentation/core/widgets/scroll_aware_widget.dart';
 import 'package:collection/collection.dart';
 
 class HomeSblScreen extends StatelessWidget {

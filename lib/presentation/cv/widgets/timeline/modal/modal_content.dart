@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
 import 'package:resume/domain/entities/timeline_detail_model.dart';
-import 'package:resume/presentation/cv/widgets/modal/link_button.dart';
+import 'package:resume/presentation/cv/widgets/timeline/modal/link_button.dart';
 
 class ModalContent extends StatelessWidget {
   const ModalContent({

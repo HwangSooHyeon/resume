@@ -4,11 +4,11 @@ import 'package:resume/presentation/skills/screens/skills_library_screen.dart';
 import 'package:resume/presentation/skills/screens/skills_programming_language_screen.dart';
 import 'package:resume/presentation/skills/screens/skills_technique_screen.dart';
 import 'package:resume/presentation/skills/screens/skills_tools_screen.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
-import 'package:resume/core/util/function/duration.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
+import 'package:resume/core/functions/duration.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
-import 'package:resume/presentation/common/widgets/fade_slide_widget.dart';
-import 'package:resume/presentation/common/widgets/hover_box_widget.dart';
+import 'package:resume/presentation/core/widgets/fade_slide_widget.dart';
+import 'package:resume/presentation/core/widgets/hover_box_widget.dart';
 
 class SkillsScreen extends StatefulWidget {
   static const String path = '/skills';

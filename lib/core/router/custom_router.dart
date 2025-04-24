@@ -3,8 +3,8 @@ import 'package:go_router/go_router.dart';
 import 'package:resume/domain/entities/enum/bottom_navigation_bar_enum.dart';
 import 'package:resume/presentation/home/screens/home_screen.dart';
 import 'package:resume/presentation/splash/screens/splash_page.dart';
-import 'package:resume/presentation/common/widgets/default_app_bar.dart';
-import 'package:resume/presentation/common/widgets/default_layout.dart';
+import 'package:resume/presentation/core/widgets/default_app_bar.dart';
+import 'package:resume/presentation/core/widgets/default_layout.dart';
 
 class CustomRouter {
   static final _rootNavigatorKey = GlobalKey<NavigatorState>();

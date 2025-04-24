@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:resume/core/util/observer/intersection_observer.dart';
+import 'package:resume/core/observer/intersection_observer.dart';
 
 /// A widget that animates its child when it becomes visible in the viewport.
 ///

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:resume/asset/gen/assets.gen.dart';
 import 'package:resume/presentation/cover-letter/widgets/cover_letter_image_box_widget.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
-import 'package:resume/presentation/common/widgets/custom_text.dart';
-import 'package:resume/presentation/common/widgets/fade_slide_widget.dart';
-import 'package:resume/presentation/common/widgets/page_fade_widget.dart';
+import 'package:resume/presentation/core/widgets/custom_text.dart';
+import 'package:resume/presentation/core/widgets/fade_slide_widget.dart';
+import 'package:resume/presentation/core/widgets/page_fade_widget.dart';
 
 class CoverLetterScreen extends StatefulWidget {
   static const String path = '/coverLetter';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:resume/presentation/home/screens/home_screen.dart';
-import 'package:resume/presentation/common/widgets/default_layout.dart';
+import 'package:resume/presentation/core/widgets/default_layout.dart';
 
 class SplashScreen extends StatefulWidget {
   static const String path = '/splash';

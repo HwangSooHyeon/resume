@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
-import 'package:resume/presentation/common/widgets/scroll_aware_widget.dart';
+import 'package:resume/presentation/core/widgets/scroll_aware_widget.dart';
 
 class HomeSubMainScreen extends ConsumerWidget {
   const HomeSubMainScreen({super.key});

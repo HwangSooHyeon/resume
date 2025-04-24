@@ -6,12 +6,12 @@ import 'package:resume/asset/gen/assets.gen.dart';
 import 'package:resume/l10n/gen_l10n/app_localizations_en.dart';
 import 'package:resume/l10n/gen_l10n/app_localizations_ko.dart';
 import 'package:resume/presentation/home/widgets/home_image_box_widget.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
-import 'package:resume/core/util/function/duration.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
+import 'package:resume/core/functions/duration.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
-import 'package:resume/presentation/common/view_model/app_localizations_view_model.dart';
-import 'package:resume/presentation/common/widgets/custom_text.dart';
-import 'package:resume/presentation/common/widgets/scroll_aware_widget.dart';
+import 'package:resume/presentation/core/view_model/app_localizations_view_model.dart';
+import 'package:resume/presentation/core/widgets/custom_text.dart';
+import 'package:resume/presentation/core/widgets/scroll_aware_widget.dart';
 
 class HomeInvestarScreen extends StatelessWidget {
   const HomeInvestarScreen({super.key});

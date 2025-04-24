@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:resume/domain/entities/enum/app_bar_enum.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 
 class DefaultAppBar extends StatelessWidget {
   const DefaultAppBar({super.key});

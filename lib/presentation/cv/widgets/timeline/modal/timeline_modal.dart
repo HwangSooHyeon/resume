@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/domain/entities/timeline_model.dart';
-import 'package:resume/core/util/timeline_formatter.dart';
-import 'package:resume/presentation/cv/widgets/modal/modal_header.dart';
-import 'package:resume/presentation/cv/widgets/modal/modal_body.dart';
+import 'package:resume/presentation/cv/widgets/timeline/utils/timeline_formatter.dart';
+import 'package:resume/presentation/cv/widgets/timeline/modal/modal_header.dart';
+import 'package:resume/presentation/cv/widgets/timeline/modal/modal_body.dart';
 
 class TimelineModal {
   static void show(BuildContext context, TimelineModel timeline) {

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:resume/l10n/gen_l10n/app_localizations.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
-import 'package:resume/presentation/common/view_model/app_localizations_view_model.dart';
-import 'package:resume/presentation/common/view_model/theme_mode_view_model.dart';
-import 'package:resume/presentation/common/widgets/custom_animated_ink_well.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
+import 'package:resume/presentation/core/view_model/app_localizations_view_model.dart';
+import 'package:resume/presentation/core/view_model/theme_mode_view_model.dart';
+import 'package:resume/presentation/core/widgets/custom_animated_ink_well.dart';
 
 enum AppBarEnum {
   themeMode,

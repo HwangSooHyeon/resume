@@ -7,9 +7,9 @@ import 'package:resume/presentation/cover-letter/screens/cover_letter_screen.dar
 import 'package:resume/presentation/cv/screens/cv_screen.dart';
 import 'package:resume/presentation/home/screens/home_screen.dart';
 import 'package:resume/presentation/skills/screens/skills_screen.dart';
-import 'package:resume/presentation/common/view_model/bottom_navigation_view_model.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
-import 'package:resume/presentation/common/widgets/custom_animated_ink_well.dart';
+import 'package:resume/presentation/core/view_model/bottom_navigation_view_model.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
+import 'package:resume/presentation/core/widgets/custom_animated_ink_well.dart';
 
 enum BottomNavigationBarEnum {
   home,

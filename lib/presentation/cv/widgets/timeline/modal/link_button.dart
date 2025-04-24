@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
 import 'package:resume/core/util/url_utils.dart';
-import 'package:resume/presentation/common/widgets/hover_box_widget.dart';
+import 'package:resume/presentation/core/widgets/hover_box_widget.dart';
 
 class LinkButton extends StatefulWidget {
   const LinkButton({

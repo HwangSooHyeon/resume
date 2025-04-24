@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:resume/core/util/extensions/build_context_extension.dart';
+import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
 import 'package:resume/domain/entities/timeline_model.dart';
-import 'package:resume/presentation/cv/widgets/modal/timeline_modal.dart';
-import 'package:resume/presentation/common/widgets/hover_box_widget.dart';
+import 'package:resume/presentation/cv/widgets/timeline/modal/timeline_modal.dart';
+import 'package:resume/presentation/core/widgets/hover_box_widget.dart';
 
 class TimelineItem extends StatelessWidget {
   const TimelineItem({
