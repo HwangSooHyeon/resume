@@ -6,33 +6,21 @@ import 'package:resume/presentation/cv/widgets/timeline/components/timeline_item
 import 'package:resume/presentation/cv/widgets/timeline/components/timeline_year_label.dart';
 import 'package:collection/collection.dart';
 
-class Timeline extends StatefulWidget {
-  const Timeline._({
-    required this.timelines,
-    this.isDefaultDate = false,
-  });
+class Timeline extends StatelessWidget {
+  final List<TimelineModel> timelines;
+  final ValueChanged<TimelineModel>? onTimelineSelected;
 
   const Timeline({
     super.key,
     required this.timelines,
-  }) : isDefaultDate = false;
+    this.onTimelineSelected,
+  });
 
-  final List<TimelineModel> timelines;
-  final bool isDefaultDate;
-
-  factory Timeline.defaultDate({required List<TimelineModel> timelines}) {
-    return Timeline._(
-      timelines: timelines,
-      isDefaultDate: true,
-    );
+  void _handleTimelineSelected(TimelineModel timeline) {
+    if (timeline.details?.isNotEmpty == true && onTimelineSelected != null) {
+      onTimelineSelected!(timeline);
+    }
   }
-
-  @override
-  State<Timeline> createState() => _TimelineState();
-}
-
-class _TimelineState extends State<Timeline> {
-  final Map<String, bool> _hoveredItems = {};
 
   @override
   Widget build(BuildContext context) {
@@ -41,32 +29,29 @@ class _TimelineState extends State<Timeline> {
       width: context.width - 200,
       height: 60,
       child: Stack(
-        children: widget.timelines.mapIndexed(
+        children: timelines.mapIndexed(
           (index, timeline) {
             final width =
                 TimelineCalculator.calculateWidth(timeline) * eachMonthWidth;
             final left =
                 TimelineCalculator.calculatePosition(timeline) * eachMonthWidth;
-            final uniqueId = '${timeline.label}-$index';
-            final isHovered = _hoveredItems[uniqueId] ?? false;
 
             return Positioned(
               left: left,
               top: 5,
-              child: timeline.isYearLabel
-                  ? TimelineYearLabel(
-                      timeline: timeline,
-                      width: width,
-                    )
-                  : TimelineItem(
-                      timeline: timeline,
-                      width: width,
-                      isHovered: isHovered,
-                      isDefaultDate: widget.isDefaultDate,
-                      onHoverChanged: (value) {
-                        setState(() => _hoveredItems[uniqueId] = value);
-                      },
-                    ),
+              child: GestureDetector(
+                onTap: () => _handleTimelineSelected(timeline),
+                child: timeline.isYearLabel
+                    ? TimelineYearLabel(
+                        timeline: timeline,
+                        width: width,
+                      )
+                    : TimelineItem(
+                        timeline: timeline,
+                        width: width,
+                        isDefaultDate: false,
+                      ),
+              ),
             );
           },
         ).toList(),

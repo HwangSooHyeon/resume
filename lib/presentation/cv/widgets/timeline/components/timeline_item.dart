@@ -10,16 +10,12 @@ class TimelineItem extends StatelessWidget {
     super.key,
     required this.timeline,
     required this.width,
-    required this.isHovered,
     this.isDefaultDate = false,
-    required this.onHoverChanged,
   });
 
   final TimelineModel timeline;
   final double width;
-  final bool isHovered;
   final bool isDefaultDate;
-  final ValueChanged<bool> onHoverChanged;
 
   Widget _buildItem(BuildContext context, bool hasDetails) {
     return ShaderMask(
