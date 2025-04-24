@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
-import 'package:resume/domain/entities/skills_model.dart';
+import 'package:resume/presentation/skills/models/skills_model.dart';
 import 'package:resume/presentation/skills/view_models/skill_card_view_model.dart';
 import 'package:resume/presentation/skills/widgets/skill_card/modal/skill_modal_body.dart';
 import 'package:resume/presentation/skills/widgets/skill_card/modal/skill_modal_header.dart';

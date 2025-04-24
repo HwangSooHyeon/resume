@@ -1,5 +1,5 @@
-import 'package:resume/domain/entities/skills_model.dart';
-import 'package:resume/presentation/skills/widgets/skill_card/models/skill_card_presentation_model.dart';
+import 'package:resume/presentation/skills/models/skills_model.dart';
+import 'package:resume/presentation/skills/models/skill_card_presentation_model.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'skill_card_view_model.g.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
-import 'package:resume/domain/entities/cover_letter_model.dart';
+import 'package:resume/presentation/cover-letter/models/cover_letter_model.dart';
 import 'package:resume/presentation/core/widgets/custom_text.dart';
 import 'package:resume/presentation/cover-letter/widgets/cover_letter_cards_grid.dart';
 

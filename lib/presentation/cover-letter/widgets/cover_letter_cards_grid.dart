@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:resume/domain/entities/cover_letter_model.dart';
+import 'package:resume/presentation/cover-letter/models/cover_letter_model.dart';
 import 'package:resume/presentation/cover-letter/widgets/cover_letter_image_box_widget.dart';
 
 class CoverLetterCardsGrid extends StatelessWidget {

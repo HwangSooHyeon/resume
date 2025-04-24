@@ -1,7 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:resume/core/extensions/locale_extension.dart';
-import 'package:resume/domain/entities/skills_model.dart';
-import 'package:resume/l10n/gen_l10n/app_localizations.dart';
+import 'package:resume/presentation/skills/models/skills_model.dart';
+import 'package:resume/core/l10n/gen_l10n/app_localizations.dart';
 import 'package:resume/core/provider/app_localizations_state_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 

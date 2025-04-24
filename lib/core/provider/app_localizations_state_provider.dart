@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:resume/l10n/gen_l10n/app_localizations.dart';
-import 'package:resume/l10n/l10n.dart';
+import 'package:resume/core/l10n/gen_l10n/app_localizations.dart';
+import 'package:resume/core/l10n/l10n.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'app_localizations_state_provider.g.dart';

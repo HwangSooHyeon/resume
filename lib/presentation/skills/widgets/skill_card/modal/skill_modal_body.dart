@@ -4,7 +4,7 @@ import 'package:gap/gap.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/functions/duration.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';
-import 'package:resume/domain/entities/skills_model.dart';
+import 'package:resume/presentation/skills/models/skills_model.dart';
 import 'package:resume/presentation/core/widgets/fade_slide_widget.dart';
 
 class SkillModalBody extends StatelessWidget {

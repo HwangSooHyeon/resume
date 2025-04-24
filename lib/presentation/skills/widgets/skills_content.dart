@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:resume/domain/entities/skills_model.dart';
+import 'package:resume/presentation/skills/models/skills_model.dart';
 import 'package:resume/presentation/core/widgets/fade_slide_widget.dart';
 import 'package:resume/presentation/skills/widgets/skill_card/skill_card_widget.dart';
 import 'package:resume/core/functions/duration.dart';

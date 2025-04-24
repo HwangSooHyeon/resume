@@ -1,6 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:resume/asset/gen/assets.gen.dart';
-import 'package:resume/domain/entities/cover_letter_model.dart';
+import 'package:resume/presentation/cover-letter/models/cover_letter_model.dart';
 import 'package:resume/core/provider/app_localizations_state_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 

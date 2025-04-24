@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:resume/asset/gen/assets.gen.dart';
-import 'package:resume/presentation/cv/widgets/timeline/models/timeline_detail_model.dart';
-import 'package:resume/presentation/cv/widgets/timeline/models/timeline_model.dart';
+import 'package:resume/presentation/cv/models/timeline_detail_model.dart';
+import 'package:resume/presentation/cv/models/timeline_model.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/functions/duration.dart';
 import 'package:resume/core/theme/custom_text_theme.dart';

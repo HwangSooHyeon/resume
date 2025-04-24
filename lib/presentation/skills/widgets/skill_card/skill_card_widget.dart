@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:resume/domain/entities/skills_model.dart';
+import 'package:resume/presentation/skills/models/skills_model.dart';
 import 'package:resume/presentation/core/services/dialog_service.dart';
 import 'package:resume/presentation/core/widgets/hover_box_widget.dart';
 import 'package:resume/presentation/skills/view_models/skill_card_view_model.dart';
@@ -9,7 +9,7 @@ import 'package:resume/presentation/skills/widgets/skill_card/components/skill_c
 import 'package:resume/presentation/skills/widgets/skill_card/components/skill_card_header.dart';
 import 'package:resume/presentation/skills/widgets/skill_card/components/skill_card_progress_info.dart';
 import 'package:resume/presentation/skills/widgets/skill_card/modal/skill_detail_modal.dart';
-import 'package:resume/presentation/skills/widgets/skill_card/models/skill_card_presentation_model.dart';
+import 'package:resume/presentation/skills/models/skill_card_presentation_model.dart';
 
 class SkillCardWidget extends ConsumerWidget {
   final SkillItem skill;

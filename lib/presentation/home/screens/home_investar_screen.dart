@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:resume/domain/entities/home_model.dart';
+import 'package:resume/presentation/home/models/home_model.dart';
 import 'package:resume/presentation/home/widgets/home_image_box_widget.dart';
 import 'package:resume/core/extensions/build_context_extension.dart';
 import 'package:resume/core/functions/duration.dart';

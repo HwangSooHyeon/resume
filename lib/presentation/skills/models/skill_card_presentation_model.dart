@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:resume/domain/entities/skills_model.dart';
+import 'package:resume/presentation/skills/models/skills_model.dart';
 
 part 'skill_card_presentation_model.freezed.dart';
 
