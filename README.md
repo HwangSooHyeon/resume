@@ -73,7 +73,7 @@ lib/
 
 ```bash
 # 저장소 클론 (Clone repository)
-git clone https://github.com/yourusername/flutter_resume.git
+git clone https://github.com/HwangSooHyeon/resume.git
 
 # 디렉토리 이동 (Change directory)
 cd flutter_resume
@@ -101,13 +101,13 @@ _This project is implemented around the MVVM pattern:_
 ## 🔜 개발 예정 기능 (Upcoming Features)
 
 - [ ] 더 다양한 인터랙션 애니메이션  
-      _More diverse interaction animations_
+       _More diverse interaction animations_
 - [ ] 다양한 오픈 API 적용 및 설정 화면 오픈  
-      _Application of various open APIs and opening of settings screen_
+       _Application of various open APIs and opening of settings screen_
 - [ ] 메일링 기능  
-      _Mailing functionality_
+       _Mailing functionality_
 - [ ] 모바일에도 대응하는 반응형 UI  
-      _Responsive UI that also works on mobile_
+       _Responsive UI that also works on mobile_
 
 ## 📝 라이센스 (License)
 
