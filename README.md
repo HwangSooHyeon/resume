@@ -108,6 +108,8 @@ _This project is implemented around the MVVM pattern:_
        _Mailing functionality_
 - [ ] 모바일에도 대응하는 반응형 UI  
        _Responsive UI that also works on mobile_
+- [ ] 레거시 코드 리팩터링
+      _Refactor legacy codes_
 
 ## 📝 라이센스 (License)
 
