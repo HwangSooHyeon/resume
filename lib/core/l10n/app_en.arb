@@ -10,6 +10,7 @@
   "config": "Config",
   "sendingEmail": "Sending-email",
   "readMore": "Read more",
+  "mainTitle": "Soohyeon Hwang - Flutter Developer",
   "homeTitle1": "Developing Cross-platform app",
   "homeTitle2": "with Soohyeon Hwang prepared Flutter developer",
   "homeTitle3": "Developing and Releasing AOS and IOS app at once.",
@@ -264,5 +265,7 @@
   "cvMoneytoringContent2": "Created a modal displaying daily trading volumes and transaction values for institutions, foreign investors, and individuals since IPO. Implemented infinite vertical scrolling functionality using Relay, alongside horizontal scrolling with visual shading effects next to date columns.",
   "cvMoneytoringContent3": "Developed collaboratively in partnership with an external team based in Vietnam.",
   "cvMoneytoringContent4": "Developed simple UI components including page footers. Evaluated and selected specific libraries required by the Vietnamese outsourcing team to streamline collaboration.",
-  "cvProfileComment": "Hello, I’m Soohyeon Hwang, a cross-platform app developer (Flutter).\nYou can view detailed information by clicking each button on the timeline."
+  "cvProfileComment": "Hello, I’m Soohyeon Hwang, a cross-platform app developer (Flutter).\nYou can view detailed information by clicking each button on the timeline.",
+  "configTitle": "Under development.",
+  "configDescription": "Preparing for a better experience."
 }

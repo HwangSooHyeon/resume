@@ -42,6 +42,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get readMore => 'Read more';
 
   @override
+  String get mainTitle => 'Soohyeon Hwang - Flutter Developer';
+
+  @override
   String get homeTitle1 => 'Developing Cross-platform app';
 
   @override
@@ -805,4 +808,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get cvProfileComment => 'Hello, I’m Soohyeon Hwang, a cross-platform app developer (Flutter).\nYou can view detailed information by clicking each button on the timeline.';
+
+  @override
+  String get configTitle => 'Under development.';
+
+  @override
+  String get configDescription => 'Preparing for a better experience.';
 }

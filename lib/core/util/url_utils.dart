@@ -14,6 +14,27 @@ class UrlUtils {
     }
   }
 
+  static Future<void> launchEmailOrCatch({
+    required String email,
+    String? subject,
+    String? body,
+  }) async {
+    final Uri emailUri = Uri(
+      scheme: 'mailto',
+      path: email,
+      queryParameters: <String, String>{
+        if (subject != null) 'subject': subject,
+        if (body != null) 'body': body,
+      },
+    );
+
+    try {
+      await launchUrl(emailUri);
+    } catch (e) {
+      debugPrint('Could not launch email: $e');
+    }
+  }
+
   static String getRepositoryName(String url) {
     String urlWithoutProtocol = url;
     if (url.startsWith('http://')) {

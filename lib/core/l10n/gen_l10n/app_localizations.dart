@@ -161,6 +161,12 @@ abstract class AppLocalizations {
   /// **'더보기'**
   String get readMore;
 
+  /// No description provided for @mainTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'황수현 - 플러터 개발자'**
+  String get mainTitle;
+
   /// No description provided for @homeTitle1.
   ///
   /// In ko, this message translates to:
@@ -1690,6 +1696,18 @@ abstract class AppLocalizations {
   /// In ko, this message translates to:
   /// **'안녕하세요, 크로스플랫폼 앱 개발자(Flutter) 황수현입니다.\n타임라인의 각 버튼을 클릭하면 상세 내용을 확인하실 수 있습니다.'**
   String get cvProfileComment;
+
+  /// No description provided for @configTitle.
+  ///
+  /// In ko, this message translates to:
+  /// **'개발 중입니다.'**
+  String get configTitle;
+
+  /// No description provided for @configDescription.
+  ///
+  /// In ko, this message translates to:
+  /// **'더 나은 경험을 위해 준비 중입니다.'**
+  String get configDescription;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

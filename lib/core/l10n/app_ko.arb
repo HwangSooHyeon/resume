@@ -10,6 +10,7 @@
   "config": "설정",
   "sendingEmail": "이메일 보내기",
   "readMore": "더보기",
+  "mainTitle": "황수현 - 플러터 개발자",
   "homeTitle1": "크로스플랫폼 앱 개발",
   "homeTitle2": "준비된 플러터 개발자 황수현과 함께",
   "homeTitle3": "AOS, IOS 개발 및 출시를 한 번에 해결하세요.",
@@ -264,5 +265,7 @@
   "cvMoneytoringContent2": "종목 상세 페이지의 매매동향 모달을 개발했습니다. 해당 모달은 기관, 외국인, 개인의 상장 이후 모든 일일 거래량 및 거래 대금을 보여주는 모달입니다. Relay를 이용해 세로 무한스크롤을 적용했고 가로 스크롤 시 날짜 column 옆에 음영 효과가 나타나도록 했습니다.",
   "cvMoneytoringContent3": "밸류체인, 알림 관리자 화면을 개발했습니다. 해당 기능들은 베트남 외주팀과 협업하여 작업했습니다.",
   "cvMoneytoringContent4": "푸터 등 간단한 UI 개발 및 베트남 외주에 필요한 특정 라이브러리들을 선정하는 작업을 했습니다.",
-  "cvProfileComment": "안녕하세요, 크로스플랫폼 앱 개발자(Flutter) 황수현입니다.\n타임라인의 각 버튼을 클릭하면 상세 내용을 확인하실 수 있습니다."
+  "cvProfileComment": "안녕하세요, 크로스플랫폼 앱 개발자(Flutter) 황수현입니다.\n타임라인의 각 버튼을 클릭하면 상세 내용을 확인하실 수 있습니다.",
+  "configTitle": "개발 중입니다.",
+  "configDescription": "더 나은 경험을 위해 준비 중입니다."
 }
