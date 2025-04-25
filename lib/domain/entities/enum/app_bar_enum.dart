@@ -28,7 +28,9 @@ enum AppBarEnum {
             AppBarEnum.locale => () {
                 locale.toggleLocale(context);
               },
-            AppBarEnum.mailing => () {},
+            AppBarEnum.mailing => () => UrlUtils.launchEmailOrCatch(
+                  email: 'mikaelh1651@gmail.com',
+                ),
           },
           child: switch (this) {
             AppBarEnum.sourceCode => Container(
